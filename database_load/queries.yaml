@@ -1,5 +1,6 @@
 cypher:
 
+# Read Queries
   get_all_authors: |
     MATCH (a:author)
     RETURN a
@@ -9,9 +10,15 @@ cypher:
     RETURN p
 
   get_authors_for_publication: |
-    MATCH (p:publication {pub_key: '$pub_key'})-[:authors]-(a:author)
+    MATCH (p:publication {pub_key: $pub_key})-[:authors]-(a:author)
     RETURN a
   
   get_publications_for_author: |
-    MATCH (a: author {author: '$author'})-[:authors]-(p:publication)
+    MATCH (a: author {author: $author})-[:authors]-(p:publication)
     RETURN p
+
+# Write Queries
+  add_coauthorship_edge: |
+    MATCH (a:author {author: $author}), (b:author {author: $coauthor})
+    MERGE (a)-[c:COAUTHORED_WITH {pub_key: $pub_key}]-(b)
+    return c
