@@ -1,0 +1,17 @@
+cypher:
+
+  get_all_authors: |
+    MATCH (a:author)
+    RETURN a
+
+  get_all_publications: |
+    MATCH (p:publication)
+    RETURN p
+
+  get_authors_for_publication: |
+    MATCH (p:publication {pub_key: '$pub_key'})-[:authors]-(a:author)
+    RETURN a
+  
+  get_publications_for_author: |
+    MATCH (a: author {author: '$author'})-[:authors]-(p:publication)
+    RETURN p
