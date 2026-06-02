@@ -3,3 +3,6 @@ dblp.dtd
 disambiguate.py
 disambiguation_same_name.csv
 disambiguation_similar_names.csv
+
+# configuration files
+config.yaml
