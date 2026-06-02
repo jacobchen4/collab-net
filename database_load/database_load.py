@@ -1,6 +1,7 @@
 import time
 import random
 import pandas as pd
+import requests
 import pyneoinstance
 
 # Retrieving the Neo4j connection credentials from the config.yaml file
@@ -10,7 +11,21 @@ creds=configs['credentials']
 
 # Establishing the Neo4j connection
 graph = pyneoinstance.Neo4jInstance(creds['uri'],creds['user'],creds['password'])
+
+# Exponential backoff function - no external libraries
+def backoff(operation_func, max_retries=5, base_delay=1.0):
+    delay = base_delay
     
+    for attempt in range(1, max_retries):
+        try:
+            return operation_func()
+        except Exception as e:
+            if attempt == max_retries:
+                raise e 
+            print(f"Attempt {attempt} failed because of {e}, trying again with a {delay} delay")
+            time.sleep(delay)
+            delay *= 2
+            
 def getPublicationsForAuthor(author):
     return graph.execute_read_query(
         query=queries['cypher']['get_publications_for_author'],
@@ -90,9 +105,33 @@ def addCoauthorsForPublication(pub_key):
 def defineCoauthorshipEdges():
     publications = getAllPublications()['p']
     publications.apply(lambda p: addCoauthorsForPublication(p['pub_key']))
+    
+    
+def getCitationforPaper(title):
+    # get req as res 
+    response = backoff(lambda: requests.get(f"https://api.semanticscholar.org/graph/v1/paper/search/match?query={title}") )
+    
+    # error checking
+    if response.status_code == 400:
+        return {"error": "bad query params"}
+    elif response.status_code == 404:
+        return {"error": "bad paper id"}
+    
+    data = response.json()
+    
+    if response.status_code != 200 or 'message' in data:
+        print(f"API Error: {data.get('message', 'Unknown API Error')}")
+        return {"error": "API rate limit or error encountered"} #
+    else:
+        paper_id = data['data'][0]['paperId']
+        fields = "title,year,abstract,venue,citationCount,referenceCount,authors.name,authors.authorId"
+        
+    details_response = backoff(lambda: requests.get(f"https://api.semanticscholar.org/graph/v1/paper/{paper_id}?fields={fields}"))
+    return details_response.json()
 
 if __name__ == "__main__":
-    defineCoauthorshipEdges()
+    # defineCoauthorshipEdges()
+    print(getCitationforPaper("Large-scale patch recommendation at Alibaba."))
     
     
 # optimizations
