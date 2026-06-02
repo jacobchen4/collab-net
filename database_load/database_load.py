@@ -29,8 +29,7 @@ def getAllAuthors():
     return graph.execute_read_query(queries['cypher']['get_all_authors'])
 
 def getAllPublications():
-    return graph.execute_read_query(queries['cypher']['get_all_authors'])
-
+    return graph.execute_read_query(queries['cypher']['get_all_publications'])
 
 # Returns a series of objects ({pub_key, coauthors}) that represents the given author's
 # coauthors and their corresponding publications
@@ -56,8 +55,10 @@ def getCoauthorsForAuthor(author):
 def addCoauthorsForAuthor(author):
     # get publication-coauthor objects for given author
     pubCoauthorsObjs = getCoauthorsForAuthor(author)
+    print("Found coauthors/publications for " + author)
     for coauthorsObj in pubCoauthorsObjs:
         pub_key = coauthorsObj['pub_key']
+        print("Adding coauthors for publication " + pub_key)
         # for each coauthor in each publication, add the corresponding coauthorship edge
         for coauthor in coauthorsObj['coauthors']:
             graph.execute_write_query(
@@ -69,6 +70,30 @@ def addCoauthorsForAuthor(author):
                     'coauthor': coauthor
                 })
 
+def addCoauthorsForPublication(pub_key):
+    print("Adding coauthors for publication " + pub_key)
+    authors = getAuthorsForPublication(pub_key)['a']
+    # create coauthorship edges between all pairs of authors on this publication
+    for i, author1 in enumerate(authors):
+        for author2 in authors[i+1:]:
+            author1_name = author1['author']
+            author2_name = author2['author']
+            graph.execute_write_query(
+                query=queries['cypher']['add_coauthorship_edge'],
+                database=creds['database'],
+                parameters={
+                    'author': author1_name,
+                    'pub_key': pub_key,
+                    'coauthor': author2_name
+                })
+
+def defineCoauthorshipEdges():
+    publications = getAllPublications()['p']
+    publications.apply(lambda p: addCoauthorsForPublication(p['pub_key']))
+
 if __name__ == "__main__":
-    # test
-    addCoauthorsForAuthor('Dongju Lee')
+    defineCoauthorshipEdges()
+    
+    
+# optimizations
+# adding coauthorship 
