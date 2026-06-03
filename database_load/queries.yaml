@@ -10,11 +10,11 @@ cypher:
     RETURN p
 
   get_authors_for_publication: |
-    MATCH (p:publication {pub_key: $pub_key})-[:authors]-(a:author)
+    MATCH (p:publication {pub_key: $pub_key})-[:AUTHORED]-(a:author)
     RETURN a
   
   get_publications_for_author: |
-    MATCH (a: author {author: $author})-[:authors]-(p:publication)
+    MATCH (a: author {author: $author})-[:AUTHORED]-(p:publication)
     RETURN p
 
 # Write Queries
@@ -22,3 +22,11 @@ cypher:
     MATCH (a:author {author: $author}), (b:author {author: $coauthor})
     MERGE (a)-[c:COAUTHORED_WITH {pub_key: $pub_key}]-(b)
     return c
+
+  add_coauthorship_edges_batch: |
+    UNWIND $author_pairs as pair
+    OPTIONAL MATCH (a:author {author: pair.author}), (b:author {author: pair.coauthor})
+    WHERE a IS NOT NULL AND b IS NOT NULL AND a <> b
+    WITH a, b, pair
+    MERGE (a)-[c:COAUTHORED_WITH {pub_key: $pub_key}]-(b)
+    RETURN COUNT(c) as edges_created
