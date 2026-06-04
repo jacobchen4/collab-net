@@ -153,8 +153,7 @@ def findLeftoff(pub_key):
     publications = getAllPublications()
     # index of error - 2 for failsafe
     last_index = publications['p'].index[publications['p'].apply(lambda p: p['pub_key']) == pub_key][0] - 2
-    return publications['p'][last_index:]
+    return publications['p'][last_index:].apply(lambda x: x['pub_key'])
+
+
     
-if __name__ == "__main__":
-    #something
-    return
