@@ -1,3 +1,4 @@
+from os import wait
 import time
 import random
 import pandas as pd
@@ -16,9 +17,11 @@ graph = pyneoinstance.Neo4jInstance(creds['uri'],creds['user'],creds['password']
 def backoff(operation_func, max_retries=5, base_delay=1.0):
     delay = base_delay
     
-    for attempt in range(1, max_retries):
+    for attempt in range(1, max_retries + 1):
         try:
-            return operation_func()
+            response =  operation_func()
+            response.raise_for_status()
+            return response 
         except Exception as e:
             if attempt == max_retries:
                 raise e 
@@ -106,33 +109,75 @@ def defineCoauthorshipEdges():
     publications = getAllPublications()['p']
     publications.apply(lambda p: addCoauthorsForPublication(p['pub_key']))
     
-    
-def getCitationforPaper(title):
-    # get req as res 
-    response = backoff(lambda: requests.get(f"https://api.semanticscholar.org/graph/v1/paper/search/match?query={title}") )
-    
-    # error checking
+# get record by title 
+def getPaperIdFromTitle(title):
+    response = backoff(lambda: requests.get(f"https://api.semanticscholar.org/graph/v1/paper/search/match?query={title}"))
     if response.status_code == 400:
-        return {"error": "bad query params"}
+        return {"Error": "Bad query params"}
     elif response.status_code == 404:
-        return {"error": "bad paper id"}
-    
+        return {"Error": "Bad paper id"}
     data = response.json()
+    if not data.get("data"):
+        return {"Error": "Paper not found"}
     
     if response.status_code != 200 or 'message' in data:
         print(f"API Error: {data.get('message', 'Unknown API Error')}")
-        return {"error": "API rate limit or error encountered"} #
+        return {"error": "API rate limit or error encountered"} 
     else:
         paper_id = data['data'][0]['paperId']
-        fields = "title,year,abstract,venue,citationCount,referenceCount,authors.name,authors.authorId"
-        
-    details_response = backoff(lambda: requests.get(f"https://api.semanticscholar.org/graph/v1/paper/{paper_id}?fields={fields}"))
-    return details_response.json()
+    return paper_id
 
+
+# get citations from paper Id - selecting title for now
+def getCitationFromId(id):
+    response = backoff(lambda: requests.get(f"https://api.semanticscholar.org/graph/v1/paper/{id}/citations"))
+    if response.status_code == 400:
+        return {"Error": "Bad query params" }
+    elif response.status_code == 404:
+        return {"Error": "Bad paper id"}
+    else:
+        data = response.json()
+        return [paper['citingPaper'] for paper in data.get('data', [])]
+    
+def getCitationFromTitle(title):
+    return getCitationFromId(getPaperIdFromTitle(title))
+    
+# get citation count from paper id 
+def getCitationCountFromId(id):
+    response = backoff(lambda: requests.get(f"https://api.semanticscholar.org/graph/v1/paper/{id}?fields=citationCount"))
+    if response.status_code == 400:
+        return {"Error": "Bad query params" }
+    elif response.status_code == 404:
+        return {"Error": "Bad paper id"}
+    else:
+        data = response.json()
+        try:
+            return data["citationCount"]
+        except (KeyError, IndexError, TypeError):
+            return {"Error": "Something went wrong."}
+
+
+def getCitationDetailCountByTitle(title):
+    return getCitationCountFromId(getPaperIdFromTitle(title))
+
+
+def getHIndexByAuthorName(author_name):
+    response = backoff(lambda: requests.get(
+        "https://api.semanticscholar.org/graph/v1/author/search",
+        params={"query": author_name, "fields": "hIndex,citationCount,paperCount"}
+    ))
+    data = response.json()
+    if not data.get('data') or len(data['data']) == 0:
+        return {'h_index': None, 'citation_count': None, 'paper_count': None}
+    # trying to find the best author -> return if non-disambiguated return the one with the most publications
+    best_author = max(data['data'], key=lambda x: x.get('paperCount', 0))
+    return {
+        'h_index': best_author.get('hIndex'),
+        'citation_count': best_author.get('citationCount'),
+        'paper_count': best_author.get('paperCount')
+    }
+    
+        
 if __name__ == "__main__":
-    # defineCoauthorshipEdges()
-    print(getCitationforPaper("Large-scale patch recommendation at Alibaba."))
-    
-    
-# optimizations
-# adding coauthorship 
+    # print(getCitationDetailCountByTitle("Deep Residual Learning for Image Recognition"))
+     print(getHIndexByAuthorName("Jihyun Park"))
