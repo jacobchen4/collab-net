@@ -17,6 +17,17 @@ cypher:
     MATCH (a: author {author: $author})-[:AUTHORED]-(p:publication)
     RETURN p
 
+  get_author-publication_degree_centrality: |
+    MATCH (a:author)-[e:AUTHORED]-(:publication)
+    with a.author as author, count(e) as num_publications
+    $min_degree
+    RETURN author, num_publications
+    ORDER BY num_publications DESC
+    $limit
+
+  get_graph_state_by_year: |
+    MATCH (a:author)-[c:COAUTHORED_WITH]
+
 # Write Queries
   add_coauthorship_edge: |
     MATCH (a:author {author: $author}), (b:author {author: $coauthor})

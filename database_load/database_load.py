@@ -6,8 +6,8 @@ import pyneoinstance
 import datetime
 
 # Retrieving the Neo4j connection credentials from the config.yaml file
-configs=pyneoinstance.load_yaml_file('./database_load/config.yaml')
-queries = pyneoinstance.load_yaml_file('./database_load/queries.yaml')
+configs=pyneoinstance.load_yaml_file('./db_queries/config.yaml')
+queries = pyneoinstance.load_yaml_file('./db_queries/queries.yaml')
 creds=configs['credentials']
 
 # Establishing the Neo4j connection
@@ -53,13 +53,6 @@ def getCoauthorsForAuthor(author):
         'pub_key': p['pub_key'],
         'coauthors': getCoauthoredPublications(p)
         })
-
-def getAllPublicationsWithAuthors():
-    query = """
-    MATCH (p:publication)-[:AUTHORED]-(a:author)
-    RETURN p.pub_key as pub_key, COLLECT(a.author) as authors
-    """
-    return graph.execute_read_query(query)
 
 def addCoauthorsForAuthor(author):
     # get publication-coauthor objects for given author
@@ -154,6 +147,3 @@ def findLeftoff(pub_key):
     # index of error - 2 for failsafe
     last_index = publications['p'].index[publications['p'].apply(lambda p: p['pub_key']) == pub_key][0] - 2
     return publications['p'][last_index:].apply(lambda x: x['pub_key'])
-
-
-    
