@@ -1,8 +1,12 @@
 dblp.xml/
-dblp.dtd
-disambiguate.py
+disambiguation/disambiguate.py
 disambiguation_same_name.csv
 disambiguation_similar_names.csv
 
 # configuration files
 config.yaml
+
+#orchid/doi extractoin
+paper_dois.csv
+paper_no_dois.csv
+author_orcids.csv
