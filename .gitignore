@@ -10,3 +10,7 @@ config.yaml
 paper_dois.csv
 paper_no_dois.csv
 author_orcids.csv
+
+# pickled graphs
+analysis/multigraph.pkl
+analysis/graph.pkl
