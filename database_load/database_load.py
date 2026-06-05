@@ -33,6 +33,24 @@ def getAllAuthors():
 def getAllPublications():
     return graph.execute_read_query(queries['cypher']['get_all_publications'])
 
+def getAuthorsByYear(year):
+    return graph.execute_read_query(queries['cypher']['get_authors_by_year'], parameters={'year': year})
+
+def getPublicationsByYear(year):
+    return graph.execute_read_query(queries['cypher']['get_publications_by_year'], parameters={'year': year})
+
+def getAuthorsByConference(conf):
+    return graph.execute_read_query(queries['cypher']['get_authors_by_conference'], parameters={"conf": conf})
+
+def getPublicationsByConference(conf):
+    return graph.execute_read_query(queries['cypher']['get_publications_by_conference'], parameters={"conf": conf})
+
+def getAuthorsByConferenceAndYear(conf, year):
+    return graph.execute_read_query(queries['cypher']['get_authors_by_conference_and_year'], parameters={'year': year, 'conf': conf})
+
+def getPublicationsByConferenceAndYear(conf, year):
+    return graph.execute_read_query(queries['cypher']['get_publications_by_conference_and_year'], parameters={'year': year, 'conf': conf}) 
+
 # Returns a series of objects ({pub_key, coauthors}) that represents the given author's
 # coauthors and their corresponding publications
 def getCoauthorsForAuthor(author):
@@ -156,4 +174,21 @@ def findLeftoff(pub_key):
     return publications['p'][last_index:].apply(lambda x: x['pub_key'])
 
 
+# Retrieves subgraph instances (e.g, filtering by year, conference)
+def getSubgraph(year = -1, conf  = ""):
+    # if conference provided
+    if conf:
+        # if both conf and year
+        if year != -1:
+            return graph.execute_read_query(queries['cypher']['get_graph_for_conference_and_year'], parameters={'year': year, 'conf': conf.lower()})
+        # if only conference
+        else:
+            return graph.execute_read_query(queries['cypher']['get_graph_for_conference'], parameters={'conf': conf.lower()})
+    # if no conference and no year
+    elif year == -1:
+        return None
+    else:
+        return graph.execute_read_query(queries['cypher']['get_graph_for_year'], parameters={'year': year})
     
+if __name__ == "__main__":
+    print(getSubgraph(2021, "ICSE"))

@@ -17,6 +17,61 @@ cypher:
     MATCH (a: author {author: $author})-[:AUTHORED]-(p:publication)
     RETURN p
 
+  get_authors_by_conference: |
+    match (a:author)-[e:AUTHORED]-(b:publication)
+    where b.pub_key contains $conf
+    return a.author as authors
+
+  get_publications_by_conference: |
+    match (b:publication)
+    where b.pub_key contains $conf
+    return b as publications
+
+  get_authors_by_year: |
+    match (a:author)--(b:publication {year: $year})
+    return a.author as authors
+
+  get_publications_by_year: |
+    match (b:publication {year: $year})
+    return b as publications
+
+  get_authors_by_conference_and_year: |
+    match (a:author)--(b:publication {year: $year})
+    where b.pub_key contains $conf
+    return a.author as authors
+
+  get_publications_by_conference_and_year: |
+    match (b:publication {year: $year})
+    where b.pub_key contains $conf
+    return b as publications
+
+  get_graph_for_year: |
+    match(a:author)-[d:COAUTHORED_WITH]-(b:author)
+    where a in collect {
+    match (a:author)-[c:AUTHORED]-(p:publication)
+    where p.year = $year
+    return a
+    }
+    return a.author as authors, d.pub_key as edges, b.author as coauthors
+
+  get_graph_for_conference: |
+    match(a:author)-[d:COAUTHORED_WITH]-(b:author)
+    where a in collect {
+    match (a:author)-[c:AUTHORED]-(p:publication)
+    where p.pub_key contains $conf
+    return a
+    }
+    return a.author as authors, d.pub_key as edges, b.author as coauthors
+
+  get_graph_for_conference_and_year: |
+    match(a:author)-[d:COAUTHORED_WITH]-(b:author)
+    where a in collect {
+    match (a:author)-[c:AUTHORED]-(p:publication)
+    where p.year = $year and p.pub_key contains $conf
+    return a
+    }
+    return a.author as authors, d.pub_key as edges, b.author as coauthors
+
 # Write Queries
   add_coauthorship_edge: |
     MATCH (a:author {author: $author}), (b:author {author: $coauthor})
