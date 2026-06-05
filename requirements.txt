@@ -1,2 +1,5 @@
 lxml
 neo4j
+pyyaml
+networkx
+pandas
