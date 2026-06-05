@@ -7,8 +7,8 @@ import datetime
 from database_load import *
 
 # Retrieving the Neo4j connection credentials from the config.yaml file
-configs=pyneoinstance.load_yaml_file('./db_queries/config.yaml')
-queries = pyneoinstance.load_yaml_file('./db_queries/queries.yaml')
+configs=pyneoinstance.load_yaml_file('./database_load/config.yaml')
+queries = pyneoinstance.load_yaml_file('./database_load/queries.yaml')
 creds=configs['credentials']
 
 # Establishing the Neo4j connection
@@ -52,7 +52,11 @@ def getCoauthorNetwork(author, num_layers=3, coauthors_set=set([]), visited_coau
             lambda set: coauthors_set.update(set)
         )
                 
-    return coauthors_set.apply(lambda author: getCoauthorNetwork(author ))
+    return coauthors_set.apply(lambda author: getCoauthorNetwork(author))
+
+# Finds all islands on a graph.
+def findGraphIslands():
+    
 
 if __name__ == "__main__":
     print(getCoauthorNetwork("Ian Gorton", num_layers=10))

@@ -16,6 +16,11 @@ cypher:
   get_publications_for_author: |
     MATCH (a: author {author: $author})-[:AUTHORED]-(p:publication)
     RETURN p
+  
+  get_coauthors_for_author_batch: |
+    UNWIND $authors as author
+    MATCH (a:author {author: a.author})-[c:COAUTHORED_WITH]-(b:author)
+    RETURN b as coauthors
 
   get_author-publication_degree_centrality: |
     MATCH (a:author)-[e:AUTHORED]-(:publication)
@@ -27,6 +32,7 @@ cypher:
 
   get_graph_state_by_year: |
     MATCH (a:author)-[c:COAUTHORED_WITH]
+
 
 # Write Queries
   add_coauthorship_edge: |
