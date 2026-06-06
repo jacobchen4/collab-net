@@ -20,7 +20,7 @@ cypher:
   get_authors_by_conference: |
     match (a:author)-[e:AUTHORED]-(b:publication)
     where b.pub_key contains $conf
-    return a.author as authors
+    return distinct a.author as authors
 
   get_publications_by_conference: |
     match (b:publication)
@@ -29,7 +29,7 @@ cypher:
 
   get_authors_by_year: |
     match (a:author)--(b:publication {year: $year})
-    return a.author as authors
+    return distinct a.author as authors
 
   get_publications_by_year: |
     match (b:publication {year: $year})
@@ -38,7 +38,7 @@ cypher:
   get_authors_by_conference_and_year: |
     match (a:author)--(b:publication {year: $year})
     where b.pub_key contains $conf
-    return a.author as authors
+    return distinct a.author as authors
 
   get_publications_by_conference_and_year: |
     match (b:publication {year: $year})
