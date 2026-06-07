@@ -66,6 +66,11 @@ def compute_metrics(approx_k=None):
     betweenness_unweighted = nx.betweenness_centrality(G, **k_arg)
     print(f"  Done in {time.time() - t0:.1f}s")
 
+    print("Computing clustering_unweighted...")
+    clustering_unweighted = nx.clustering(G)
+    print("Computing clustering_weighted...")
+    clustering_weighted = nx.clustering(G, weight="weight")
+
     print("\nBuilding DataFrame...")
     rows = []
     for node_id, data in G.nodes(data=True):
@@ -76,6 +81,8 @@ def compute_metrics(approx_k=None):
             "degree_total": degree_total.get(node_id, 0),
             "betweenness_weighted": betweenness_weighted.get(node_id, 0.0),
             "betweenness_unweighted": betweenness_unweighted.get(node_id, 0.0),
+            "clustering_unweighted": clustering_unweighted.get(node_id, 0.0),
+            "clustering_weighted": clustering_weighted.get(node_id, 0.0),
             "connected_component": components.get(node_id, -1),
         })
 
