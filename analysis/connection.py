@@ -2,7 +2,7 @@ import yaml
 from neo4j import GraphDatabase
 from contextlib import contextmanager
 
-_CONFIG_PATH = "./analysis/config.yaml"
+_CONFIG_PATH = "./config.yaml"
 
 def _load_creds():
     with open(_CONFIG_PATH, "r") as f:

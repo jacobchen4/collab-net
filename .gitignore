@@ -14,3 +14,6 @@ author_orcids.csv
 # pickled graphs
 analysis/multigraph.pkl
 analysis/graph.pkl
+analysis/graphs/
+analysis/__pycache__/
+database_load/__pycache__/

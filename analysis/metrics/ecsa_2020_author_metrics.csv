@@ -1,0 +1,1074 @@
+name,database_id,degree_weighted,degree_total,betweenness_weighted,betweenness_unweighted,clustering_unweighted,clustering_weighted,connected_component
+Patricia Lago,Patricia Lago,72,131,0.2689082543050388,0.18174641016804685,0.012519561815336464,0.002019103878306771,0
+Catia Trubiani,Catia Trubiani,43,60,0.134605918165359,0.16412856471565393,0.08194905869324474,0.007766734330297164,0
+Ludovico Iovino,Ludovico Iovino,28,42,0.06363929724045504,0.11483540220713723,0.05291005291005291,0.005652086900553644,0
+Pooyan Jamshidi,Pooyan Jamshidi,39,49,0.06162029764227415,0.11162363384791356,0.04993252361673414,0.0038257772105100615,0
+Stefen Becker,Stefen Becker,40,61,0.12560601172475622,0.104631751168365,0.09230769230769231,0.008967497419080496,0
+Damian A. Tamburri,Damian A. Tamburri,45,92,0.11163376192102048,0.10190412900730031,0.007070707070707071,0.0006307854681247689,0
+Heiko Koziolek,Heiko Koziolek,45,65,0.0839503989303018,0.0997045355947391,0.06262626262626263,0.0056318386786851984,0
+Anne Koziolek,Anne Koziolek,64,133,0.10590402112337471,0.09831202472912742,0.03422619047619048,0.006806278249037945,0
+Yanja Dajsuren,Yanja Dajsuren,20,32,0.07028959718215644,0.08763089432138445,0.015789473684210527,0.0015481216024136764,0
+Mehdi Mirakhorli,Mehdi Mirakhorli,46,70,0.09090093199385889,0.08692550453381626,0.002898550724637681,0.0003372517763823236,0
+Justus Bogner,Justus Bogner,35,61,0.11371678009927022,0.08207768120341719,0.06722689075630252,0.009959039470756615,0
+Rafael Capilla,Rafael Capilla,19,26,0.07942361553866985,0.07824502237261394,0.07017543859649122,0.007683700236371991,0
+André van Hoorn,André van Hoorn,38,61,0.05389445440282249,0.07253952520375367,0.05689900426742532,0.007171589787606567,0
+Uwe Zdun,Uwe Zdun,48,82,0.06105877214069709,0.0720439421064481,0.030141843971631204,0.0044079869707085014,0
+Pablo Oliveira Antonino,Pablo Oliveira Antonino,42,78,0.10967955971775109,0.07190256513164714,0.04994192799070848,0.008890122588325151,0
+Ilias Gerostathopoulos,Ilias Gerostathopoulos,7,11,0.09277507203130009,0.06963192693081126,0.23809523809523808,0.029488382161966285,0
+Javier Cámara 0001,Javier Cámara 0001,40,63,0.05253916081357916,0.06887397649251964,0.05641025641025641,0.004282971928181513,0
+Henry Muccini,Henry Muccini,10,32,0.04682468478685006,0.06644799278729127,0.13333333333333333,0.030075591603839526,0
+Muhammad Ali Babar 0001,Muhammad Ali Babar 0001,44,52,0.08149284869420405,0.0663805365683522,0.0021141649048625794,0.00017757872443902368,0
+Romina Spalazzese,Romina Spalazzese,10,18,0.1417035693526996,0.06195689462445875,0.3111111111111111,0.03288443028194762,0
+Stefan Wagner 0001,Stefan Wagner 0001,44,72,0.06455907756966799,0.05986536076650204,0.012684989429175475,0.0022180081259621826,0
+Jasmin Jahic,Jasmin Jahic,24,31,0.05698424652821328,0.058731867565251034,0.09782608695652174,0.010967647865695719,0
+Slinger Jansen,Slinger Jansen,26,28,0.04434571714257842,0.05868681365581058,0.0,0.0,0
+Jan Martijn E. M. van der Werf,Jan Martijn E. M. van der Werf,2,4,0.04460272604066502,0.05860737454185654,0.0,0.0,0
+Martina De Sanctis,Martina De Sanctis,18,27,0.11187316960366234,0.055918756212054783,0.10457516339869281,0.011274880598246138,0
+Manuel Wimmer,Manuel Wimmer,22,26,0.02929901438187215,0.048370470495731135,0.017316017316017316,0.0014096678616492978,0
+Amir Molzam Sharifloo,Amir Molzam Sharifloo,3,3,0.04800458927352035,0.047894275936404544,0.3333333333333333,0.022222222222222227,0
+Ivano Malavolta,Ivano Malavolta,8,25,0.09556019179023184,0.04366163381979416,0.21428571428571427,0.04989112842562061,0
+Paris Avgeriou,Paris Avgeriou,4,7,0.03847033796935025,0.04175038455090142,0.0,0.0,0
+Philippe Kruchten,Philippe Kruchten,16,20,0.0036051339067965493,0.03877275409964484,0.3333333333333333,0.02826438995932832,0
+Robert Heinrich,Robert Heinrich,10,23,0.09537132919088033,0.03866139249361275,0.28888888888888886,0.0480794496428683,0
+Danny Weyns,Danny Weyns,6,8,0.02169108370960324,0.0365339269112144,0.0,0.0,0
+Olaf Zimmermann,Olaf Zimmermann,16,19,0.04122835497175652,0.03642698357263634,0.075,0.007582894142970646,0
+Christian Berger 0001,Christian Berger 0001,22,34,0.030981254442075334,0.036123768848335354,0.012987012987012988,0.0013743732051672724,0
+Raffaela Mirandola,Raffaela Mirandola,25,56,0.066987422249165,0.035443601738650715,0.14333333333333334,0.024392256646455137,0
+Hernán Astudillo,Hernán Astudillo,23,48,0.027291697006331554,0.03483795854808577,0.02766798418972332,0.002790099223376035,0
+Alexander Pretschner,Alexander Pretschner,26,31,0.042654131304262995,0.03444292463690396,0.021538461538461538,0.0018901510366186442,0
+Mauro Caporuscio,Mauro Caporuscio,23,31,0.02802097922502334,0.03392597344630655,0.09090909090909091,0.008557248447461705,0
+Everton Cavalcante,Everton Cavalcante,23,37,0.04336908332984935,0.03383914326379583,0.14624505928853754,0.02082941646433826,0
+Flávio Oquendo,Flávio Oquendo,32,58,0.09870777197694998,0.03341530660436039,0.06653225806451613,0.009905565984670302,0
+Rick Kazman,Rick Kazman,4,9,0.0762817985817876,0.03217407993107004,0.16666666666666666,0.02311204247835449,0
+Antonio Filieri,Antonio Filieri,29,33,0.04580007597981149,0.0296549070255195,0.03940886699507389,0.0027852367274379566,0
+Thomas Kuhn 0001,Thomas Kuhn 0001,31,69,0.025088741342308065,0.026844879848757594,0.08602150537634409,0.016267616029427848,0
+Mark G. J. van den Brand,Mark G. J. van den Brand,2,5,0.014929880534303273,0.024378462205777832,0.0,0.0,0
+Grace A. Lewis,Grace A. Lewis,7,11,0.04538777140209317,0.024298194024571992,0.5714285714285714,0.04901762139942937,0
+Ion Barosan,Ion Barosan,12,12,0.0094579274495868,0.023654164402079236,0.045454545454545456,0.0030303030303030307,0
+Barbora Buhnova,Barbora Buhnova,20,38,0.023074726159120363,0.02334824419097312,0.021052631578947368,0.004397061778675601,0
+Matthias Galster,Matthias Galster,4,7,0.013036581651732,0.023244105772845376,0.16666666666666666,0.013999122776609701,0
+Patrizia Scandurra,Patrizia Scandurra,21,48,0.01613626472562491,0.022666515473828912,0.16666666666666666,0.02965088317732669,0
+Boris Pérez,Boris Pérez,17,29,0.021841083448304693,0.02247798431276228,0.007352941176470588,0.001056095436290139,0
+Jan Keim,Jan Keim,34,78,0.008859797650403445,0.021528256752233476,0.08199643493761141,0.018086356388572238,0
+Mohammad Sharaf,Mohammad Sharaf,15,40,0.021739448111334086,0.020992549196596686,0.12380952380952381,0.023355132394646975,0
+Sandro Speth,Sandro Speth,13,22,0.010992192689679518,0.020495240219993823,0.1794871794871795,0.025296516024990796,0
+Antony Tang,Antony Tang,2,2,0.010060730137826273,0.019766415941519344,0.0,0.0,0
+Elisa Yumi Nakagawa,Elisa Yumi Nakagawa,7,14,0.10110036905516766,0.019748799687037827,0.3333333333333333,0.05502307443726,0
+Gregor Engels,Gregor Engels,21,29,0.037119873032131594,0.019522536489908805,0.014285714285714285,0.0017616982650798532,0
+Jamal El Hachem,Jamal El Hachem,2,2,0.032284990488732804,0.019327914928900413,0.0,0.0,0
+Joost Visser 0001,Joost Visser 0001,14,15,0.01872426644787268,0.0189859482350154,0.04395604395604396,0.003311239633545602,0
+Miroslaw Staron,Miroslaw Staron,2,5,0.03145788912579957,0.018256977542260685,0.0,0.0,0
+Andreas Vogelsang,Andreas Vogelsang,2,2,0.0,0.018256977542260685,0.0,0.0,0
+Rich Hilliard,Rich Hilliard,4,4,0.0073889279385054175,0.015894462296141346,0.16666666666666666,0.016024995225637873,0
+Stephan Seifermann,Stephan Seifermann,13,33,0.007602790494307175,0.015664519638616228,0.08974358974358974,0.014879904255644233,0
+Alexander Serebrenik,Alexander Serebrenik,2,7,0.02684574762740917,0.014144199154692803,0.0,0.0,0
+Roberto Verdecchia,Roberto Verdecchia,16,38,0.01528034721351227,0.013706083190086519,0.10833333333333334,0.02084227241304957,0
+Ana Petrovska,Ana Petrovska,7,8,0.01508875876221135,0.012932177983129444,0.23809523809523808,0.01669816206315833,0
+António Rito Silva,António Rito Silva,11,12,0.021602766106442576,0.012654183563972852,0.0,0.0,0
+Davide Falessi,Davide Falessi,2,2,0.0015771000564404865,0.012562138574500767,0.0,0.0,0
+Mahyar Tourchi Moghaddam,Mahyar Tourchi Moghaddam,11,17,0.01160745641540198,0.012233108777289307,0.10909090909090909,0.01216276838707986,0
+Paola Inverardi,Paola Inverardi,14,27,0.022781813896785914,0.011484705272220687,0.06593406593406594,0.010505203236792687,0
+Uwe Breitenbücher,Uwe Breitenbücher,12,16,0.0166903136047122,0.011293572276959866,0.2727272727272727,0.02578388855540424,0
+Antinisca Di Marco,Antinisca Di Marco,10,15,0.014906516089022673,0.011153397645808963,0.06666666666666667,0.009135197069898559,0
+Surya Nepal,Surya Nepal,8,8,0.009822412795964157,0.009990636801984474,0.03571428571428571,0.0029998120235592216,0
+Thaís Batista,Thaís Batista,19,43,0.05583790896126277,0.009833093274780911,0.22807017543859648,0.03742619439114305,0
+Federico Quin,Federico Quin,6,8,0.008962601209638084,0.009102787881321682,0.0,0.0,0
+Alfonso Pierantonio,Alfonso Pierantonio,5,5,0.0,0.008881212343876007,0.6,0.06251640547797868,0
+David Garlan,David Garlan,4,15,0.00937147900204858,0.008823405040278587,0.5,0.06198729966903697,0
+Angelika Kaplan,Angelika Kaplan,25,44,0.002198594300904441,0.008798283632932561,0.14666666666666667,0.021730077461002372,0
+Alberto Avritzer,Alberto Avritzer,5,10,0.02692518674136321,0.00868481656329869,0.6,0.080363933798835,0
+Diego Perez-Palacin,Diego Perez-Palacin,14,17,0.005438464046480946,0.008460346814454622,0.23076923076923078,0.021220787326448026,0
+Mirko D'Angelo,Mirko D'Angelo,12,15,0.005282701077943615,0.007519954496124038,0.21212121212121213,0.01932875596875082,0
+Matteo Camilli,Matteo Camilli,14,29,0.01109499624891416,0.007305554744625607,0.26373626373626374,0.03962314067891339,0
+Elvinia Riccobene,Elvinia Riccobene,13,32,0.0010288144071890779,0.006951545249752319,0.32051282051282054,0.05430770203189549,0
+Yuanfang Cai,Yuanfang Cai,2,3,0.003726629022255668,0.006772946482412083,0.0,0.0,0
+Stefan Kugele,Stefan Kugele,3,4,0.003144854334768733,0.006738525724661641,0.3333333333333333,0.027998245553219402,0
+Ralf H. Reussner,Ralf H. Reussner,7,16,0.0,0.006184939512104513,0.47619047619047616,0.07683796990428643,0
+Jorge Andrés Díaz Pace,Jorge Andrés Díaz Pace,3,4,0.004300459798347199,0.006151042483364357,0.3333333333333333,0.040380457618491995,0
+Johannes Grohmann,Johannes Grohmann,14,18,0.00468690772328832,0.0058708873662590795,0.10989010989010989,0.00968094234689809,0
+Bradley R. Schmerl,Bradley R. Schmerl,3,11,0.0,0.0056542163175277455,0.3333333333333333,0.04622408495670898,0
+Ipek Ozkaya,Ipek Ozkaya,3,3,0.0,0.00551986089410082,0.3333333333333333,0.03527557893262666,0
+Mohamed Soliman 0001,Mohamed Soliman 0001,2,3,0.004429898825201722,0.005049345555554503,0.0,0.0,0
+Helena Rodrigues 0001,Helena Rodrigues 0001,2,2,0.0,0.004810487030775752,0.0,0.0,0
+Dominik Werle,Dominik Werle,11,14,0.00030841067770391735,0.004705244302308201,0.36363636363636365,0.03483349885354832,0
+Francesca Arcelli Fontana,Francesca Arcelli Fontana,3,4,0.002875384399199149,0.004510056345272056,0.3333333333333333,0.03527557893262666,0
+Ilaria Pigazzini,Ilaria Pigazzini,3,3,0.0,0.004510056345272056,0.3333333333333333,0.03527557893262666,0
+M. Alireza Hakamian,M. Alireza Hakamian,11,21,0.0011456366335920768,0.004404866899066574,0.2909090909090909,0.04101741521818765,0
+Daniel Méndez Fernández,Daniel Méndez Fernández,2,4,0.0,0.004367384268082327,0.0,0.0,0
+Antonio Vetrò,Antonio Vetrò,2,2,0.0,0.004367384268082327,0.0,0.0,0
+Vincenzo Grassi,Vincenzo Grassi,12,15,4.67288905611996e-06,0.004176869319450269,0.3939393939393939,0.04244732751649995,0
+Vittorio Cortellessa,Vittorio Cortellessa,5,7,0.008397181633847568,0.003427784946290683,0.6,0.06251640547797868,0
+Somayeh Malakuti,Somayeh Malakuti,9,10,0.0017418193956687152,0.0030887796660952938,0.19444444444444445,0.01645741907674549,0
+Davide Arcelli,Davide Arcelli,5,9,0.007859799392393773,0.0029479904994904067,0.0,0.0,0
+Elisabetta Di Nitto,Elisabetta Di Nitto,3,10,0.014439227183410676,0.0029155596580835138,0.6666666666666666,0.07244268999766386,0
+Aldeida Aleti,Aldeida Aleti,9,10,0.007242978036985938,0.002732731480513708,0.3055555555555556,0.02484074876916463,0
+Carlos E. Cuesta,Carlos E. Cuesta,2,4,0.0,0.002691608405989134,0.0,0.0,0
+Rodrigo O. Spínola,Rodrigo O. Spínola,2,3,0.010988298615466087,0.002638019607798471,0.0,0.0,0
+Mai Abusair,Mai Abusair,8,22,0.011800368851935467,0.0024252329416330092,0.32142857142857145,0.06719917988517851,0
+Nenad Medvidovic,Nenad Medvidovic,2,4,0.009913534132558495,0.0024069893365395775,0.0,0.0,0
+Valdemar Vicente Graciano Neto,Valdemar Vicente Graciano Neto,2,3,0.0,0.0022549502818122557,0.0,0.0,0
+Carlos Carrillo 0001,Carlos Carrillo 0001,8,12,0.0013137048766438584,0.0022501810827999656,0.32142857142857145,0.03545612027014766,0
+Karthik Vaidhyanathan,Karthik Vaidhyanathan,4,5,0.0033270970079574114,0.0020575759280689835,0.0,0.0,0
+Michael Goedicke,Michael Goedicke,2,3,0.002632394168280911,0.0019805487339541066,0.0,0.0,0
+Amleto Di Salle,Amleto Di Salle,3,7,0.0005817746874869351,0.0019276830719842735,0.3333333333333333,0.037999465481704374,0
+Éric Rutten,Éric Rutten,5,5,0.0017289689507643852,0.0017850436194378246,0.3,0.020000000000000004,0
+André Restivo,André Restivo,7,7,0.0017289689507643852,0.0017850436194378246,0.47619047619047616,0.03714799915379986,0
+Lucia Happe,Lucia Happe,3,3,0.011037363950555346,0.0017850436194378246,0.0,0.0,0
+Sam Malek,Sam Malek,2,4,0.007817743390888693,0.0017627121759127367,0.0,0.0,0
+Andreas Morgenstern,Andreas Morgenstern,5,14,0.0,0.0017378549421598354,0.6,0.12954586852824476,0
+Manar Mazkatli,Manar Mazkatli,14,19,0.006558399790264364,0.001585765797323262,0.1978021978021978,0.021774540068747267,0
+Sten Grüner,Sten Grüner,8,11,0.006150690220117897,0.0013730505676565815,0.32142857142857145,0.034562630885902376,0
+Konstantinos Angelopoulos,Konstantinos Angelopoulos,3,3,0.0,0.001329840702361316,0.6666666666666666,0.04444444444444445,0
+Alessandro Vittorio Papadopoulos,Alessandro Vittorio Papadopoulos,3,5,0.014547638209512659,0.001329840702361316,0.6666666666666666,0.055996491106438805,0
+Thomas Vogel 0001,Thomas Vogel 0001,3,3,0.0,0.001329840702361316,0.6666666666666666,0.04444444444444445,0
+Alessio Bucaioni,Alessio Bucaioni,3,5,0.0006168213554078347,0.0013060724911855288,0.6666666666666666,0.06409998090255149,0
+Sebastian Frank 0001,Sebastian Frank 0001,10,21,0.0002799060544615856,0.0009325580547546575,0.3333333333333333,0.051318054535544166,0
+Antonio Brogi,Antonio Brogi,3,5,0.0016294364138690304,0.0008375822513597726,0.3333333333333333,0.040380457618491995,0
+Jacopo Soldani,Jacopo Soldani,3,5,0.0016294364138690304,0.0008375822513597726,0.3333333333333333,0.040380457618491995,0
+Evangelos Ntentos,Evangelos Ntentos,15,24,0.001018066762360002,0.0007819984914926436,0.24761904761904763,0.032866380077842115,0
+Patrizio Pelliccione,Patrizio Pelliccione,3,5,0.0,0.0006884997068770978,0.3333333333333333,0.032049990451275746,0
+Michele Tucci 0001,Michele Tucci 0001,2,2,0.0002803733433671976,0.0005630939719086171,0.0,0.0,0
+Jonas Fritzsch,Jonas Fritzsch,11,24,1.55762968537332e-05,0.0005535296691921654,0.38181818181818183,0.059120157210437084,0
+Anze Luzar,Anze Luzar,3,4,0.0004322422376910963,0.00044626090485945616,0.6666666666666666,0.055996491106438805,0
+Matija Cankar,Matija Cankar,3,4,0.0004322422376910963,0.00044626090485945616,0.6666666666666666,0.055996491106438805,0
+Pablo Cruz,Pablo Cruz,4,6,0.0009138613364085265,0.0004017263893055626,0.5,0.048074985676913616,0
+Adam Bachorek,Adam Bachorek,9,13,4.67288905611996e-06,0.00039697590404533646,0.4166666666666667,0.053711420753780686,0
+Jóakim von Kistowski,Jóakim von Kistowski,4,7,0.00015654178338001865,0.00024770972437903016,0.5,0.08804648155771455,0
+Jürgen Walter,Jürgen Walter,2,2,0.0,0.00019673072996202607,0.0,0.0,0
+Simon Eismann,Simon Eismann,2,3,0.0001518688943238987,0.00019673072996202607,0.0,0.0,0
+Marcello M. Bersani,Marcello M. Bersani,5,13,0.0,0.00017136260748188255,0.8,0.1619427931643848,0
+Oliver Kopp,Oliver Kopp,6,6,0.0,0.0001593682743902625,0.7333333333333333,0.05119929822128776,0
+Christoph Fehling,Christoph Fehling,6,6,0.0,0.0001593682743902625,0.7333333333333333,0.05119929822128776,0
+Sebastian Herold,Sebastian Herold,15,25,6.542044678567944e-05,6.542044678567944e-05,0.0,0.0,1
+Satish Narayana Srirama,Satish Narayana Srirama,9,10,6.074755772955948e-05,6.074755772955948e-05,0.16666666666666666,0.011111111111111112,2
+Sebastian Hahner,Sebastian Hahner,4,9,0.0,5.6839136926918794e-05,0.6666666666666666,0.1177866290237471,0
+Jair C. Leite,Jair C. Leite,10,22,5.4517038988066195e-06,5.4947509463053234e-05,0.5555555555555556,0.0786166670444895,0
+Julius Rückert,Julius Rückert,11,19,0.00010007770728523582,5.140177961731956e-05,0.2,0.028297447632022965,0
+Eoin Martino Grua,Eoin Martino Grua,3,4,0.0,3.0171995019174564e-05,0.6666666666666666,0.09937555983517815,0
+Hans Hansson,Hans Hansson,6,9,1.401866716835988e-05,2.3364445280599802e-05,0.2,0.026666666666666672,3
+Markus Frank,Markus Frank,6,9,0.0006098120218236548,2.102800075253982e-05,0.4,0.041084416616567476,0
+Konstantinos Plakidas,Konstantinos Plakidas,8,25,1.6744519117763188e-05,1.1682222640299901e-05,0.5,0.09602759804392917,0
+Filipe Figueiredo Correia,Filipe Figueiredo Correia,8,15,1.55762968537332e-05,1.0903407797613239e-05,0.5714285714285714,0.06945197971945012,0
+Emmanuel Grolleau,Emmanuel Grolleau,5,5,2.803733433671976e-05,9.34577811223992e-06,0.3,0.020000000000000004,4
+Marie Platenius-Mohr,Marie Platenius-Mohr,4,6,0.0,6.23051874149328e-06,0.8333333333333334,0.09343402022578946,0
+Federico Giaimo,Federico Giaimo,4,7,9.34577811223992e-06,4.67288905611996e-06,0.5,0.05291336839893999,0
+Snigdha Singh,Snigdha Singh,4,6,0.0,3.790232234408412e-06,0.6666666666666666,0.08277329034678303,0
+Sophie Corallo,Sophie Corallo,4,9,0.0,2.670222317782834e-06,0.8333333333333334,0.14747296688928443,0
+Erik Poll,Erik Poll,3,4,0.0,2.33644452805998e-06,0.6666666666666666,0.055996491106438805,0
+Chadni Islam,Chadni Islam,3,4,2.33644452805998e-06,2.33644452805998e-06,0.6666666666666666,0.055996491106438805,0
+Sebastian Meixner,Sebastian Meixner,6,9,0.0,2.33644452805998e-06,0.8,0.10271656503273972,0
+Moamin Abughazala,Moamin Abughazala,3,10,0.0,1.55762968537332e-06,0.6666666666666666,0.14620719441637198,0
+Farid Edrisi,Farid Edrisi,6,8,3.11525937074664e-06,1.55762968537332e-06,0.8,0.06701941510737328,0
+Andy Zaidman,Andy Zaidman,1,1,0.0,0.0,0.0,0.0,0
+Joost Bosman 0001,Joost Bosman 0001,1,1,0.0,0.0,0.0,0.0,0
+Srdjan Stevanetic,Srdjan Stevanetic,2,4,0.0,0.0,1.0,0.20243926479171084,0
+María Rodríguez,María Rodríguez,1,1,0.0,0.0,0.0,0.0,0
+Carlo Bellettini,Carlo Bellettini,1,1,0.0,0.0,0.0,0.0,0
+Pouyeh Banijamali,Pouyeh Banijamali,1,1,0.0,0.0,0.0,0.0,0
+Carolyn B. Seaman,Carolyn B. Seaman,1,2,0.0,0.0,0.0,0.0,0
+Matteo G. Rossi,Matteo G. Rossi,3,6,0.0,0.0,1.0,0.18174773790306598,0
+Sebastiaan Klaasse,Sebastiaan Klaasse,1,1,0.0,0.0,0.0,0.0,0
+Claus Pahl,Claus Pahl,1,2,0.0,0.0,0.0,0.0,0
+Riccardo Pinciroli,Riccardo Pinciroli,2,4,0.0,0.0,1.0,0.12114137285547599,0
+Filomena Ferrucci,Filomena Ferrucci,1,3,0.0,0.0,0.0,0.0,0
+Antonio Garmendia,Antonio Garmendia,1,2,0.0,0.0,0.0,0.0,0
+Carl-Fredrik Sørensen,Carl-Fredrik Sørensen,1,1,0.0,0.0,0.0,0.0,0
+Dennis Tschechlov,Dennis Tschechlov,3,3,0.0,0.0,1.0,0.11637938858190074,0
+Anne Nyokabi,Anne Nyokabi,3,3,0.0,0.0,1.0,0.06666666666666668,0
+Siamak Farshidi,Siamak Farshidi,1,1,0.0,0.0,0.0,0.0,0
+Theodoros Theodoropoulos,Theodoros Theodoropoulos,1,1,0.0,0.0,0.0,0.0,0
+Hugo Bruneliere,Hugo Bruneliere,1,1,0.0,0.0,0.0,0.0,0
+Paolo Gaspari,Paolo Gaspari,1,1,0.0,0.0,0.0,0.0,0
+Albert Albers,Albert Albers,1,1,0.0,0.0,0.0,0.0,0
+J. Andres Diaz-Pace,J. Andres Diaz-Pace,1,1,0.0,0.0,0.0,0.0,0
+Marcus Hilbrich,Marcus Hilbrich,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Alexander Egyed,Alexander Egyed,1,1,0.0,0.0,0.0,0.0,0
+Seth Leslie,Seth Leslie,1,1,0.0,0.0,0.0,0.0,0
+Martin Becker,Martin Becker,3,3,0.0,0.0,1.0,0.08482490206293646,0
+Clara Axelsson,Clara Axelsson,1,1,0.0,0.0,0.0,0.0,0
+Bruno Rossi 0001,Bruno Rossi 0001,1,1,0.0,0.0,0.0,0.0,0
+Miguel Velez,Miguel Velez,1,3,0.0,0.0,0.0,0.0,0
+Maria Spichkova,Maria Spichkova,1,2,0.0,0.0,0.0,0.0,0
+Michael Vierhauser,Michael Vierhauser,1,2,0.0,0.0,0.0,0.0,0
+Mircea Lungu,Mircea Lungu,1,1,0.0,0.0,0.0,0.0,0
+Jordy Broekman,Jordy Broekman,1,1,0.0,0.0,0.0,0.0,0
+Matthias Riebisch,Matthias Riebisch,2,3,0.0,0.0,1.0,0.10582673679787998,0
+Peter Sanders 0001,Peter Sanders 0001,1,1,0.0,0.0,0.0,0.0,0
+Apitchaka Singjai,Apitchaka Singjai,2,3,0.0,0.0,1.0,0.10582673679787998,0
+Leif Bonorden,Leif Bonorden,1,1,0.0,0.0,0.0,0.0,0
+Palak Sharma,Palak Sharma,1,1,0.0,0.0,0.0,0.0,0
+Filip Krikava,Filip Krikava,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Daniel Elsner,Daniel Elsner,2,3,0.0,0.0,1.0,0.10582673679787998,0
+Rasmus Svensson,Rasmus Svensson,2,2,0.0,0.0,1.0,0.06666666666666668,10
+Paolo Di Francesco,Paolo Di Francesco,2,4,0.0,0.0,1.0,0.10582673679787998,0
+João Franscisco Almeida,João Franscisco Almeida,1,1,0.0,0.0,0.0,0.0,0
+Daniela Holzner,Daniela Holzner,1,1,0.0,0.0,0.0,0.0,0
+Aurora Macías,Aurora Macías,1,1,0.0,0.0,0.0,0.0,0
+Lorenz Graf-Vlachy,Lorenz Graf-Vlachy,1,1,0.0,0.0,0.0,0.0,0
+Esther Adenekan,Esther Adenekan,1,1,0.0,0.0,0.0,0.0,0
+Gian Luca Scoccia,Gian Luca Scoccia,1,5,0.0,0.0,0.0,0.0,0
+Sebastian Geiger,Sebastian Geiger,4,7,0.0,0.0,1.0,0.1441413305944638,0
+Pavel Nedvedický,Pavel Nedvedický,1,1,0.0,0.0,0.0,0.0,0
+Iffat Fatima,Iffat Fatima,1,6,0.0,0.0,0.0,0.0,0
+Juanru Li,Juanru Li,1,1,0.0,0.0,0.0,0.0,0
+Elias Müller,Elias Müller,2,2,0.0,0.0,1.0,0.12114137285547599,0
+Amr Mustafa,Amr Mustafa,1,1,0.0,0.0,0.0,0.0,0
+Klementina Josifovska,Klementina Josifovska,1,1,0.0,0.0,0.0,0.0,0
+Ivan Kotegov,Ivan Kotegov,1,1,0.0,0.0,0.0,0.0,0
+Tobias Hey 0001,Tobias Hey 0001,2,8,0.0,0.0,1.0,0.3949994757876494,0
+Sangeeth Kochanthara,Sangeeth Kochanthara,1,2,0.0,0.0,0.0,0.0,0
+Amine El Malki,Amine El Malki,1,1,0.0,0.0,0.0,0.0,0
+Jorge Mendes 0001,Jorge Mendes 0001,1,1,0.0,0.0,0.0,0.0,0
+Manuel De Stefano,Manuel De Stefano,1,1,0.0,0.0,0.0,0.0,0
+Luca Berardinelli,Luca Berardinelli,1,1,0.0,0.0,0.0,0.0,0
+Jan Pieter Guelen,Jan Pieter Guelen,1,1,0.0,0.0,0.0,0.0,0
+Norbert Siegmund,Norbert Siegmund,1,3,0.0,0.0,0.0,0.0,0
+Tommaso Pecorella,Tommaso Pecorella,1,1,0.0,0.0,0.0,0.0,0
+Jasper Schenkhuizen,Jasper Schenkhuizen,1,1,0.0,0.0,0.0,0.0,0
+Mónica M. Villegas,Mónica M. Villegas,1,4,0.0,0.0,0.0,0.0,0
+Danielle Gonzalez,Danielle Gonzalez,1,1,0.0,0.0,0.0,0.0,0
+Markus Damm,Markus Damm,2,4,0.0,0.0,1.0,0.2550574910363186,0
+Aref El-Maarawi Tefur,Aref El-Maarawi Tefur,3,3,0.0,0.0,1.0,0.1109316154837453,0
+Katerina Demetzou,Katerina Demetzou,1,1,0.0,0.0,0.0,0.0,1
+Jason Mashinchi,Jason Mashinchi,1,1,0.0,0.0,0.0,0.0,0
+Kai Mindermann,Kai Mindermann,1,2,0.0,0.0,0.0,0.0,0
+Hugo Sereno Ferreira,Hugo Sereno Ferreira,5,5,0.0,0.0,1.0,0.07801079822297972,0
+Keerthiga Rajenthiram,Keerthiga Rajenthiram,1,1,0.0,0.0,0.0,0.0,0
+Marco Scavuzzo,Marco Scavuzzo,1,1,0.0,0.0,0.0,0.0,0
+Jan-Philipp Töberg,Jan-Philipp Töberg,3,6,0.0,0.0,1.0,0.18469706948956835,0
+Thatiane de Oliveira Rosa,Thatiane de Oliveira Rosa,3,6,0.0,0.0,1.0,0.16585235801840323,0
+Saahil Ognawala,Saahil Ognawala,1,1,0.0,0.0,0.0,0.0,0
+Alexia Pacheco,Alexia Pacheco,1,1,0.0,0.0,0.0,0.0,0
+Giona Granchelli,Giona Granchelli,1,2,0.0,0.0,0.0,0.0,0
+Sona Ghahremani,Sona Ghahremani,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Rowan Arts,Rowan Arts,1,1,0.0,0.0,0.0,0.0,0
+Jane Cleland-Huang,Jane Cleland-Huang,1,2,0.0,0.0,0.0,0.0,0
+Petr Hnetynka,Petr Hnetynka,1,4,0.0,0.0,0.0,0.0,0
+Matej Artac,Matej Artac,2,3,0.0,0.0,1.0,0.0839947366596582,0
+Martin Filipczyk,Martin Filipczyk,1,1,0.0,0.0,0.0,0.0,0
+Tobias Boceck,Tobias Boceck,3,3,0.0,0.0,1.0,0.11637938858190074,0
+Achyuth Nagaraj,Achyuth Nagaraj,1,1,0.0,0.0,0.0,0.0,0
+Kai Marquardt,Kai Marquardt,1,1,0.0,0.0,0.0,0.0,0
+Thomas Alexander Völk,Thomas Alexander Völk,1,1,0.0,0.0,0.0,0.0,0
+Amirali Amiri,Amirali Amiri,1,1,0.0,0.0,0.0,0.0,0
+Altair Mendes,Altair Mendes,2,2,0.0,0.0,1.0,0.13867225487012694,0
+Bushra Sabir,Bushra Sabir,1,1,0.0,0.0,0.0,0.0,0
+Susanne Boshuis,Susanne Boshuis,1,1,0.0,0.0,0.0,0.0,0
+Jakob Mass,Jakob Mass,1,1,0.0,0.0,0.0,0.0,2
+Rinat Asmus,Rinat Asmus,2,2,0.0,0.0,1.0,0.06666666666666668,11
+Christoph Zorn,Christoph Zorn,3,3,0.0,0.0,1.0,0.1109316154837453,0
+Faheem Ullah,Faheem Ullah,1,2,0.0,0.0,0.0,0.0,0
+Marcel Böhme,Marcel Böhme,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Christina Paule,Christina Paule,1,2,0.0,0.0,0.0,0.0,0
+Matteo Maria Fiore,Matteo Maria Fiore,1,1,0.0,0.0,0.0,0.0,0
+Sara Fernandes,Sara Fernandes,1,1,0.0,0.0,0.0,0.0,0
+Karla Morris,Karla Morris,5,5,0.0,0.0,1.0,0.06666666666666668,5
+Timothy Ernst,Timothy Ernst,1,1,0.0,0.0,0.0,0.0,0
+Adrian Juan Verdejo,Adrian Juan Verdejo,1,2,0.0,0.0,0.0,0.0,0
+Yoslandy Lazo,Yoslandy Lazo,1,1,0.0,0.0,0.0,0.0,0
+Paulo Barbosa,Paulo Barbosa,1,1,0.0,0.0,0.0,0.0,0
+Eames Trinh,Eames Trinh,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Sjaak Brinkkemper,Sjaak Brinkkemper,1,2,0.0,0.0,0.0,0.0,0
+Radu Calinescu,Radu Calinescu,1,1,0.0,0.0,0.0,0.0,0
+Ashkan Sami,Ashkan Sami,1,1,0.0,0.0,0.0,0.0,0
+Nils Bosbach,Nils Bosbach,1,1,0.0,0.0,0.0,0.0,0
+Stephen John Warnett,Stephen John Warnett,2,5,0.0,0.0,1.0,0.19229994270765446,0
+Marion Wiese,Marion Wiese,1,1,0.0,0.0,0.0,0.0,0
+Mateusz Ujma,Mateusz Ujma,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Lucas B. R. Oliveira,Lucas B. R. Oliveira,1,1,0.0,0.0,0.0,0.0,0
+Frank Schnicke,Frank Schnicke,3,9,0.0,0.0,1.0,0.2055106677263939,0
+Eric Bouwers,Eric Bouwers,1,1,0.0,0.0,0.0,0.0,0
+Heiko Klare,Heiko Klare,3,3,0.0,0.0,1.0,0.07244268999766386,0
+Evelyn van Kelle,Evelyn van Kelle,1,1,0.0,0.0,0.0,0.0,0
+Katerina Chinnappan,Katerina Chinnappan,1,1,0.0,0.0,0.0,0.0,0
+Geoffrey C. Hulette,Geoffrey C. Hulette,5,5,0.0,0.0,1.0,0.06666666666666668,5
+Rowan Sincic,Rowan Sincic,1,1,0.0,0.0,0.0,0.0,0
+Aske Plaat,Aske Plaat,1,1,0.0,0.0,0.0,0.0,0
+Antoine Bertout,Antoine Bertout,3,3,0.0,0.0,1.0,0.06666666666666668,4
+Göran Petersson,Göran Petersson,1,1,0.0,0.0,0.0,0.0,0
+Guillaume Giraud,Guillaume Giraud,3,3,0.0,0.0,1.0,0.06666666666666668,0
+Sarthak Gupta,Sarthak Gupta,1,1,0.0,0.0,0.0,0.0,0
+Alvin Jian Jia Tan,Alvin Jian Jia Tan,1,1,0.0,0.0,0.0,0.0,0
+Sarah Stieß,Sarah Stieß,2,3,0.0,0.0,1.0,0.15262856567377758,0
+Markus Funke,Markus Funke,3,9,0.0,0.0,1.0,0.18952007602718737,0
+Antonio Cicchetti,Antonio Cicchetti,2,2,0.0,0.0,1.0,0.09614997135382723,0
+Massimiliano Di Penta,Massimiliano Di Penta,1,1,0.0,0.0,0.0,0.0,0
+Janek Speit,Janek Speit,2,4,0.0,0.0,1.0,0.24883407712114988,0
+Klaus Krogmann,Klaus Krogmann,3,3,0.0,0.0,1.0,0.07244268999766386,0
+Suprio Ray,Suprio Ray,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Eduardo Silva 0001,Eduardo Silva 0001,4,10,0.0,0.0,1.0,0.20338375673056097,0
+Lukas Daubner,Lukas Daubner,1,2,0.0,0.0,0.0,0.0,0
+Lu Xiao 0001,Lu Xiao 0001,1,2,0.0,0.0,0.0,0.0,0
+Pelle Jakovits,Pelle Jakovits,4,4,0.0,0.0,1.0,0.06666666666666667,2
+Hugo Sica de Andrade,Hugo Sica de Andrade,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Zai Zhang 0001,Zai Zhang 0001,3,3,0.0,0.0,1.0,0.1241098748469251,0
+Tobias Thirolf,Tobias Thirolf,2,2,0.0,0.0,1.0,0.1567556458480505,0
+Indika Kumara,Indika Kumara,1,5,0.0,0.0,0.0,0.0,0
+Maryam Razavian,Maryam Razavian,3,5,0.0,0.0,1.0,0.1044804385210435,0
+Pascal Rübel,Pascal Rübel,2,2,0.0,0.0,1.0,0.16067615094501533,0
+Coral Calero,Coral Calero,1,1,0.0,0.0,0.0,0.0,0
+Teerat Pitakrat,Teerat Pitakrat,1,1,0.0,0.0,0.0,0.0,0
+Vanea Chiprianov,Vanea Chiprianov,1,1,0.0,0.0,0.0,0.0,0
+Remco C. de Boer,Remco C. de Boer,3,4,0.0,0.0,1.0,0.12842693917620654,0
+Alessia Knauss,Alessia Knauss,1,3,0.0,0.0,0.0,0.0,0
+Erica Weilemann,Erica Weilemann,1,1,0.0,0.0,0.0,0.0,0
+Francesco Nocera,Francesco Nocera,1,1,0.0,0.0,0.0,0.0,0
+Mark Klein 0003,Mark Klein 0003,1,1,0.0,0.0,0.0,0.0,0
+Lorenzo Capra,Lorenzo Capra,1,1,0.0,0.0,0.0,0.0,0
+Mohammad Ali 0002,Mohammad Ali 0002,1,1,0.0,0.0,0.0,0.0,0
+Prerna Bihani,Prerna Bihani,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Leen Blom,Leen Blom,1,2,0.0,0.0,0.0,0.0,0
+Jesús M. T. Portocarrero,Jesús M. T. Portocarrero,1,1,0.0,0.0,0.0,0.0,0
+Emilia Cioroaica,Emilia Cioroaica,2,10,0.0,0.0,1.0,0.3333333333333333,0
+Fahimeh Alizadeh Moghaddam,Fahimeh Alizadeh Moghaddam,1,1,0.0,0.0,0.0,0.0,0
+Patrizio Migliarini,Patrizio Migliarini,1,1,0.0,0.0,0.0,0.0,0
+Mohamad Fazelnia,Mohamad Fazelnia,1,1,0.0,0.0,0.0,0.0,0
+Ian Gorton,Ian Gorton,1,1,0.0,0.0,0.0,0.0,0
+Dominik Fuchss,Dominik Fuchss,1,1,0.0,0.0,0.0,0.0,0
+Huang Huang,Huang Huang,1,1,0.0,0.0,0.0,0.0,0
+Rajiv Ramdhany,Rajiv Ramdhany,1,1,0.0,0.0,0.0,0.0,0
+Jonas Schneider 0006,Jonas Schneider 0006,1,1,0.0,0.0,0.0,0.0,0
+Mauricio Alférez,Mauricio Alférez,1,1,0.0,0.0,0.0,0.0,0
+Elder Cirilo,Elder Cirilo,1,1,0.0,0.0,0.0,0.0,0
+Bassam Adnan,Bassam Adnan,1,1,0.0,0.0,0.0,0.0,0
+Stephan Faßbender,Stephan Faßbender,1,1,0.0,0.0,0.0,0.0,0
+Felix Willnecker,Felix Willnecker,1,1,0.0,0.0,0.0,0.0,0
+Anders Magnusson,Anders Magnusson,1,1,0.0,0.0,0.0,0.0,0
+Manuel Portela,Manuel Portela,1,1,0.0,0.0,0.0,0.0,0
+Sara Hashemi,Sara Hashemi,1,1,0.0,0.0,0.0,0.0,0
+Samuele Giussani,Samuele Giussani,3,3,0.0,0.0,1.0,0.08399473665965822,0
+Roland Croft,Roland Croft,1,1,0.0,0.0,0.0,0.0,0
+Jiri Havlik,Jiri Havlik,1,1,0.0,0.0,0.0,0.0,0
+Lina Maria Garcés Rodriguez,Lina Maria Garcés Rodriguez,1,1,0.0,0.0,0.0,0.0,0
+Xingwen Xiao,Xingwen Xiao,1,1,0.0,0.0,0.0,0.0,0
+Priom Biswas,Priom Biswas,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Marcello Visconti,Marcello Visconti,1,1,0.0,0.0,0.0,0.0,0
+Rodrigo Pereira dos Santos,Rodrigo Pereira dos Santos,1,1,0.0,0.0,0.0,0.0,0
+Constantin Ziesche,Constantin Ziesche,2,2,0.0,0.0,1.0,0.16067615094501533,0
+Thomas Goldschmidt,Thomas Goldschmidt,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Moreno Marzolla,Moreno Marzolla,1,1,0.0,0.0,0.0,0.0,0
+Thomas Bamelis,Thomas Bamelis,1,1,0.0,0.0,0.0,0.0,0
+Peter Enbrecht,Peter Enbrecht,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Carl-Johan Hoel,Carl-Johan Hoel,1,1,0.0,0.0,0.0,0.0,0
+Jens Doppelhamer,Jens Doppelhamer,1,1,0.0,0.0,0.0,0.0,0
+David Gesvindr,David Gesvindr,1,4,0.0,0.0,0.0,0.0,0
+Stanislav Chren,Stanislav Chren,2,5,0.0,0.0,1.0,0.20714883373025725,0
+Tiago Volpato,Tiago Volpato,1,1,0.0,0.0,0.0,0.0,0
+Gianantonio Me,Gianantonio Me,1,2,0.0,0.0,0.0,0.0,0
+Loek Cleophas,Loek Cleophas,1,2,0.0,0.0,0.0,0.0,0
+Gösta Stomberg,Gösta Stomberg,2,2,0.0,0.0,1.0,0.11399839644511313,0
+Stefano Momo Loss,Stefano Momo Loss,2,2,0.0,0.0,1.0,0.13867225487012694,0
+Ondrej Gasior,Ondrej Gasior,1,2,0.0,0.0,0.0,0.0,0
+Carlo Ghezzi,Carlo Ghezzi,1,1,0.0,0.0,0.0,0.0,0
+Robert Deckers,Robert Deckers,1,1,0.0,0.0,0.0,0.0,0
+Anthony Peruma,Anthony Peruma,1,1,0.0,0.0,0.0,0.0,0
+Michael Colesky,Michael Colesky,1,1,0.0,0.0,0.0,0.0,1
+Giovanni Quattrocchi,Giovanni Quattrocchi,1,1,0.0,0.0,0.0,0.0,0
+Ashwin Prasad Shivarpatna Venkatesh,Ashwin Prasad Shivarpatna Venkatesh,1,1,0.0,0.0,0.0,0.0,0
+Cong Sun 0001,Cong Sun 0001,1,1,0.0,0.0,0.0,0.0,0
+Hong-Mei Chen,Hong-Mei Chen,1,1,0.0,0.0,0.0,0.0,0
+Giuseppe De Martino,Giuseppe De Martino,1,1,0.0,0.0,0.0,0.0,0
+René Dammer,René Dammer,1,1,0.0,0.0,0.0,0.0,0
+Yannick Mijsters,Yannick Mijsters,1,1,0.0,0.0,0.0,0.0,0
+Samodha Pallewatta,Samodha Pallewatta,1,1,0.0,0.0,0.0,0.0,0
+Abu Mohammed Raisuddin,Abu Mohammed Raisuddin,1,1,0.0,0.0,0.0,0.0,0
+Camila Araújo,Camila Araújo,6,6,0.0,0.0,1.0,0.08646445539743917,0
+Gastón Márquez,Gastón Márquez,1,7,0.0,0.0,0.0,0.0,0
+Jean Quilbeuf,Jean Quilbeuf,3,4,0.0,0.0,1.0,0.14666502050759223,0
+Arash Khabbaz Saberi,Arash Khabbaz Saberi,1,1,0.0,0.0,0.0,0.0,0
+Andreas Wortmann 0001,Andreas Wortmann 0001,1,1,0.0,0.0,0.0,0.0,0
+Chinmaya Kumar Dehury,Chinmaya Kumar Dehury,4,4,0.0,0.0,1.0,0.06666666666666667,2
+Evangelos Pournaras,Evangelos Pournaras,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Eduardo Figueiredo 0001,Eduardo Figueiredo 0001,1,1,0.0,0.0,0.0,0.0,0
+Sebastian Gottschalk,Sebastian Gottschalk,1,1,0.0,0.0,0.0,0.0,0
+Dominik Bilgery,Dominik Bilgery,1,1,0.0,0.0,0.0,0.0,0
+Manoj Kannan Soundara Pandian,Manoj Kannan Soundara Pandian,1,1,0.0,0.0,0.0,0.0,0
+Elia Ashraf,Elia Ashraf,1,1,0.0,0.0,0.0,0.0,0
+Anne Brüggemann-Klein,Anne Brüggemann-Klein,3,3,0.0,0.0,1.0,0.06666666666666668,0
+Raghuram Gopalakrishnan,Raghuram Gopalakrishnan,1,1,0.0,0.0,0.0,0.0,0
+Lizhi Liao,Lizhi Liao,1,1,0.0,0.0,0.0,0.0,0
+Geert Kwintenberg,Geert Kwintenberg,1,1,0.0,0.0,0.0,0.0,0
+Riccardo Roveda,Riccardo Roveda,1,1,0.0,0.0,0.0,0.0,0
+Simon Collart Dutilleul,Simon Collart Dutilleul,2,2,0.0,0.0,1.0,0.06666666666666668,7
+Ian Warren,Ian Warren,3,7,0.0,0.0,1.0,0.13747614198909877,8
+Emilio Cruciani,Emilio Cruciani,1,3,0.0,0.0,0.0,0.0,0
+Dominik Fuchß,Dominik Fuchß,3,19,0.0,0.0,1.0,0.3821322406303644,0
+A. T. M. Aerts,A. T. M. Aerts,1,1,0.0,0.0,0.0,0.0,0
+Hind Bangui,Hind Bangui,1,1,0.0,0.0,0.0,0.0,0
+Michael Hitchens,Michael Hitchens,1,1,0.0,0.0,0.0,0.0,0
+Sarpreet Singh Buttar,Sarpreet Singh Buttar,1,1,0.0,0.0,0.0,0.0,0
+Maurizio Morisio,Maurizio Morisio,1,1,0.0,0.0,0.0,0.0,0
+Bahar Schwichtenberg,Bahar Schwichtenberg,1,1,0.0,0.0,0.0,0.0,0
+Hadil Abukwaik,Hadil Abukwaik,2,2,0.0,0.0,1.0,0.11399839644511313,0
+Alberto Leva,Alberto Leva,1,1,0.0,0.0,0.0,0.0,0
+Y. Raghu Reddy,Y. Raghu Reddy,1,1,0.0,0.0,0.0,0.0,0
+Alessandro Maria Rizzi,Alessandro Maria Rizzi,1,1,0.0,0.0,0.0,0.0,0
+Hamideh Hajiabadi 0001,Hamideh Hajiabadi 0001,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Ibrahim Mujhid,Ibrahim Mujhid,1,1,0.0,0.0,0.0,0.0,0
+Elena Heldwein,Elena Heldwein,3,3,0.0,0.0,1.0,0.08482490206293646,0
+Ali Shokri 0003,Ali Shokri 0003,1,1,0.0,0.0,0.0,0.0,0
+Johannes Schmitt 0001,Johannes Schmitt 0001,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Tudor B. Ionescu,Tudor B. Ionescu,2,4,0.0,0.0,1.0,0.20243926479171084,0
+Ola Benderius,Ola Benderius,1,2,0.0,0.0,0.0,0.0,0
+Jan Schroeder,Jan Schroeder,1,4,0.0,0.0,0.0,0.0,0
+Benno Kallweit,Benno Kallweit,3,10,0.0,0.0,1.0,0.26150715883283265,0
+Martin Macák,Martin Macák,1,2,0.0,0.0,0.0,0.0,0
+Dominik Safaric,Dominik Safaric,1,1,0.0,0.0,0.0,0.0,0
+Soraya Mesli-Kesraoui,Soraya Mesli-Kesraoui,1,1,0.0,0.0,0.0,0.0,0
+Emilio Incerto,Emilio Incerto,1,1,0.0,0.0,0.0,0.0,0
+Thomas Zimmermann,Thomas Zimmermann,1,1,0.0,0.0,0.0,0.0,0
+Lionel Seinturier,Lionel Seinturier,1,1,0.0,0.0,0.0,0.0,0
+Chushu Gao,Chushu Gao,1,1,0.0,0.0,0.0,0.0,0
+Giovanni Stilo,Giovanni Stilo,1,2,0.0,0.0,0.0,0.0,0
+Shardul Sonar,Shardul Sonar,2,2,0.0,0.0,1.0,0.11399839644511313,0
+Marina Mongiello,Marina Mongiello,1,1,0.0,0.0,0.0,0.0,0
+Arash Arjmandi Basmenj,Arash Arjmandi Basmenj,3,3,0.0,0.0,1.0,0.06666666666666668,0
+Apoorva Nalini Pradeep Kumar,Apoorva Nalini Pradeep Kumar,2,2,0.0,0.0,1.0,0.10582673679787998,0
+José Carlos Maldonado,José Carlos Maldonado,1,2,0.0,0.0,0.0,0.0,0
+Ioanna Lytra,Ioanna Lytra,1,1,0.0,0.0,0.0,0.0,0
+Erik Burger,Erik Burger,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Faezeh Amou Najafabadi,Faezeh Amou Najafabadi,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Samuel Gratzl,Samuel Gratzl,5,5,0.0,0.0,1.0,0.07134780413468188,0
+Frederico Alvares,Frederico Alvares,1,1,0.0,0.0,0.0,0.0,0
+Juan Cadavid,Juan Cadavid,1,1,0.0,0.0,0.0,0.0,0
+Domenico Bianculli,Domenico Bianculli,1,1,0.0,0.0,0.0,0.0,0
+Amr Rekaby Salama,Amr Rekaby Salama,1,1,0.0,0.0,0.0,0.0,0
+Hussein Marah,Hussein Marah,1,1,0.0,0.0,0.0,0.0,0
+Jasmin Ramadani,Jasmin Ramadani,1,1,0.0,0.0,0.0,0.0,0
+Aneesh Sambu,Aneesh Sambu,1,1,0.0,0.0,0.0,0.0,0
+Katharina Großer,Katharina Großer,3,6,0.0,0.0,1.0,0.18469706948956835,0
+Tales Viglioni,Tales Viglioni,3,3,0.0,0.0,1.0,0.12594410833378009,0
+Alireza Sadeghi,Alireza Sadeghi,1,1,0.0,0.0,0.0,0.0,0
+Martin P. Boerman,Martin P. Boerman,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Yves Richard Kirschner,Yves Richard Kirschner,2,4,0.0,0.0,1.0,0.22608076286761114,0
+David Manrique,David Manrique,3,3,0.0,0.0,1.0,0.06666666666666668,0
+Laura Blaso,Laura Blaso,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Matthias Lohr,Matthias Lohr,3,6,0.0,0.0,1.0,0.18469706948956835,0
+Roel Donker,Roel Donker,1,1,0.0,0.0,0.0,0.0,0
+Crispin Kirchner,Crispin Kirchner,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Paola Grosso,Paola Grosso,1,1,0.0,0.0,0.0,0.0,0
+Tiziano Santilli,Tiziano Santilli,1,1,0.0,0.0,0.0,0.0,0
+Joshua Bachmeier,Joshua Bachmeier,1,1,0.0,0.0,0.0,0.0,0
+Hina Anwar,Hina Anwar,1,1,0.0,0.0,0.0,0.0,2
+Linus Basig,Linus Basig,1,1,0.0,0.0,0.0,0.0,0
+Lukasz Grzymkowski,Lukasz Grzymkowski,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Roger Chen,Roger Chen,1,1,0.0,0.0,0.0,0.0,0
+Marco Ehl,Marco Ehl,3,6,0.0,0.0,1.0,0.18469706948956835,0
+Jonas Van Der Donckt,Jonas Van Der Donckt,1,1,0.0,0.0,0.0,0.0,0
+Nuno Santos 0003,Nuno Santos 0003,1,2,0.0,0.0,0.0,0.0,0
+Simon Speth,Simon Speth,1,1,0.0,0.0,0.0,0.0,0
+Mojdeh Golagha,Mojdeh Golagha,1,3,0.0,0.0,0.0,0.0,0
+Marco Zanoni,Marco Zanoni,1,1,0.0,0.0,0.0,0.0,0
+Raphael Straub 0001,Raphael Straub 0001,1,1,0.0,0.0,0.0,0.0,0
+Marco Stadler,Marco Stadler,1,1,0.0,0.0,0.0,0.0,0
+Sarah Goodwin,Sarah Goodwin,5,5,0.0,0.0,1.0,0.07134780413468188,0
+Matthias Fruth,Matthias Fruth,1,1,0.0,0.0,0.0,0.0,0
+Thomas Bauer 0002,Thomas Bauer 0002,3,5,0.0,0.0,1.0,0.16578007891575686,0
+Jeff Gennari,Jeff Gennari,1,1,0.0,0.0,0.0,0.0,0
+Peter Liggesmeyer,Peter Liggesmeyer,3,3,0.0,0.0,1.0,0.11683254146751783,0
+Ghareeb Falazi,Ghareeb Falazi,3,3,0.0,0.0,1.0,0.08482490206293646,0
+Harald Altinger,Harald Altinger,1,2,0.0,0.0,0.0,0.0,0
+Per Persson,Per Persson,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Olsi Rrjolli,Olsi Rrjolli,2,2,0.0,0.0,1.0,0.12114137285547599,0
+Jan-Peter Ostberg,Jan-Peter Ostberg,1,3,0.0,0.0,0.0,0.0,0
+Razieh Alidoosti,Razieh Alidoosti,3,5,0.0,0.0,1.0,0.1044804385210435,0
+Frederico Lopes,Frederico Lopes,2,2,0.0,0.0,1.0,0.13867225487012694,0
+Valentina Centurelli,Valentina Centurelli,2,2,0.0,0.0,1.0,0.13867225487012694,0
+Julian Brott,Julian Brott,3,3,0.0,0.0,1.0,0.1109316154837453,0
+Alejandro Russo,Alejandro Russo,1,1,0.0,0.0,0.0,0.0,0
+Antonio Bucchiarone,Antonio Bucchiarone,2,2,0.0,0.0,1.0,0.09614997135382723,0
+Davide Di Ruscio,Davide Di Ruscio,1,1,0.0,0.0,0.0,0.0,0
+Verena Käfer,Verena Käfer,1,1,0.0,0.0,0.0,0.0,0
+Adiel Tuyishime,Adiel Tuyishime,1,1,0.0,0.0,0.0,0.0,0
+Lennart Mittag,Lennart Mittag,1,1,0.0,0.0,0.0,0.0,0
+Jesper Andersson,Jesper Andersson,1,2,0.0,0.0,0.0,0.0,0
+Chris Exton,Chris Exton,1,1,0.0,0.0,0.0,0.0,1
+Jérôme Pfeiffer,Jérôme Pfeiffer,1,1,0.0,0.0,0.0,0.0,0
+Jacob Juul,Jacob Juul,1,1,0.0,0.0,0.0,0.0,0
+Axel-Frederik Brand,Axel-Frederik Brand,1,1,0.0,0.0,0.0,0.0,0
+Rose Sturm,Rose Sturm,1,1,0.0,0.0,0.0,0.0,0
+Khoi Pham,Khoi Pham,1,1,0.0,0.0,0.0,0.0,0
+Álvaro José Abreu de Oliveira,Álvaro José Abreu de Oliveira,1,1,0.0,0.0,0.0,0.0,0
+Thai Son Hoang,Thai Son Hoang,5,5,0.0,0.0,1.0,0.06666666666666668,5
+Nuno Gonçalves,Nuno Gonçalves,1,1,0.0,0.0,0.0,0.0,0
+Justin Lipman,Justin Lipman,1,1,0.0,0.0,0.0,0.0,0
+Antonia Bertolino,Antonia Bertolino,1,3,0.0,0.0,0.0,0.0,0
+Daniel Schall 0001,Daniel Schall 0001,4,13,0.0,0.0,1.0,0.1935093944557961,0
+Andreas Preikschat,Andreas Preikschat,1,1,0.0,0.0,0.0,0.0,0
+Chengyu Zheng,Chengyu Zheng,1,1,0.0,0.0,0.0,0.0,0
+Ruzanna Chitchyan,Ruzanna Chitchyan,1,1,0.0,0.0,0.0,0.0,0
+Sven Tomforde,Sven Tomforde,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Andreas Burger,Andreas Burger,2,7,0.0,0.0,1.0,0.2609911760779242,0
+Abdulla P. P,Abdulla P. P,2,2,0.0,0.0,1.0,0.11399839644511313,0
+Matthias Tichy,Matthias Tichy,1,1,0.0,0.0,0.0,0.0,0
+Ingo Wagner,Ingo Wagner,1,1,0.0,0.0,0.0,0.0,0
+Dmitrii Stebliuk,Dmitrii Stebliuk,1,1,0.0,0.0,0.0,0.0,0
+Jens Knodel,Jens Knodel,1,1,0.0,0.0,0.0,0.0,0
+Diogo Faustino,Diogo Faustino,1,1,0.0,0.0,0.0,0.0,0
+M. Jeroen Van Der Donckt,M. Jeroen Van Der Donckt,1,1,0.0,0.0,0.0,0.0,0
+Philipp Foth,Philipp Foth,1,1,0.0,0.0,0.0,0.0,0
+Tomas Lindström,Tomas Lindström,3,6,0.0,0.0,1.0,0.13333333333333336,3
+Colin Paterson,Colin Paterson,1,1,0.0,0.0,0.0,0.0,0
+Raoul Jetley,Raoul Jetley,2,2,0.0,0.0,1.0,0.11399839644511313,0
+Eduardo Martins Guerra,Eduardo Martins Guerra,3,6,0.0,0.0,1.0,0.16585235801840323,0
+Nelly Condori-Fernández,Nelly Condori-Fernández,1,1,0.0,0.0,0.0,0.0,0
+Diethelm Ostry,Diethelm Ostry,1,1,0.0,0.0,0.0,0.0,0
+Tom Mens,Tom Mens,1,1,0.0,0.0,0.0,0.0,0
+Asanka Wasala,Asanka Wasala,1,1,0.0,0.0,0.0,0.0,1
+Victor Prokhorenko,Victor Prokhorenko,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Loli Burgueño,Loli Burgueño,1,1,0.0,0.0,0.0,0.0,0
+Kenji Tei,Kenji Tei,1,1,0.0,0.0,0.0,0.0,0
+Sergio Quijano,Sergio Quijano,2,2,0.0,0.0,1.0,0.06666666666666668,0
+P. P. Abdulla,P. P. Abdulla,2,2,0.0,0.0,1.0,0.11399839644511313,0
+Nathan Hagel,Nathan Hagel,1,1,0.0,0.0,0.0,0.0,0
+Hausi A. Müller,Hausi A. Müller,1,1,0.0,0.0,0.0,0.0,0
+Mahmood al-Doori,Mahmood al-Doori,3,6,0.0,0.0,1.0,0.18469706948956835,0
+Thanh-Dat Nguyen 0001,Thanh-Dat Nguyen 0001,1,1,0.0,0.0,0.0,0.0,4
+Patrick Pschorn,Patrick Pschorn,2,2,0.0,0.0,1.0,0.16067615094501533,0
+Saso Stanovnik,Saso Stanovnik,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Ali Kazemi Arani,Ali Kazemi Arani,1,1,0.0,0.0,0.0,0.0,0
+Weiyi Shang,Weiyi Shang,1,1,0.0,0.0,0.0,0.0,0
+Michael J. Butler,Michael J. Butler,5,5,0.0,0.0,1.0,0.06666666666666668,5
+Xinxin Zhu,Xinxin Zhu,1,1,0.0,0.0,0.0,0.0,0
+Sigrid Eldh,Sigrid Eldh,1,1,0.0,0.0,0.0,0.0,3
+Filipe Silva-Santos,Filipe Silva-Santos,1,1,0.0,0.0,0.0,0.0,0
+Erica Janke,Erica Janke,1,1,0.0,0.0,0.0,0.0,0
+Vahid Hashemi,Vahid Hashemi,2,2,0.0,0.0,1.0,0.06666666666666668,12
+Telmo Lopes,Telmo Lopes,1,1,0.0,0.0,0.0,0.0,0
+Martina Rapp,Martina Rapp,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Felix Schulte-Langforth,Felix Schulte-Langforth,3,3,0.0,0.0,1.0,0.11765869788422327,0
+Lambert Caljouw,Lambert Caljouw,1,1,0.0,0.0,0.0,0.0,0
+Raghad Matar,Raghad Matar,1,2,0.0,0.0,0.0,0.0,0
+Claudius Jordan,Claudius Jordan,1,1,0.0,0.0,0.0,0.0,0
+Saeed Tajfar,Saeed Tajfar,1,1,0.0,0.0,0.0,0.0,0
+Uwe Mayer,Uwe Mayer,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Huy Tran,Huy Tran,1,1,0.0,0.0,0.0,0.0,0
+Syed Asad Ali Naqvi,Syed Asad Ali Naqvi,1,1,0.0,0.0,0.0,0.0,0
+Julian Thorpe,Julian Thorpe,1,1,0.0,0.0,0.0,0.0,0
+F. Lo Presti,F. Lo Presti,4,4,0.0,0.0,1.0,0.10419400912996446,0
+Fahd Helwani,Fahd Helwani,1,1,0.0,0.0,0.0,0.0,0
+René Noël,René Noël,1,1,0.0,0.0,0.0,0.0,0
+Marc Dreiser,Marc Dreiser,2,2,0.0,0.0,1.0,0.06666666666666668,11
+Ashutosh Pandey 0002,Ashutosh Pandey 0002,1,1,0.0,0.0,0.0,0.0,0
+Nabor C. Mendonça,Nabor C. Mendonça,2,3,0.0,0.0,1.0,0.0839947366596582,0
+Nicolli Rios,Nicolli Rios,1,2,0.0,0.0,0.0,0.0,0
+Deepak Krishna,Deepak Krishna,1,1,0.0,0.0,0.0,0.0,0
+Meiyappan Nagappan,Meiyappan Nagappan,1,2,0.0,0.0,0.0,0.0,0
+Rebekka Wohlrab,Rebekka Wohlrab,1,1,0.0,0.0,0.0,0.0,0
+Francisco J. Duarte,Francisco J. Duarte,1,1,0.0,0.0,0.0,0.0,0
+Daniel Alami,Daniel Alami,1,1,0.0,0.0,0.0,0.0,0
+Moritz Wäschle,Moritz Wäschle,1,1,0.0,0.0,0.0,0.0,0
+Corina S. Pasareanu,Corina S. Pasareanu,1,1,0.0,0.0,0.0,0.0,0
+Jan Pacovsky,Jan Pacovsky,1,1,0.0,0.0,0.0,0.0,0
+Alexandre Ferreira,Alexandre Ferreira,1,1,0.0,0.0,0.0,0.0,0
+Nebojsa Tausan,Nebojsa Tausan,1,1,0.0,0.0,0.0,0.0,0
+Zipani Tom Sinkala,Zipani Tom Sinkala,1,6,0.0,0.0,0.0,0.0,1
+Lion Wagner,Lion Wagner,3,6,0.0,0.0,1.0,0.1760929631154291,0
+Philippe Lalanda,Philippe Lalanda,3,3,0.0,0.0,1.0,0.06666666666666668,0
+Bjarne Sauer,Bjarne Sauer,2,2,0.0,0.0,1.0,0.1567556458480505,0
+Wallace Manzano,Wallace Manzano,1,2,0.0,0.0,0.0,0.0,0
+Fawaz Alhenaki,Fawaz Alhenaki,1,1,0.0,0.0,0.0,0.0,0
+Derek Garcia,Derek Garcia,1,1,0.0,0.0,0.0,0.0,0
+Ralf Gitzel,Ralf Gitzel,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Fahed Alkhabbas,Fahed Alkhabbas,2,3,0.0,0.0,1.0,0.12114137285547599,0
+Alejandra Pedroza Marchena,Alejandra Pedroza Marchena,1,1,0.0,0.0,0.0,0.0,0
+Brauner R. N. Oliveira,Brauner R. N. Oliveira,1,1,0.0,0.0,0.0,0.0,0
+Steven Grainger,Steven Grainger,1,1,0.0,0.0,0.0,0.0,0
+Marcel Oliveira,Marcel Oliveira,6,6,0.0,0.0,1.0,0.08646445539743917,0
+Triet Huynh Minh Le,Triet Huynh Minh Le,1,1,0.0,0.0,0.0,0.0,0
+Simon Schwichtenberg,Simon Schwichtenberg,1,2,0.0,0.0,0.0,0.0,0
+Nguyen Khoi Tran 0001,Nguyen Khoi Tran 0001,1,4,0.0,0.0,0.0,0.0,0
+Tom van Eijk,Tom van Eijk,1,2,0.0,0.0,0.0,0.0,0
+Lukas Märtin,Lukas Märtin,1,2,0.0,0.0,0.0,0.0,0
+Nicolas Hili,Nicolas Hili,1,1,0.0,0.0,0.0,0.0,0
+Friederike Dollinger,Friederike Dollinger,2,2,0.0,0.0,1.0,0.06666666666666668,11
+Michael Felderer,Michael Felderer,1,1,0.0,0.0,0.0,0.0,0
+Antonio Vallecillo,Antonio Vallecillo,1,1,0.0,0.0,0.0,0.0,0
+Lars Grunske,Lars Grunske,1,1,0.0,0.0,0.0,0.0,0
+Romina Kühn,Romina Kühn,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Ivana Bosnic,Ivana Bosnic,1,1,0.0,0.0,0.0,0.0,0
+Allan Mori,Allan Mori,1,1,0.0,0.0,0.0,0.0,0
+Rogardt Heldal,Rogardt Heldal,1,1,0.0,0.0,0.0,0.0,0
+Vikas Kumar Jha,Vikas Kumar Jha,1,1,0.0,0.0,0.0,0.0,0
+Alexander Bartel,Alexander Bartel,1,1,0.0,0.0,0.0,0.0,0
+Chun Yong Chong,Chun Yong Chong,1,1,0.0,0.0,0.0,0.0,0
+Ipek Ustunboyacioglu,Ipek Ustunboyacioglu,1,1,0.0,0.0,0.0,0.0,0
+Dirk Schulz 0002,Dirk Schulz 0002,2,2,0.0,0.0,1.0,0.16067615094501533,0
+Roman Nagy,Roman Nagy,1,1,0.0,0.0,0.0,0.0,0
+Niklas D. Kuder,Niklas D. Kuder,1,1,0.0,0.0,0.0,0.0,0
+Song Yang 0001,Song Yang 0001,1,1,0.0,0.0,0.0,0.0,0
+Dimitar Dimitrov 0005,Dimitar Dimitrov 0005,2,4,0.0,0.0,1.0,0.18096117443966042,0
+Gerhard Wirrer,Gerhard Wirrer,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Daniele Di Pompeo,Daniele Di Pompeo,1,3,0.0,0.0,0.0,0.0,0
+Eduardo B. Fernández,Eduardo B. Fernández,1,2,0.0,0.0,0.0,0.0,0
+Ahmet Okutan,Ahmet Okutan,1,2,0.0,0.0,0.0,0.0,0
+Mansooreh Zahedi,Mansooreh Zahedi,1,1,0.0,0.0,0.0,0.0,0
+Mojtaba Shahin,Mojtaba Shahin,1,1,0.0,0.0,0.0,0.0,0
+Néstor Cataño,Néstor Cataño,1,1,0.0,0.0,0.0,0.0,0
+Sudhanshu G. R. Chouhan,Sudhanshu G. R. Chouhan,3,3,0.0,0.0,1.0,0.06666666666666668,0
+Adriatik Bedjeti,Adriatik Bedjeti,1,1,0.0,0.0,0.0,0.0,0
+Daniel Sundmark,Daniel Sundmark,1,1,0.0,0.0,0.0,0.0,3
+Yara Shana'a,Yara Shana'a,2,2,0.0,0.0,1.0,0.12114137285547599,0
+Carola Lilienthal,Carola Lilienthal,5,5,0.0,0.0,1.0,0.06839947366596584,0
+Francesco Urdih,Francesco Urdih,1,1,0.0,0.0,0.0,0.0,0
+Sven Apel,Sven Apel,2,3,0.0,0.0,1.0,0.0839947366596582,0
+Guilherme Vale,Guilherme Vale,3,6,0.0,0.0,1.0,0.16585235801840323,0
+Sam Michiels,Sam Michiels,1,2,0.0,0.0,0.0,0.0,0
+Antonela Tommasel,Antonela Tommasel,1,2,0.0,0.0,0.0,0.0,0
+Romina Eramo,Romina Eramo,1,1,0.0,0.0,0.0,0.0,0
+Prasad Kawthekar,Prasad Kawthekar,1,1,0.0,0.0,0.0,0.0,0
+Carlos A. Varela,Carlos A. Varela,1,2,0.0,0.0,0.0,0.0,0
+Sebastian Vöst,Sebastian Vöst,1,2,0.0,0.0,0.0,0.0,0
+Barbara Russo,Barbara Russo,4,8,0.0,0.0,1.0,0.12401877816132643,0
+Neelofar,Neelofar,1,1,0.0,0.0,0.0,0.0,0
+Maximilian Walter,Maximilian Walter,2,6,0.0,0.0,1.0,0.1436289793354589,0
+Breno Miranda,Breno Miranda,1,3,0.0,0.0,0.0,0.0,0
+Subash Kannoth,Subash Kannoth,2,2,0.0,0.0,1.0,0.16067615094501533,0
+Niklas Meißner,Niklas Meißner,3,3,0.0,0.0,1.0,0.1044804385210435,0
+Malte Jacobi,Malte Jacobi,2,2,0.0,0.0,1.0,0.16067615094501533,0
+Mikkel Baun Kjærgaard,Mikkel Baun Kjærgaard,1,2,0.0,0.0,0.0,0.0,0
+Peng Liang 0001,Peng Liang 0001,1,1,0.0,0.0,0.0,0.0,0
+Lorenzo Pagliari,Lorenzo Pagliari,4,4,0.0,0.0,1.0,0.08227045822671736,0
+Moris Behnam,Moris Behnam,1,1,0.0,0.0,0.0,0.0,0
+Sávio Freire,Sávio Freire,1,2,0.0,0.0,0.0,0.0,0
+Gustavo López 0001,Gustavo López 0001,1,1,0.0,0.0,0.0,0.0,0
+Zoya Alexeeva,Zoya Alexeeva,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Cristian Orellana,Cristian Orellana,1,3,0.0,0.0,0.0,0.0,0
+Stefano Lambiase,Stefano Lambiase,1,1,0.0,0.0,0.0,0.0,0
+Michel Albonico,Michel Albonico,1,1,0.0,0.0,0.0,0.0,0
+Henning Groenda,Henning Groenda,1,1,0.0,0.0,0.0,0.0,0
+Elmar Jürgens,Elmar Jürgens,1,1,0.0,0.0,0.0,0.0,0
+Eko Handoyo,Eko Handoyo,1,1,0.0,0.0,0.0,0.0,0
+Nicolás D'Ippolito,Nicolás D'Ippolito,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Mashal Afzal Memon,Mashal Afzal Memon,1,1,0.0,0.0,0.0,0.0,0
+Dario Di Nucci,Dario Di Nucci,1,4,0.0,0.0,0.0,0.0,0
+Jannik Lotz,Jannik Lotz,1,1,0.0,0.0,0.0,0.0,0
+Maritta Heisel,Maritta Heisel,1,1,0.0,0.0,0.0,0.0,0
+Vasilis Tountopoulos,Vasilis Tountopoulos,4,4,0.0,0.0,1.0,0.06666666666666667,2
+Jonas Lammert,Jonas Lammert,1,1,0.0,0.0,0.0,0.0,0
+Margrethe Hallberg,Margrethe Hallberg,5,5,0.0,0.0,1.0,0.07186508766456415,0
+Jörg Lenhard,Jörg Lenhard,1,1,0.0,0.0,0.0,0.0,1
+Henry Lu,Henry Lu,1,1,0.0,0.0,0.0,0.0,0
+Siqi Ma 0001,Siqi Ma 0001,1,1,0.0,0.0,0.0,0.0,0
+Djamal Kesraoui,Djamal Kesraoui,1,1,0.0,0.0,0.0,0.0,0
+Marcos Kalinowski,Marcos Kalinowski,1,1,0.0,0.0,0.0,0.0,0
+Hariharan Thiagarajan,Hariharan Thiagarajan,2,2,0.0,0.0,1.0,0.06666666666666668,9
+Gustavo Vale,Gustavo Vale,1,1,0.0,0.0,0.0,0.0,0
+Stéphanie Challita,Stéphanie Challita,5,5,0.0,0.0,1.0,0.06839947366596584,0
+Agata Kruzikova,Agata Kruzikova,1,1,0.0,0.0,0.0,0.0,0
+Tanja Mayerhofer,Tanja Mayerhofer,1,2,0.0,0.0,0.0,0.0,0
+Mohsen Anvaari,Mohsen Anvaari,1,1,0.0,0.0,0.0,0.0,0
+Per van der Wijst,Per van der Wijst,1,1,0.0,0.0,0.0,0.0,0
+Marvin Wyrich,Marvin Wyrich,3,8,0.0,0.0,1.0,0.20156305612043038,0
+Stephan Lipp,Stephan Lipp,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Fabio Palomba,Fabio Palomba,1,7,0.0,0.0,0.0,0.0,0
+Dominik Mauksch,Dominik Mauksch,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Daniel Schneider 0001,Daniel Schneider 0001,2,2,0.0,0.0,1.0,0.11399839644511313,0
+Paolo Arcaini,Paolo Arcaini,3,8,0.0,0.0,1.0,0.24596049783423032,0
+Christopher Enoch,Christopher Enoch,1,1,0.0,0.0,0.0,0.0,0
+Vincenzo Ferme,Vincenzo Ferme,1,1,0.0,0.0,0.0,0.0,0
+Dominik Fisch,Dominik Fisch,1,1,0.0,0.0,0.0,0.0,0
+Rami Eleiwi,Rami Eleiwi,2,2,0.0,0.0,1.0,0.12114137285547599,0
+Deborah Richards 0001,Deborah Richards 0001,1,1,0.0,0.0,0.0,0.0,0
+Sebastian Banescu,Sebastian Banescu,2,3,0.0,0.0,1.0,0.10582673679787998,0
+Jan Bosch,Jan Bosch,1,1,0.0,0.0,0.0,0.0,0
+Neil A. Ernst,Neil A. Ernst,1,1,0.0,0.0,0.0,0.0,0
+Benjamin Hertz,Benjamin Hertz,4,4,0.0,0.0,1.0,0.06666666666666667,6
+Matthias Jung 0001,Matthias Jung 0001,3,3,0.0,0.0,1.0,0.11765869788422327,0
+Elisa Bertino,Elisa Bertino,1,1,0.0,0.0,0.0,0.0,0
+Thomas Kühn 0001,Thomas Kühn 0001,3,6,0.0,0.0,1.0,0.18469706948956835,0
+Evangelia Kalyvianaki,Evangelia Kalyvianaki,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Ivan Compagnucci,Ivan Compagnucci,1,1,0.0,0.0,0.0,0.0,0
+Diana Di Marco,Diana Di Marco,1,1,0.0,0.0,0.0,0.0,0
+Christian Stier,Christian Stier,1,1,0.0,0.0,0.0,0.0,0
+Selma Suloglu,Selma Suloglu,1,2,0.0,0.0,0.0,0.0,0
+Lars König,Lars König,1,1,0.0,0.0,0.0,0.0,0
+Marco Autili,Marco Autili,1,5,0.0,0.0,0.0,0.0,0
+Robert C. Armstrong,Robert C. Armstrong,5,5,0.0,0.0,1.0,0.06666666666666668,5
+Joanna C. S. Santos,Joanna C. S. Santos,1,6,0.0,0.0,0.0,0.0,0
+Jean-Luc Richier,Jean-Luc Richier,1,1,0.0,0.0,0.0,0.0,7
+Adell Tatrous,Adell Tatrous,2,2,0.0,0.0,1.0,0.06666666666666668,10
+Reto Aebersold,Reto Aebersold,1,1,0.0,0.0,0.0,0.0,0
+Rob van Vliet,Rob van Vliet,1,2,0.0,0.0,0.0,0.0,0
+Kevin Maggi,Kevin Maggi,1,1,0.0,0.0,0.0,0.0,0
+Axel Legay,Axel Legay,3,3,0.0,0.0,1.0,0.12594410833378009,0
+Divya Gopinath,Divya Gopinath,1,1,0.0,0.0,0.0,0.0,0
+Malolan Chetlur,Malolan Chetlur,1,1,0.0,0.0,0.0,0.0,0
+Ivan Ruchkin,Ivan Ruchkin,1,1,0.0,0.0,0.0,0.0,0
+Dorothea Wagner,Dorothea Wagner,1,1,0.0,0.0,0.0,0.0,0
+Hassan Hage,Hassan Hage,2,2,0.0,0.0,1.0,0.06666666666666668,12
+Jens Happe,Jens Happe,3,3,0.0,0.0,1.0,0.07244268999766386,0
+Roland Wuersching,Roland Wuersching,1,1,0.0,0.0,0.0,0.0,0
+Dietmar Pfahl,Dietmar Pfahl,1,1,0.0,0.0,0.0,0.0,2
+Fangchao Tian,Fangchao Tian,1,1,0.0,0.0,0.0,0.0,0
+Matthew Morrison,Matthew Morrison,1,1,0.0,0.0,0.0,0.0,0
+Miguel Collado,Miguel Collado,2,2,0.0,0.0,1.0,0.09614997135382723,0
+Varun Kumar,Varun Kumar,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Joost Dijkers,Joost Dijkers,1,1,0.0,0.0,0.0,0.0,0
+Dominik Kesim,Dominik Kesim,3,6,0.0,0.0,1.0,0.1760929631154291,0
+Jordi Cabot,Jordi Cabot,1,1,0.0,0.0,0.0,0.0,0
+Saeed Namdar,Saeed Namdar,1,1,0.0,0.0,0.0,0.0,0
+Francisco Ponce 0001,Francisco Ponce 0001,1,3,0.0,0.0,0.0,0.0,0
+Eva Zimmermann,Eva Zimmermann,1,1,0.0,0.0,0.0,0.0,0
+Jérémy Buisson,Jérémy Buisson,1,1,0.0,0.0,0.0,0.0,0
+Heng Li 0007,Heng Li 0007,1,1,0.0,0.0,0.0,0.0,0
+Maria Graber,Maria Graber,1,1,0.0,0.0,0.0,0.0,0
+Matthias Popp,Matthias Popp,3,3,0.0,0.0,1.0,0.11637938858190074,0
+Christoph Czepa,Christoph Czepa,1,1,0.0,0.0,0.0,0.0,0
+Philipp Recke,Philipp Recke,2,2,0.0,0.0,1.0,0.12114137285547599,0
+Sara Moshtari,Sara Moshtari,1,2,0.0,0.0,0.0,0.0,0
+Jokin García,Jokin García,1,1,0.0,0.0,0.0,0.0,0
+Anton Johannesson,Anton Johannesson,5,5,0.0,0.0,1.0,0.07186508766456415,0
+Nicolas Boltz,Nicolas Boltz,3,6,0.0,0.0,1.0,0.18469706948956835,0
+Leonardo Scommegna,Leonardo Scommegna,1,2,0.0,0.0,0.0,0.0,0
+Alexander Bergmayr,Alexander Bergmayr,1,1,0.0,0.0,0.0,0.0,0
+Sathvika Miryala,Sathvika Miryala,1,1,0.0,0.0,0.0,0.0,0
+Nini Cui,Nini Cui,1,1,0.0,0.0,0.0,0.0,0
+Roykrong Sukkerd,Roykrong Sukkerd,1,1,0.0,0.0,0.0,0.0,0
+Thomas F. Düllmann,Thomas F. Düllmann,1,3,0.0,0.0,0.0,0.0,0
+Niranjana Deshpande,Niranjana Deshpande,1,1,0.0,0.0,0.0,0.0,13
+Michael Bauer,Michael Bauer,1,1,0.0,0.0,0.0,0.0,0
+Anton Jansen,Anton Jansen,5,5,0.0,0.0,1.0,0.06839947366596584,0
+Igor Cavrak,Igor Cavrak,1,1,0.0,0.0,0.0,0.0,0
+Niklas Ewald,Niklas Ewald,2,2,0.0,0.0,1.0,0.1567556458480505,0
+Alexander Florean,Alexander Florean,1,1,0.0,0.0,0.0,0.0,1
+Aida Causevic,Aida Causevic,3,6,0.0,0.0,1.0,0.13333333333333336,3
+Tom Peirs,Tom Peirs,1,1,0.0,0.0,0.0,0.0,0
+Guido Loupias,Guido Loupias,1,1,0.0,0.0,0.0,0.0,0
+Julie Dugdale,Julie Dugdale,1,2,0.0,0.0,0.0,0.0,0
+Roy Jamil,Roy Jamil,3,3,0.0,0.0,1.0,0.06666666666666668,4
+Dita Prikrylova,Dita Prikrylova,1,2,0.0,0.0,0.0,0.0,0
+Hamid Bagheri,Hamid Bagheri,1,1,0.0,0.0,0.0,0.0,0
+Dominik Hellhake,Dominik Hellhake,1,1,0.0,0.0,0.0,0.0,0
+Yang Wang 0049,Yang Wang 0049,1,3,0.0,0.0,0.0,0.0,0
+Laoa Jalal,Laoa Jalal,1,1,0.0,0.0,0.0,0.0,1
+Larissa Schmid,Larissa Schmid,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Christian Kästner,Christian Kästner,2,6,0.0,0.0,1.0,0.11399839644511313,0
+Lucie Jurystova,Lucie Jurystova,1,1,0.0,0.0,0.0,0.0,0
+Frank Mantwill,Frank Mantwill,2,2,0.0,0.0,1.0,0.06666666666666668,12
+Harri Preenja,Harri Preenja,1,1,0.0,0.0,0.0,0.0,0
+Giorgos Giotis,Giorgos Giotis,4,4,0.0,0.0,1.0,0.06666666666666667,2
+Goetz Botterweck,Goetz Botterweck,1,1,0.0,0.0,0.0,0.0,1
+Marie Christin Platenius,Marie Christin Platenius,2,4,0.0,0.0,1.0,0.13333333333333336,0
+Alexander Witton,Alexander Witton,3,3,0.0,0.0,1.0,0.11765869788422327,0
+Alberto Ceselli,Alberto Ceselli,1,1,0.0,0.0,0.0,0.0,0
+Samira Silva,Samira Silva,1,1,0.0,0.0,0.0,0.0,0
+Stefan Sauer 0001,Stefan Sauer 0001,1,2,0.0,0.0,0.0,0.0,0
+Shihong Huang,Shihong Huang,1,1,0.0,0.0,0.0,0.0,0
+Marta Olszewska,Marta Olszewska,1,1,0.0,0.0,0.0,0.0,0
+Tirtha Kaloor,Tirtha Kaloor,1,1,0.0,0.0,0.0,0.0,0
+Alain Bignon,Alain Bignon,1,1,0.0,0.0,0.0,0.0,0
+Matthew Cauwels,Matthew Cauwels,4,4,0.0,0.0,1.0,0.06666666666666667,6
+Paul Ralph,Paul Ralph,1,1,0.0,0.0,0.0,0.0,0
+Sander Klock,Sander Klock,1,1,0.0,0.0,0.0,0.0,0
+Apurvanand Sahay,Apurvanand Sahay,1,1,0.0,0.0,0.0,0.0,0
+Michele Guerriero,Michele Guerriero,2,5,0.0,0.0,1.0,0.10582673679787998,0
+Ivica Crnkovic,Ivica Crnkovic,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Freark Westra,Freark Westra,1,1,0.0,0.0,0.0,0.0,0
+Daniel Graziotin,Daniel Graziotin,1,4,0.0,0.0,0.0,0.0,0
+Florian Bossert,Florian Bossert,1,1,0.0,0.0,0.0,0.0,0
+Johnatan Oliveira,Johnatan Oliveira,1,1,0.0,0.0,0.0,0.0,0
+Erhard Weiss,Erhard Weiss,1,1,0.0,0.0,0.0,0.0,0
+Giuseppe Procaccianti,Giuseppe Procaccianti,1,4,0.0,0.0,0.0,0.0,0
+Dimitri Rusin,Dimitri Rusin,2,2,0.0,0.0,1.0,0.16067615094501533,0
+Gabriel A. Moreno,Gabriel A. Moreno,1,3,0.0,0.0,0.0,0.0,0
+Nico Peter,Nico Peter,2,2,0.0,0.0,1.0,0.1567556458480505,0
+Carla Taramasco,Carla Taramasco,1,2,0.0,0.0,0.0,0.0,0
+Livia Lestingi,Livia Lestingi,3,6,0.0,0.0,1.0,0.18174773790306598,0
+Valentina Lenarduzzi,Valentina Lenarduzzi,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Fagner Dias,Fagner Dias,6,6,0.0,0.0,1.0,0.08646445539743917,0
+Timur Saglam,Timur Saglam,3,6,0.0,0.0,1.0,0.18469706948956835,0
+Federico Ciccozzi,Federico Ciccozzi,1,1,0.0,0.0,0.0,0.0,0
+Enxhi Ferko,Enxhi Ferko,1,1,0.0,0.0,0.0,0.0,0
+Fei Li 0002,Fei Li 0002,4,6,0.0,0.0,1.0,0.12864290226273042,0
+Thomas Hutzelmann,Thomas Hutzelmann,6,7,4.67288905611996e-06,0.0,0.3333333333333333,0.0309091789049823,0
+Asfand Yar,Asfand Yar,2,2,0.0,0.0,1.0,0.06666666666666668,7
+Darko Durisic,Darko Durisic,1,2,0.0,0.0,0.0,0.0,0
+Niels Rood,Niels Rood,1,2,0.0,0.0,0.0,0.0,0
+Yassine Ouhammou,Yassine Ouhammou,1,1,0.0,0.0,0.0,0.0,4
+Elena Leroux,Elena Leroux,1,1,0.0,0.0,0.0,0.0,0
+Rocco Oliveto,Rocco Oliveto,1,1,0.0,0.0,0.0,0.0,0
+Aline Paes,Aline Paes,1,1,0.0,0.0,0.0,0.0,0
+Georgios Gousios,Georgios Gousios,1,1,0.0,0.0,0.0,0.0,0
+Tommi Mikkonen,Tommi Mikkonen,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Scott Uk-Jin Lee,Scott Uk-Jin Lee,3,3,0.0,0.0,1.0,0.09937555983517815,8
+María-Del-Pilar Villamil,María-Del-Pilar Villamil,1,1,0.0,0.0,0.0,0.0,0
+Tiago Matias,Tiago Matias,5,5,0.0,0.0,1.0,0.07801079822297972,0
+Marina Waldén,Marina Waldén,1,1,0.0,0.0,0.0,0.0,0
+Ivar Jacobson,Ivar Jacobson,1,1,0.0,0.0,0.0,0.0,0
+Daniel Sadoc Menasché,Daniel Sadoc Menasché,1,1,0.0,0.0,0.0,0.0,0
+Cor-Paul Bezemer,Cor-Paul Bezemer,1,1,0.0,0.0,0.0,0.0,0
+Robert L. Nord,Robert L. Nord,1,1,0.0,0.0,0.0,0.0,0
+Adriana Sejfia,Adriana Sejfia,1,1,0.0,0.0,0.0,0.0,0
+Daniel Abajirov,Daniel Abajirov,1,1,0.0,0.0,0.0,0.0,0
+Leo Laine,Leo Laine,1,1,0.0,0.0,0.0,0.0,0
+Fabiano Pecorelli,Fabiano Pecorelli,1,2,0.0,0.0,0.0,0.0,0
+John Hatcliff,John Hatcliff,2,2,0.0,0.0,1.0,0.06666666666666668,9
+Markos Viggiato,Markos Viggiato,1,1,0.0,0.0,0.0,0.0,0
+Luana Sousa,Luana Sousa,1,1,0.0,0.0,0.0,0.0,0
+Nils-André Forjahn,Nils-André Forjahn,1,1,0.0,0.0,0.0,0.0,0
+Matthew Thornton,Matthew Thornton,1,1,0.0,0.0,0.0,0.0,0
+Thomas Herpel,Thomas Herpel,1,2,0.0,0.0,0.0,0.0,0
+Sebastián Ospina,Sebastián Ospina,2,2,0.0,0.0,1.0,0.13333333333333336,0
+He Zhang 0001,He Zhang 0001,1,2,0.0,0.0,0.0,0.0,0
+Erik A. Jagroep,Erik A. Jagroep,1,2,0.0,0.0,0.0,0.0,0
+Phuoc Sang Nguyen,Phuoc Sang Nguyen,1,1,0.0,0.0,0.0,0.0,0
+Achraf Ghabi,Achraf Ghabi,1,1,0.0,0.0,0.0,0.0,0
+Thanh Tran Thi Kim,Thanh Tran Thi Kim,1,1,0.0,0.0,0.0,0.0,0
+Tobias Eisenreich,Tobias Eisenreich,2,3,0.0,0.0,1.0,0.0839947366596582,0
+Willem-Jan van den Heuvel,Willem-Jan van den Heuvel,1,5,0.0,0.0,0.0,0.0,0
+Lucas Mauser,Lucas Mauser,1,2,0.0,0.0,0.0,0.0,0
+Yves Schneider,Yves Schneider,2,3,0.0,0.0,1.0,0.1974997378938247,0
+Stefano Ruberto,Stefano Ruberto,1,1,0.0,0.0,0.0,0.0,0
+Moritz Gstür,Moritz Gstür,1,1,0.0,0.0,0.0,0.0,0
+Kristin Y. Rozier,Kristin Y. Rozier,4,4,0.0,0.0,1.0,0.06666666666666667,6
+Vick Dini,Vick Dini,1,1,0.0,0.0,0.0,0.0,0
+Andrew Walters,Andrew Walters,1,1,0.0,0.0,0.0,0.0,0
+Mario Trapp,Mario Trapp,1,1,0.0,0.0,0.0,0.0,0
+M. Mehdi Kholoosi,M. Mehdi Kholoosi,1,1,0.0,0.0,0.0,0.0,0
+Gennaro Zanfardino,Gennaro Zanfardino,1,1,0.0,0.0,0.0,0.0,0
+Ivan Jovanovikj,Ivan Jovanovikj,1,2,0.0,0.0,0.0,0.0,0
+Olaf Drögehorn,Olaf Drögehorn,1,1,0.0,0.0,0.0,0.0,0
+Darío Correal,Darío Correal,2,7,0.009915870577086556,0.0,1.0,0.1436289793354589,0
+Bruno Costa 0003,Bruno Costa 0003,1,1,0.0,0.0,0.0,0.0,0
+Mehran Abolhasan,Mehran Abolhasan,1,1,0.0,0.0,0.0,0.0,0
+Diego Elias Costa,Diego Elias Costa,1,1,0.0,0.0,0.0,0.0,0
+Birgit Derntl,Birgit Derntl,1,1,0.0,0.0,0.0,0.0,0
+Mariana Silva,Mariana Silva,1,1,0.0,0.0,0.0,0.0,0
+Manuel Merkel,Manuel Merkel,1,1,0.0,0.0,0.0,0.0,0
+Marco De Toma,Marco De Toma,1,1,0.0,0.0,0.0,0.0,0
+Franco Raimondi,Franco Raimondi,1,1,0.0,0.0,0.0,0.0,0
+Angelo Gargantini,Angelo Gargantini,4,8,0.0,0.0,1.0,0.1640440931086351,0
+Colin F. Snook,Colin F. Snook,5,5,0.0,0.0,1.0,0.06666666666666668,5
+Hye-Young Paik,Hye-Young Paik,1,1,0.0,0.0,0.0,0.0,0
+Chii Chang,Chii Chang,1,2,0.0,0.0,0.0,0.0,2
+Reid G. Simmons,Reid G. Simmons,1,1,0.0,0.0,0.0,0.0,0
+Leonardo Silva Rosa,Leonardo Silva Rosa,1,1,0.0,0.0,0.0,0.0,0
+Floriment Klinaku,Floriment Klinaku,3,6,0.0,0.0,1.0,0.11820175794182826,0
+Milena Guessi,Milena Guessi,1,1,0.0,0.0,0.0,0.0,0
+Ademar Aguiar,Ademar Aguiar,1,1,0.0,0.0,0.0,0.0,0
+Pawel Wójcik,Pawel Wójcik,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Jim Buckley,Jim Buckley,1,4,0.0,0.0,0.0,0.0,1
+Santiago Matalonga,Santiago Matalonga,1,1,0.0,0.0,0.0,0.0,0
+Armand Toguyéni,Armand Toguyéni,1,1,0.0,0.0,0.0,0.0,0
+Pauline Delporte,Pauline Delporte,1,1,0.0,0.0,0.0,0.0,0
+Nacha Chondamrongkul,Nacha Chondamrongkul,3,8,0.0,0.0,1.0,0.14070173047044968,8
+Schuyler Dillon,Schuyler Dillon,1,1,0.0,0.0,0.0,0.0,0
+Giordano d'Aloisio,Giordano d'Aloisio,1,2,0.0,0.0,0.0,0.0,0
+Tagline Treichel,Tagline Treichel,1,1,0.0,0.0,0.0,0.0,0
+Axel Busch,Axel Busch,1,3,0.0,0.0,0.0,0.0,0
+Fabio Moretti,Fabio Moretti,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Eric Knauss,Eric Knauss,1,1,0.0,0.0,0.0,0.0,0
+Pablo Rodriguez 0002,Pablo Rodriguez 0002,2,3,0.0,0.0,1.0,0.1436289793354589,0
+Jacek Rosik,Jacek Rosik,1,1,0.0,0.0,0.0,0.0,1
+Azadeh Alebrahim,Azadeh Alebrahim,1,1,0.0,0.0,0.0,0.0,0
+Samuel Santos,Samuel Santos,1,1,0.0,0.0,0.0,0.0,0
+Zeeger Lubsen,Zeeger Lubsen,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Mohammad Mahdi Hassan,Mohammad Mahdi Hassan,1,1,0.0,0.0,0.0,0.0,1
+Pablo Curty,Pablo Curty,1,1,0.0,0.0,0.0,0.0,0
+Kevin Laporte,Kevin Laporte,1,1,0.0,0.0,0.0,0.0,0
+Sabine Molenaar,Sabine Molenaar,1,1,0.0,0.0,0.0,0.0,0
+Philippe Aniorté,Philippe Aniorté,1,1,0.0,0.0,0.0,0.0,0
+Henrik Eriksson,Henrik Eriksson,1,2,0.0,0.0,0.0,0.0,0
+Phillip H. Jones,Phillip H. Jones,4,4,0.0,0.0,1.0,0.06666666666666667,6
+Björn Leander,Björn Leander,3,6,0.0,0.0,1.0,0.13333333333333336,3
+Frederik Reiche,Frederik Reiche,1,1,0.0,0.0,0.0,0.0,0
+Matthew B. Dwyer,Matthew B. Dwyer,1,1,0.0,0.0,0.0,0.0,0
+Gersan Moguérou,Gersan Moguérou,1,1,0.0,0.0,0.0,0.0,0
+Joanna Ye,Joanna Ye,1,1,0.0,0.0,0.0,0.0,0
+Clemens A. Szyperski,Clemens A. Szyperski,1,1,0.0,0.0,0.0,0.0,0
+Ithar Saleh,Ithar Saleh,2,2,0.0,0.0,1.0,0.12114137285547599,0
+Farshid Anvari,Farshid Anvari,1,1,0.0,0.0,0.0,0.0,0
+Louis-Marie Traonouez,Louis-Marie Traonouez,3,3,0.0,0.0,1.0,0.12594410833378009,0
+Gemma Catolino,Gemma Catolino,1,6,0.0,0.0,0.0,0.0,0
+Tiziano De Matteis,Tiziano De Matteis,1,1,0.0,0.0,0.0,0.0,0
+Leonardo Mariani,Leonardo Mariani,1,1,0.0,0.0,0.0,0.0,0
+Kunal Suri,Kunal Suri,1,1,0.0,0.0,0.0,0.0,0
+Robert Ramac,Robert Ramac,1,1,0.0,0.0,0.0,0.0,0
+Mubashir Ali,Mubashir Ali,3,3,0.0,0.0,0.6666666666666666,0.04444444444444445,0
+Vladimir Mandic,Vladimir Mandic,1,1,0.0,0.0,0.0,0.0,0
+Victor Cortez,Victor Cortez,3,3,0.0,0.0,1.0,0.12282436754464082,0
+Michael Szvetits,Michael Szvetits,1,1,0.0,0.0,0.0,0.0,0
+Abigail Hammer,Abigail Hammer,4,4,0.0,0.0,1.0,0.06666666666666667,6
+Niklaus Meyer,Niklaus Meyer,1,1,0.0,0.0,0.0,0.0,0
+Birgit Penzenstadler,Birgit Penzenstadler,1,1,0.0,0.0,0.0,0.0,0
+Thomas Weber 0006,Thomas Weber 0006,1,2,0.0,0.0,0.0,0.0,0
+João Saraiva,João Saraiva,1,1,0.0,0.0,0.0,0.0,0
+Viktoria Koscinski,Viktoria Koscinski,1,2,0.0,0.0,0.0,0.0,0
+Sergey Ostroumov,Sergey Ostroumov,1,1,0.0,0.0,0.0,0.0,0
+Annalisa Napolitano,Annalisa Napolitano,2,2,0.0,0.0,1.0,0.09614997135382723,0
+Priyanka Karkhanis,Priyanka Karkhanis,1,1,0.0,0.0,0.0,0.0,0
+Yves Ledru,Yves Ledru,1,1,0.0,0.0,0.0,0.0,7
+Tomás Bures,Tomás Bures,1,2,0.0,0.0,0.0,0.0,0
+Andreas Rausch 0001,Andreas Rausch 0001,1,1,0.0,0.0,0.0,0.0,1
+Stepan Shevtsov,Stepan Shevtsov,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Robby,Robby,2,2,0.0,0.0,1.0,0.06666666666666668,9
+Matthew Edwards 0001,Matthew Edwards 0001,1,1,0.0,0.0,0.0,0.0,0
+Tobias Telge,Tobias Telge,2,2,0.0,0.0,1.0,0.1567556458480505,0
+Joel Cox,Joel Cox,1,1,0.0,0.0,0.0,0.0,0
+Heinz W. Schmidt,Heinz W. Schmidt,1,2,0.0,0.0,0.0,0.0,0
+Muhammad Aufeef Chauhan,Muhammad Aufeef Chauhan,1,1,0.0,0.0,0.0,0.0,0
+Jácome Cunha,Jácome Cunha,1,1,0.0,0.0,0.0,0.0,0
+Andrea De Lucia,Andrea De Lucia,1,1,0.0,0.0,0.0,0.0,0
+Hayes Converse,Hayes Converse,1,1,0.0,0.0,0.0,0.0,0
+Katy Tarrit,Katy Tarrit,1,1,0.0,0.0,0.0,0.0,0
+Mirco Tribastone,Mirco Tribastone,1,1,0.0,0.0,0.0,0.0,0
+Jing Sun 0002,Jing Sun 0002,3,8,0.0,0.0,1.0,0.14070173047044968,8
+Akram Idani,Akram Idani,4,4,0.0,0.0,0.16666666666666666,0.011111111111111113,7
+Jorge Pereira,Jorge Pereira,3,3,0.0,0.0,1.0,0.11460278812842035,0
+Frank Leymann,Frank Leymann,3,3,0.0,0.0,1.0,0.08482490206293646,0
+Pierre-Jean Queval,Pierre-Jean Queval,1,1,0.0,0.0,0.0,0.0,0
+Xin Zhou 0016,Xin Zhou 0016,1,2,0.0,0.0,0.0,0.0,0
+Francesca Marzi,Francesca Marzi,1,2,0.0,0.0,0.0,0.0,0
+Andrea Janes,Andrea Janes,4,9,0.0,0.0,1.0,0.133939889664725,0
+Mattia D'Emidio,Mattia D'Emidio,1,1,0.0,0.0,0.0,0.0,0
+Eltjo R. Poort,Eltjo R. Poort,1,2,0.0,0.0,0.0,0.0,0
+Martin Becker 0002,Martin Becker 0002,2,2,0.0,0.0,1.0,0.16067615094501533,0
+Tadej Borovsak,Tadej Borovsak,2,3,0.0,0.0,1.0,0.0839947366596582,0
+Niklas Krieger,Niklas Krieger,3,7,0.0,0.0,1.0,0.17644290657307615,0
+Alejandro Catalá Bolos,Alejandro Catalá Bolos,1,1,0.0,0.0,0.0,0.0,0
+Hyoungshick Kim,Hyoungshick Kim,1,1,0.0,0.0,0.0,0.0,0
+Markus Schnappinger,Markus Schnappinger,1,1,0.0,0.0,0.0,0.0,0
+Nadine Nicole Koch,Nadine Nicole Koch,3,3,0.0,0.0,1.0,0.1044804385210435,0
+Daniel Soares Santos,Daniel Soares Santos,1,1,0.0,0.0,0.0,0.0,0
+Jesko Hermann,Jesko Hermann,2,2,0.0,0.0,1.0,0.16067615094501533,0
+Xin Huang 0019,Xin Huang 0019,1,2,0.0,0.0,0.0,0.0,0
+Henning Schulz,Henning Schulz,1,1,0.0,0.0,0.0,0.0,0
+Awais Rashid,Awais Rashid,1,1,0.0,0.0,0.0,0.0,0
+Ferran Borreguero,Ferran Borreguero,1,1,0.0,0.0,0.0,0.0,0
+Manoel G. Mendonça,Manoel G. Mendonça,1,1,0.0,0.0,0.0,0.0,0
+Cristian Klein,Cristian Klein,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Claudia Raibulet,Claudia Raibulet,1,2,0.0,0.0,0.0,0.0,0
+Jairo Veloz Vidal,Jairo Veloz Vidal,1,1,0.0,0.0,0.0,0.0,0
+Silvia Bonfanti,Silvia Bonfanti,2,4,0.0,0.0,1.0,0.2201284832596418,0
+Daniel Lehner,Daniel Lehner,1,1,0.0,0.0,0.0,0.0,0
+Joshua Garcia,Joshua Garcia,1,3,0.0,0.0,0.0,0.0,0
+Rob van der Valk,Rob van der Valk,1,1,0.0,0.0,0.0,0.0,0
+Luis Salinas,Luis Salinas,2,2,0.0,0.0,1.0,0.09614997135382723,0
+Christoph Ruhsam,Christoph Ruhsam,1,1,0.0,0.0,0.0,0.0,0
+Giuseppe Scanniello,Giuseppe Scanniello,1,1,0.0,0.0,0.0,0.0,0
+Tobias Olsson,Tobias Olsson,1,1,0.0,0.0,0.0,0.0,0
+Camilo Castellanos,Camilo Castellanos,1,4,0.0,0.0,0.0,0.0,0
+Alexander Poth,Alexander Poth,2,2,0.0,0.0,1.0,0.12114137285547599,0
+Bernard Dautrevaux,Bernard Dautrevaux,3,3,0.0,0.0,1.0,0.06666666666666668,4
+Ionut Mihai,Ionut Mihai,1,1,0.0,0.0,0.0,0.0,0
+Mario Cardarelli,Mario Cardarelli,1,2,0.0,0.0,0.0,0.0,0
+Andrea D'Angelo,Andrea D'Angelo,1,1,0.0,0.0,0.0,0.0,0
+Khalil Drira,Khalil Drira,1,2,0.0,0.0,0.0,0.0,0
+Clemente Izurieta,Clemente Izurieta,1,1,0.0,0.0,0.0,0.0,0
+Sonya Voneva,Sonya Voneva,3,3,0.0,0.0,1.0,0.09127207003906546,0
+Chiara Braghin,Chiara Braghin,4,7,0.0,0.0,1.0,0.1523443229912853,0
+Giorgio Amasanti,Giorgio Amasanti,1,1,0.0,0.0,0.0,0.0,0
+Christian Gerth,Christian Gerth,1,1,0.0,0.0,0.0,0.0,0
+Vlastimil Krivka,Vlastimil Krivka,1,1,0.0,0.0,0.0,0.0,0
+Andrea Zisman,Andrea Zisman,1,2,0.0,0.0,0.0,0.0,0
+Sophie Schulz,Sophie Schulz,3,8,0.0,0.0,1.0,0.22516568966503425,0
+Sebastian Weber 0001,Sebastian Weber 0001,1,1,0.0,0.0,0.0,0.0,0
+Yamid E. Ramírez,Yamid E. Ramírez,1,1,0.0,0.0,0.0,0.0,0
+Patric Genfer,Patric Genfer,1,3,0.0,0.0,0.0,0.0,0
+Jana Michalkova,Jana Michalkova,1,1,0.0,0.0,0.0,0.0,0
+Alex Serban,Alex Serban,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Martin Blom,Martin Blom,1,3,0.0,0.0,0.0,0.0,1
+Rima Al Ali,Rima Al Ali,1,2,0.0,0.0,0.0,0.0,0
+Arianit Kurti,Arianit Kurti,1,1,0.0,0.0,0.0,0.0,0
+Md. Rezaur Rahman,Md. Rezaur Rahman,1,1,0.0,0.0,0.0,0.0,0
+Marvin Muñoz Barón,Marvin Muñoz Barón,1,1,0.0,0.0,0.0,0.0,0
+Jens Heuschkel,Jens Heuschkel,1,1,0.0,0.0,0.0,0.0,0
+Tim B. Braam,Tim B. Braam,1,1,0.0,0.0,0.0,0.0,0
+Juraj Feljan,Juraj Feljan,1,1,0.0,0.0,0.0,0.0,0
+Inayat Rehman,Inayat Rehman,1,1,0.0,0.0,0.0,0.0,0
+Björn Mittelsdorf,Björn Mittelsdorf,2,2,0.0,0.0,1.0,0.16067615094501533,0
+Yutong Zhao,Yutong Zhao,1,1,0.0,0.0,0.0,0.0,0
+Will Leeson,Will Leeson,1,1,0.0,0.0,0.0,0.0,0
+Bernardo Andrade,Bernardo Andrade,1,1,0.0,0.0,0.0,0.0,0
+Lukas Jünger 0001,Lukas Jünger 0001,1,1,0.0,0.0,0.0,0.0,0
+Sara Abbaspour Asadollah,Sara Abbaspour Asadollah,1,1,0.0,0.0,0.0,0.0,3
+Patricia Goldberg,Patricia Goldberg,3,3,0.0,0.0,1.0,0.06666666666666668,0
+Rainer Niedermayr,Rainer Niedermayr,1,2,0.0,0.0,0.0,0.0,0
+Elena Navarro 0001,Elena Navarro 0001,1,3,0.0,0.0,0.0,0.0,0
+Ivan Bogicevic,Ivan Bogicevic,1,1,0.0,0.0,0.0,0.0,0
+Joran Leest,Joran Leest,1,1,0.0,0.0,0.0,0.0,0
+Maximilian Eckert,Maximilian Eckert,1,1,0.0,0.0,0.0,0.0,0
+Tobias Röhm,Tobias Röhm,1,1,0.0,0.0,0.0,0.0,0
+Stefan Driessen,Stefan Driessen,1,1,0.0,0.0,0.0,0.0,0
+Lidiane Oliveira dos Santos,Lidiane Oliveira dos Santos,4,6,0.0,0.0,1.0,0.14838132698424158,0
+Francis Palma,Francis Palma,2,2,0.0,0.0,1.0,0.06666666666666668,10
+Renato Cordeiro Ferreira,Renato Cordeiro Ferreira,1,1,0.0,0.0,0.0,0.0,0
+Bahtijar Vogel,Bahtijar Vogel,1,1,0.0,0.0,0.0,0.0,0
+Nils Johansson,Nils Johansson,1,2,0.0,0.0,0.0,0.0,0
+Philipp Brune,Philipp Brune,1,1,0.0,0.0,0.0,0.0,0
+Florian Faßnacht,Florian Faßnacht,3,3,0.0,0.0,1.0,0.11765869788422327,0
+Ingrid Nunes,Ingrid Nunes,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Ulrik Eklund,Ulrik Eklund,1,1,0.0,0.0,0.0,0.0,0
+Vadim Titov,Vadim Titov,2,2,0.0,0.0,1.0,0.12114137285547599,0
+Kamel M. K. Abdelsalam,Kamel M. K. Abdelsalam,1,1,0.0,0.0,0.0,0.0,0
+Peter Ziegler,Peter Ziegler,1,1,0.0,0.0,0.0,0.0,0
+Max E. Kramer,Max E. Kramer,3,3,0.0,0.0,1.0,0.07244268999766386,0
+Berker Demirer,Berker Demirer,1,1,0.0,0.0,0.0,0.0,2
+Sébastien Gérard,Sébastien Gérard,1,1,0.0,0.0,0.0,0.0,0
+Felipe Osses,Felipe Osses,1,2,0.0,0.0,0.0,0.0,0
+Flávia Coimbra Delicato,Flávia Coimbra Delicato,1,2,0.0,0.0,0.0,0.0,0
+Jan Jürjens,Jan Jürjens,3,6,0.0,0.0,1.0,0.18469706948956835,0
+Vladimir Yussupov,Vladimir Yussupov,1,2,0.0,0.0,0.0,0.0,0
+Yaping Luo,Yaping Luo,1,2,0.0,0.0,0.0,0.0,0
+Claudius Kocher,Claudius Kocher,2,2,0.0,0.0,1.0,0.1567556458480505,0
+Jochen Quante,Jochen Quante,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Björnborg Nguyen,Björnborg Nguyen,1,1,0.0,0.0,0.0,0.0,0
+Gerhard Engelbrecht,Gerhard Engelbrecht,1,1,0.0,0.0,0.0,0.0,0
+Juri Di Rocco,Juri Di Rocco,1,1,0.0,0.0,0.0,0.0,0
+Maria Teresa Rossi,Maria Teresa Rossi,3,3,0.0,0.0,1.0,0.0764944348957202,0
+Vasilios Andrikopoulos,Vasilios Andrikopoulos,1,1,0.0,0.0,0.0,0.0,0
+Fabrizio Lazzaretti,Fabrizio Lazzaretti,1,1,0.0,0.0,0.0,0.0,0
+Jörg Henß,Jörg Henß,1,1,0.0,0.0,0.0,0.0,0
+Enes Yigitbas,Enes Yigitbas,1,3,0.0,0.0,0.0,0.0,0
+Naveen Sharma,Naveen Sharma,1,1,0.0,0.0,0.0,0.0,13
+Carlos M. Aderaldo,Carlos M. Aderaldo,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Sofia Linsbauer,Sofia Linsbauer,1,2,0.0,0.0,0.0,0.0,0
+Marco Konersmann,Marco Konersmann,3,6,0.0,0.0,1.0,0.18469706948956835,0
+Andrew Cain,Andrew Cain,1,1,0.0,0.0,0.0,0.0,0
+Roel J. Wieringa,Roel J. Wieringa,1,1,0.0,0.0,0.0,0.0,0
+David Monschein,David Monschein,3,5,0.0,0.0,1.0,0.1265476489716921,0
+Alfred Zimmermann,Alfred Zimmermann,6,15,3.11525937074664e-06,0.0,0.6,0.10042332743598205,0
+Heli Järvenpää,Heli Järvenpää,2,2,0.0,0.0,1.0,0.10582673679787998,0
+Gilberto Pedraza-Garcia,Gilberto Pedraza-Garcia,1,3,0.0,0.0,0.0,0.0,0
+Miles Stötzner,Miles Stötzner,3,3,0.0,0.0,1.0,0.08482490206293646,0
+Anthony Anjorin,Anthony Anjorin,1,1,0.0,0.0,0.0,0.0,0
+Christian Seiler,Christian Seiler,1,1,0.0,0.0,0.0,0.0,0
+Henry Hoffmann,Henry Hoffmann,2,3,0.0,0.0,1.0,0.0839947366596582,0
+Ilja Heitlager,Ilja Heitlager,1,2,0.0,0.0,0.0,0.0,0
+Thomas Haitzer,Thomas Haitzer,1,1,0.0,0.0,0.0,0.0,0
+V. Smrithi Rekha,V. Smrithi Rekha,1,1,0.0,0.0,0.0,0.0,0
+Carina Frota Alves,Carina Frota Alves,1,2,0.0,0.0,0.0,0.0,0
+Enrico Vicario,Enrico Vicario,2,4,0.0,0.0,1.0,0.19229994270765446,0
+Bram van der Waaij,Bram van der Waaij,1,1,0.0,0.0,0.0,0.0,0
+Marko C. J. D. van Eekelen,Marko C. J. D. van Eekelen,1,1,0.0,0.0,0.0,0.0,0
+Sasa Misailovic,Sasa Misailovic,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Paulo F. Pires,Paulo F. Pires,1,2,0.0,0.0,0.0,0.0,0
+Thorsten Müller 0003,Thorsten Müller 0003,2,2,0.0,0.0,1.0,0.16067615094501533,0
+Kathrin Leonie Schmidt,Kathrin Leonie Schmidt,1,1,0.0,0.0,0.0,0.0,0
+Claudia Kopf,Claudia Kopf,5,5,0.0,0.0,1.0,0.07186508766456415,0
+Silke Reimer,Silke Reimer,1,1,0.0,0.0,0.0,0.0,0
+Rhaban Hark,Rhaban Hark,1,4,0.0,0.0,0.0,0.0,0
+Azat Aralbay Uulu,Azat Aralbay Uulu,1,1,0.0,0.0,0.0,0.0,0
+Paul Davidsson,Paul Davidsson,2,3,0.0,0.0,1.0,0.12114137285547599,0
+Yiming Zhao,Yiming Zhao,1,1,0.0,0.0,0.0,0.0,0
+Martina Maggio,Martina Maggio,2,4,0.0,0.0,1.0,0.09614997135382723,0
+Samuel Kounev,Samuel Kounev,1,2,0.0,0.0,0.0,0.0,0
+Zai Müller-Zhang 0001,Zai Müller-Zhang 0001,1,1,0.0,0.0,0.0,0.0,0
+Mina Alipour,Mina Alipour,1,1,0.0,0.0,0.0,0.0,0
+Robin Roitsch,Robin Roitsch,2,3,0.0,0.0,1.0,0.0839947366596582,0
+Andreas B. Hempel,Andreas B. Hempel,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Pascal Berruet,Pascal Berruet,1,1,0.0,0.0,0.0,0.0,0
+Luís Nunes,Luís Nunes,1,1,0.0,0.0,0.0,0.0,0
+Simos Gerasimou,Simos Gerasimou,2,2,0.0,0.0,1.0,0.06666666666666668,0
+Sofia Migliorini,Sofia Migliorini,2,2,0.0,0.0,1.0,0.13333333333333336,0
+Martín Ochoa,Martín Ochoa,1,1,0.0,0.0,0.0,0.0,0
+Lothar Fritsch,Lothar Fritsch,1,1,0.0,0.0,0.0,0.0,1
+Nafise Eskandani,Nafise Eskandani,2,5,0.0,0.0,1.0,0.13333333333333336,0
+Nicole Wasankhasit,Nicole Wasankhasit,1,1,0.0,0.0,0.0,0.0,0
+Haoyu Liu,Haoyu Liu,2,4,0.0,0.0,1.0,0.24883407712114988,0
+Luciano Baresi,Luciano Baresi,1,2,0.0,0.0,0.0,0.0,0
+Ricardo Britto 0001,Ricardo Britto 0001,4,4,0.0,0.0,1.0,0.07938244656121878,0
+Alexandru Constantin Serban,Alexandru Constantin Serban,2,2,0.0,0.0,1.0,0.0839947366596582,0
+Dino Mandrioli,Dino Mandrioli,1,1,0.0,0.0,0.0,0.0,0
+Sebastian Kotstein,Sebastian Kotstein,1,1,0.0,0.0,0.0,0.0,0

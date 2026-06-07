@@ -36,11 +36,15 @@ def assign_components(G):
     return node_to_component
 
 
-def compute_metrics(approx_k=None):
-    print("Loading graphs...")
-    MG, G = load_graphs()
+def compute_metrics(MG=None, G=None, out_path=None, approx_k=None):
+    if MG is None or G is None:
+        print("Loading graphs...")
+        MG, G = load_graphs()
     print(f"  MultiGraph:     {MG.number_of_nodes():,} nodes, {MG.number_of_edges():,} edges")
     print(f"  Weighted Graph: {G.number_of_nodes():,} nodes, {G.number_of_edges():,} edges")
+
+    if out_path is None:
+        out_path = "analysis/author_metrics.csv"
 
     print("\nComputing degree_weighted (unique coauthors)...")
     degree_weighted = dict(G.degree())
@@ -87,7 +91,6 @@ def compute_metrics(approx_k=None):
         })
 
     df = pd.DataFrame(rows).sort_values("betweenness_unweighted", ascending=False)
-    out_path = "analysis/author_metrics.csv"
     df.to_csv(out_path, index=False)
     print(f"\nWrote {len(df):,} rows to {out_path}")
     print(f"Largest component size: {(df['connected_component'] == 0).sum():,} authors")
@@ -98,4 +101,4 @@ if __name__ == "__main__":
     parser.add_argument("--approx", type=int, default=None, metavar="K",
                         help="Use approximate betweenness with K sample nodes")
     args = parser.parse_args()
-    compute_metrics(approx_k=args.approx)
+    compute_metrics(out_path="analysis/author_metrics.csv", approx_k=args.approx)
