@@ -1,5 +1,7 @@
 import pandas as pd
 import sys
+import matplotlib.pyplot as plt
+import numpy as np
 
 # import database_load
 sys.path.insert(0, './database_load')
@@ -44,10 +46,104 @@ def getTopAuthorStatsForConferenceAndYear(conf="", year=-1):
     # top_cluster_authors = author_data.sort_values(by='clustering_coefficient', ascending= False).head(TOP_AUTHORS_RETRIEVAL_NUM)[['authors', 'clustering_coefficient']]    
     
     return avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors
+    
 
+def visualizeAuthorStatsForConference(conf=""):
+    """
+    Visualize author statistics across all years for a given conference.
+    Creates line graphs with error bars showing standard deviation for average weighted betweenness, 
+    unweighted betweenness, and degree.
+    
+    Args:
+        conf (str): Conference abbreviation ('icse', 'icsa', 'ecsa')
+    """
+    years = list(range(2016, 2026))
+    avg_unweighted_btw_list = []
+    std_unweighted_btw_list = []
+    avg_weighted_btw_list = []
+    std_weighted_btw_list = []
+    avg_degree_list = []
+    std_degree_list = []
+    
+    # Collect statistics for all years
+    for year in years:
+        try:
+            res = getTopAuthorStatsForConferenceAndYear(conf, year)
+            avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors = res
+            
+            avg_unweighted_btw_list.append(avg_unweighted_btw)
+            std_unweighted_btw_list.append(std_unweighted_btw if not np.isnan(std_unweighted_btw) else 0)
+            
+            avg_weighted_btw_list.append(avg_weighted_btw)
+            std_weighted_btw_list.append(std_weighted_btw if not np.isnan(std_weighted_btw) else 0)
+            
+            # Calculate average and std dev degree from the top degree authors
+            if len(top_weighted_degree_authors) > 0:
+                avg_degree = top_weighted_degree_authors['degree_weighted'].mean()
+                std_degree = top_weighted_degree_authors['degree_weighted'].std()
+            else:
+                avg_degree = 0
+                std_degree = 0
+            avg_degree_list.append(avg_degree)
+            std_degree_list.append(std_degree if not np.isnan(std_degree) else 0)
+            
+        except Exception as e:
+            print(f"Error retrieving stats for {conf} {year}: {str(e)}")
+            avg_unweighted_btw_list.append(np.nan)
+            std_unweighted_btw_list.append(0)
+            avg_weighted_btw_list.append(np.nan)
+            std_weighted_btw_list.append(0)
+            avg_degree_list.append(np.nan)
+            std_degree_list.append(0)
+    
+    # Create visualization
+    fig, axes = plt.subplots(3, 1, figsize=(12, 10))
+    fig.suptitle(f'{conf.upper()} Conference - Author Statistics Trends (2016-2025)', fontsize=16, fontweight='bold')
+    
+    # Plot 1: Average Unweighted Betweenness with error bars
+    axes[0].errorbar(years, avg_unweighted_btw_list, yerr=std_unweighted_btw_list, 
+                     marker='o', linestyle='-', linewidth=2, markersize=8, 
+                     color='steelblue', ecolor='steelblue', capsize=5, capthick=2, alpha=0.7)
+    axes[0].set_ylabel('Average Unweighted Betweenness', fontsize=12, fontweight='bold')
+    axes[0].set_title('Average Unweighted Betweenness Centrality by Year')
+    # axes[0].set_ylim(0.0, 0.002)
+    axes[0].grid(axis='y', alpha=0.3)
+    axes[0].set_xticks(years)
+    axes[0].set_xticklabels(years, rotation=45)
+    
+    # Plot 2: Average Weighted Betweenness with error bars
+    axes[1].errorbar(years, avg_weighted_btw_list, yerr=std_weighted_btw_list, 
+                     marker='s', linestyle='-', linewidth=2, markersize=8, 
+                     color='coral', ecolor='coral', capsize=5, capthick=2, alpha=0.7)
+    axes[1].set_ylabel('Average Weighted Betweenness', fontsize=12, fontweight='bold')
+    axes[1].set_title('Average Weighted Betweenness Centrality by Year')
+    # axes[1].set_ylim(0.0, 0.004)
+    axes[1].grid(axis='y', alpha=0.3)
+    axes[1].set_xticks(years)
+    axes[1].set_xticklabels(years, rotation=45)
+    
+    # Plot 3: Average Degree with error bars
+    axes[2].errorbar(years, avg_degree_list, yerr=std_degree_list, 
+                     marker='^', linestyle='-', linewidth=2, markersize=8, 
+                     color='mediumseagreen', ecolor='mediumseagreen', capsize=5, capthick=2, alpha=0.7)
+    axes[2].set_ylabel('Average Degree (Weighted)', fontsize=12, fontweight='bold')
+    axes[2].set_xlabel('Year', fontsize=12, fontweight='bold')
+    axes[2].set_title('Average Degree (Weighted) by Year')
+    axes[2].grid(axis='y', alpha=0.3)
+    axes[2].set_xticks(years)
+    axes[2].set_xticklabels(years, rotation=45)
+    
+    plt.tight_layout()
+    
+    # Save figure
+    output_file = f'./analysis/{conf}_author_statistics_trend.png'
+    plt.savefig(output_file, dpi=300, bbox_inches='tight')
+    print(f"Visualization saved to {output_file}")
+    plt.close()
     
 # Script to write findings across all three conferences, across the span of 10 years
-if __name__ == "__main__":
+# into an excel workbook, with a sheet per conference + year 
+def loadExcelSheets():
     conferences = ['icse', 'icsa', 'ecsa']
     years = range(2016, 2026)
     excel_file = './analysis/collaboration_network.xlsx'
@@ -96,3 +192,6 @@ if __name__ == "__main__":
     
     print(f"\nCompleted - all results in {excel_file}")                
     
+if __name__ == "__main__":
+    for conf in ['icse', 'icsa', 'ecsa']:
+        visualizeAuthorStatsForConference(conf)
