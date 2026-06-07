@@ -1,0 +1,148 @@
+# Analysis
+
+Scripts for computing author-level network metrics from the Neo4j Aura coauthorship graph and exporting to CSV.
+
+---
+
+## Setup
+
+1. Install dependencies from the repo root:
+   ```
+   pip install -r requirements.txt
+   ```
+
+2. Copy the credential template and fill in your Aura details:
+   ```
+   copy analysis\config.yaml.template analysis\config.yaml
+   ```
+   `config.yaml` is gitignored — never commit it.
+
+---
+
+## Pipeline
+
+Run all scripts from the **repo root**. Steps 1–3 must run in order; steps 4–6 are independent and can run in any order after step 3.
+
+### Step 1 — Fetch the graph from Neo4j
+```
+python analysis/fetch_graph.py
+```
+Queries the database and saves two networkx graph files locally:
+- `analysis/multigraph.pkl` — raw MultiGraph (one edge per shared paper)
+- `analysis/graph.pkl` — collapsed weighted Graph (one edge per coauthor pair, `weight` = # shared papers, `distance` = `1/weight`)
+
+### Step 2 — Compute core metrics
+```
+python analysis/compute_metrics.py
+```
+Writes `analysis/author_metrics.csv` with degree, betweenness, and connected component columns.
+
+> **Runtime:** Exact betweenness on ~14k nodes takes ~50 minutes. For faster approximate results:
+> ```
+> python analysis/compute_metrics.py --approx 500
+> ```
+
+### Step 3 — Add clustering coefficients
+```
+python analysis/add_clustering.py
+```
+Appends `clustering_unweighted` and `clustering_weighted` columns to `author_metrics.csv` in place. Fast (seconds).
+
+### Step 4 — Classify structural roles
+```
+python analysis/classify_roles.py
+```
+Writes `analysis/author_roles.csv` — all metrics plus a `role` column.
+
+### Step 5 — Detect research communities
+```
+python analysis/detect_communities.py
+```
+Runs Louvain community detection on the weighted graph. Writes `analysis/author_communities.csv`.
+
+### Step 6 — Find cross-conference bridge authors
+```
+python analysis/bridge_authors.py
+```
+Identifies authors who published in 2+ conferences. Writes `analysis/bridge_authors.csv`.
+
+---
+
+## Outputs
+
+### `author_metrics.csv`
+One row per author (13,903 rows).
+
+| Column | Description |
+|---|---|
+| `name` | Author name as stored in the database |
+| `database_id` | Neo4j `elementId` — stable string identifier for the `:author` node |
+| `degree_weighted` | Number of unique coauthors (degree on collapsed graph) |
+| `degree_total` | Total coauthorship edges, counting each shared paper separately |
+| `betweenness_weighted` | Betweenness on collapsed graph; edge distance = `1/weight` |
+| `betweenness_unweighted` | Betweenness on collapsed graph; all edges distance = 1 |
+| `clustering_unweighted` | Fraction of an author's coauthors who also collaborated with each other |
+| `clustering_weighted` | Clustering weighted by number of shared papers |
+| `connected_component` | Integer component ID — `0` is the largest component, ascending by size |
+
+### `author_roles.csv`
+All columns from `author_metrics.csv` plus:
+
+| Column | Description |
+|---|---|
+| `role` | Structural role: `broker`, `hub`, `embedded`, `peripheral`, or `core` |
+
+Role definitions (applied in priority order, using 25th/75th percentile thresholds):
+
+| Role | Condition |
+|---|---|
+| `broker` | Betweenness ≥ 75th percentile **and** clustering < 50th percentile |
+| `hub` | Degree ≥ 75th percentile **and** clustering < 50th percentile |
+| `embedded` | Clustering ≥ 75th percentile **and** betweenness < 50th percentile |
+| `peripheral` | Degree < 25th percentile |
+| `core` | All others |
+
+### `author_communities.csv`
+One row per author. Louvain communities sorted descending by size (`community_id = 0` is largest).
+
+| Column | Description |
+|---|---|
+| `name` | Author name |
+| `database_id` | Neo4j `elementId` |
+| `community_id` | Community index (0 = largest) |
+| `community_size` | Number of authors in that community |
+
+### `bridge_authors.csv`
+One row per author who published in 2+ conferences, sorted by conference count then betweenness.
+
+| Column | Description |
+|---|---|
+| `name` | Author name |
+| `n_conferences` | Number of distinct conferences published in |
+| `ICSA` / `ICSE` / `ECSA` | Publication count per conference |
+| `total_pubs` | Total publications across all conferences |
+| + network metrics | `degree_weighted`, `betweenness_unweighted/weighted`, `clustering_unweighted`, `connected_component` |
+
+---
+
+## Key numbers (as of 2026-06-07)
+
+| Metric | Value |
+|---|---|
+| Total authors | 13,903 |
+| Total publications | 7,553 |
+| Conferences | ICSA, ICSE, ECSA (2015–present) |
+| Unique coauthor pairs | 45,405 |
+| Raw coauthorship edges | 56,589 |
+| Connected components | 1,120 |
+| Largest component | 10,307 authors (74%) |
+| Louvain communities | 1,176 |
+| Largest community | 632 authors |
+| Bridge authors (2+ conferences) | 844 |
+| Bridge authors (all 3 conferences) | 212 |
+
+---
+
+## Data source
+
+The underlying graph was loaded into Neo4j from `csvs/author_publications.csv` (extracted from the DBLP XML dump) after author disambiguation. See `database_load/` for the loading scripts and `disambiguation/` for the disambiguation pipeline.
