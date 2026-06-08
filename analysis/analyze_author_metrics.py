@@ -11,8 +11,6 @@ from database_load import *
 # General graph observations
 # Clustering, etc.
 # Take ~10 (?) authors with the highest of each metric, note their position in the graph + who they coauthor with
-# Take ~10 (?) authors with the highest of each metric, note their position in the graph + who they coauthor with
-
 
 # number of authors to retrieve for each metric (top/bottom authors for a specific metric)
 TOP_AUTHORS_RETRIEVAL_NUM = 10
@@ -37,15 +35,17 @@ def getTopAuthorStatsForConferenceAndYear(conf="", year=-1):
     avg_cluster_weighted = author_data['clustering_weighted'].mean()
     std_cluster_weighted = author_data['clustering_weighted'].std()
     
+    avg_degree_weighted = author_data['degree_weighted'].mean()
+    std_degree_weighted = author_data['degree_weighted'].std()
+    
     # top authors per category
     top_unweighted_btw_authors = author_data.sort_values(by='betweenness_unweighted', ascending=False).head(TOP_AUTHORS_RETRIEVAL_NUM)[['authors', 'betweenness_unweighted']]
     top_weighted_btw_authors = author_data.sort_values(by='betweenness_weighted', ascending=False).head(TOP_AUTHORS_RETRIEVAL_NUM)[['authors', 'betweenness_weighted']]
     top_weighted_degree_authors = author_data.sort_values(by='degree_weighted', ascending=False).head(TOP_AUTHORS_RETRIEVAL_NUM)[['authors', 'degree_weighted']]
     top_weighted_cluster_authors = author_data.sort_values(by='clustering_weighted', ascending=False).head(TOP_AUTHORS_RETRIEVAL_NUM)[['authors', 'clustering_weighted']]
-    top_weighted_cluster_authors = author_data.sort_values(by='clustering_weighted', ascending=False).head(TOP_AUTHORS_RETRIEVAL_NUM)[['authors', 'clustering_weighted']]
     
-    return avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, avg_cluster_weighted, std_cluster_weighted, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors, top_weighted_cluster_authors
-    return avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, avg_cluster_weighted, std_cluster_weighted, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors, top_weighted_cluster_authors
+    return avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, avg_cluster_weighted, std_cluster_weighted, avg_degree_weighted, std_degree_weighted, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors, top_weighted_cluster_authors
+
 
 def visualizeAuthorStatsForConference(conf=""):
     """
@@ -66,15 +66,13 @@ def visualizeAuthorStatsForConference(conf=""):
     std_degree_list = []
     avg_cluster_list = []
     std_cluster_list = []
-    avg_cluster_list = []
-    std_cluster_list = []
+   
     
     # Collect statistics for all years
     for year in years:
         try:
             res = getTopAuthorStatsForConferenceAndYear(conf, year)
-            avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, avg_cluster_weighted, std_cluster_weighted, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors, top_weighted_cluster_authors = res
-            avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, avg_cluster_weighted, std_cluster_weighted, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors, top_weighted_cluster_authors = res
+            avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, avg_cluster_weighted, std_cluster_weighted, avg_degree_weighted, std_degree_weighted, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors, top_weighted_cluster_authors = res
             
             avg_unweighted_btw_list.append(avg_unweighted_btw)
             std_unweighted_btw_list.append(std_unweighted_btw if not np.isnan(std_unweighted_btw) else 0)
@@ -82,19 +80,8 @@ def visualizeAuthorStatsForConference(conf=""):
             avg_weighted_btw_list.append(avg_weighted_btw)
             std_weighted_btw_list.append(std_weighted_btw if not np.isnan(std_weighted_btw) else 0)
             
-            # Calculate average and std dev degree from the top degree authors
-            if len(top_weighted_degree_authors) > 0:
-                avg_degree = top_weighted_degree_authors['degree_weighted'].mean()
-                std_degree = top_weighted_degree_authors['degree_weighted'].std()
-            else:
-                avg_degree = 0
-                std_degree = 0
-            avg_degree_list.append(avg_degree)
-            std_degree_list.append(std_degree if not np.isnan(std_degree) else 0)
-            
-            # Clustering coefficient
-            avg_cluster_list.append(avg_cluster_weighted)
-            std_cluster_list.append(std_cluster_weighted if not np.isnan(std_cluster_weighted) else 0)
+            avg_degree_list.append(avg_degree_weighted)
+            std_degree_list.append(std_degree_weighted if not np.isnan(std_degree_weighted) else 0)
             
             # Clustering coefficient
             avg_cluster_list.append(avg_cluster_weighted)
@@ -108,8 +95,6 @@ def visualizeAuthorStatsForConference(conf=""):
             std_weighted_btw_list.append(0)
             avg_degree_list.append(np.nan)
             std_degree_list.append(0)
-            avg_cluster_list.append(np.nan)
-            std_cluster_list.append(0)
             avg_cluster_list.append(np.nan)
             std_cluster_list.append(0)
     
