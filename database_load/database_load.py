@@ -6,7 +6,7 @@ import pyneoinstance
 import datetime
 
 # Retrieving the Neo4j connection credentials from the config.yaml file
-configs=pyneoinstance.load_yaml_file('./config.yaml')
+configs=pyneoinstance.load_yaml_file('config.yaml')
 queries = pyneoinstance.load_yaml_file('./database_load/queries.yaml')
 creds=configs['credentials']
 

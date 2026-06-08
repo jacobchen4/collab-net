@@ -17,14 +17,11 @@ from database_load import *
 TOP_AUTHORS_RETRIEVAL_NUM = 10
 
 def getTopAuthorStatsForConferenceAndYear(conf="", year=-1):
-    # if conf == "" or year == -1:
-    #     print("Conference or year not provided.")
-    #     return None
+    if conf == "" or year == -1:
+        print("Conference or year not provided.")
+        return None
     
-    # get authors data for specific year and conference
-    # author_data = pd.read_csv(f'./csvs/{conf}_{year}.csv').rename(columns={"name": 'authors'})
-    
-    author_data = pd.read_csv(f'./analysis/author_metrics.csv').rename(columns={'name': 'authors'})
+    author_data = pd.read_csv(f'./analysis/metrics/{conf.lower()}_{year}_author_metrics.csv').rename(columns={'name': 'authors'})
     
     # Betweenness centrality metrics: avg, std
     avg_unweighted_btw = author_data['betweenness_unweighted'].mean()
