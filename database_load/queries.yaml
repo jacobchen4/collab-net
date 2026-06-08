@@ -46,31 +46,23 @@ cypher:
     return b as publications
 
   get_graph_for_year: |
-    match(a:author)-[d:COAUTHORED_WITH]-(b:author)
-    where a in collect {
-    match (a:author)-[c:AUTHORED]-(p:publication)
-    where p.year = $year
-    return a
-    }
-    return a.author as authors, d.pub_key as edges, b.author as coauthors
+    MATCH (a:author)-[c:COAUTHORED_WITH]-(b:author)
+    MATCH (a)-[:AUTHORED]-(p:publication)
+    WHERE p.year = $year AND p.pub_key = c.pub_key
+    RETURN a.author as authors, c.pub_key as edges, b.author as coauthors
 
   get_graph_for_conference: |
-    match(a:author)-[d:COAUTHORED_WITH]-(b:author)
-    where a in collect {
-    match (a:author)-[c:AUTHORED]-(p:publication)
-    where p.pub_key contains $conf
-    return a
-    }
-    return a.author as authors, d.pub_key as edges, b.author as coauthors
+    MATCH (a:author)-[c:COAUTHORED_WITH]-(b:author)
+    MATCH (a)-[e:AUTHORED]-(p:publication)
+    WHERE p.pub_key contains $conf AND p.pub_key = c.pub_key
+    RETURN a, c, b,
 
   get_graph_for_conference_and_year: |
-    match(a:author)-[d:COAUTHORED_WITH]-(b:author)
-    where a in collect {
-    match (a:author)-[c:AUTHORED]-(p:publication)
-    where p.year = $year and p.pub_key contains $conf
-    return a
-    }
-    return a.author as authors, d.pub_key as edges, b.author as coauthors
+    MATCH (a:author)-[c:COAUTHORED_WITH]-(b:author)
+    MATCH (a)-[:AUTHORED]->(p:publication)
+    WHERE p.pub_key contains $conf AND p.year = $year AND p.pub_key = c.pub_key
+    RETURN a.author as authors, c.pub_key as edges, b.author as coauthors
+    
 
 # Write Queries
   add_coauthorship_edge: |
