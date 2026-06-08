@@ -7,11 +7,6 @@ import numpy as np
 sys.path.insert(0, './database_load')
 from database_load import *
 
-# By conference
-# General graph observations
-# Clustering, etc.
-# Take ~10 (?) authors with the highest of each metric, note their position in the graph + who they coauthor with
-
 # number of authors to retrieve for each metric (top/bottom authors for a specific metric)
 TOP_AUTHORS_RETRIEVAL_NUM = 10
 
@@ -100,7 +95,6 @@ def visualizeAuthorStatsForConference(conf=""):
     
     # Create visualization
     fig, axes = plt.subplots(4, 1, figsize=(12, 14))
-    fig, axes = plt.subplots(4, 1, figsize=(12, 14))
     fig.suptitle(f'{conf.upper()} Conference - Author Statistics Trends (2016-2025)', fontsize=16, fontweight='bold')
     
     # Plot 1: Average Unweighted Betweenness with error bars
@@ -147,7 +141,7 @@ def visualizeAuthorStatsForConference(conf=""):
     plt.tight_layout()
     
     # Save figure
-    output_file = f'./analysis/{conf}_author_statistics_trend.png'
+    output_file = f'./analysis/images/{conf}_author_statistics_trend.png'
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     print(f"Visualization saved to {output_file}")
     plt.close()
