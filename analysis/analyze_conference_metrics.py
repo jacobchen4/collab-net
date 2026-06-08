@@ -21,13 +21,17 @@ def getAllConferenceMetrics():
 
         print(f"Visualizing {conf} data")
         for year in years:
-            
-            authors = getAuthorsByConferenceAndYear(conf=conf, year=year)
-            pubs = getPublicationsByConferenceAndYear(conf=conf, year=year)
-    
-            authors_over_time.append(len(authors))
-            pubs_over_time.append(len(pubs))
+            try:
+                authors = getAuthorsByConferenceAndYear(conf=conf, year=year)
+                pubs = getPublicationsByConferenceAndYear(conf=conf, year=year)
         
+                authors_over_time.append(len(authors))
+                pubs_over_time.append(len(pubs))
+            except Exception as e:
+                print(e)
+                authors_over_time.append(np.nan)
+                pubs_over_time.append(np.nan)
+                
         # Create visualization
         fig, axes = plt.subplots(2, 1, figsize=(12, 14))
         fig.suptitle(f'{conf.upper()} Author/Publication Trends (2015-2025)', fontsize=16, fontweight='bold')

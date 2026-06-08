@@ -62,7 +62,6 @@ def visualizeAuthorStatsForConference(conf=""):
     avg_cluster_list = []
     std_cluster_list = []
    
-    
     # Collect statistics for all years
     for year in years:
         try:
@@ -78,7 +77,6 @@ def visualizeAuthorStatsForConference(conf=""):
             avg_degree_list.append(avg_degree_weighted)
             std_degree_list.append(std_degree_weighted if not np.isnan(std_degree_weighted) else 0)
             
-            # Clustering coefficient
             avg_cluster_list.append(avg_cluster_weighted)
             std_cluster_list.append(std_cluster_weighted if not np.isnan(std_cluster_weighted) else 0)
             
