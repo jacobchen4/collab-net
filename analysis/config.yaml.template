@@ -1,8 +1,0 @@
-credentials:
-  # Neo4j Aura URI — format: neo4j+s://<instance-id>.databases.neo4j.io
-  uri: neo4j+s://<instance-id>.databases.neo4j.io
-  user: <user_id>
-  password: <your-password>
-  database: neo4j
-  instance_id: <id>
-  instance_name: <name-of-graph>

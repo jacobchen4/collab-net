@@ -52,7 +52,7 @@ def visualizeAuthorStatsForConference(conf=""):
     Args:
         conf (str): Conference abbreviation ('icse', 'icsa', 'ecsa')
     """
-    years = list(range(2016, 2026))
+    years = list(range(2015, 2026))
     avg_unweighted_btw_list = []
     std_unweighted_btw_list = []
     avg_weighted_btw_list = []
@@ -95,7 +95,7 @@ def visualizeAuthorStatsForConference(conf=""):
     
     # Create visualization
     fig, axes = plt.subplots(4, 1, figsize=(12, 14))
-    fig.suptitle(f'{conf.upper()} Conference - Author Statistics Trends (2016-2025)', fontsize=16, fontweight='bold')
+    fig.suptitle(f'{conf.upper()} Conference - Author Statistics Trends (2015-2025)', fontsize=16, fontweight='bold')
     
     # Plot 1: Average Unweighted Betweenness with error bars
     axes[0].errorbar(years, avg_unweighted_btw_list, yerr=std_unweighted_btw_list, 
@@ -150,7 +150,7 @@ def visualizeAuthorStatsForConference(conf=""):
 # into an excel workbook, with a sheet per conference + year 
 def loadExcelSheets():
     conferences = ['icse', 'icsa', 'ecsa']
-    years = range(2016, 2026)
+    years = range(2015, 2026)
     excel_file = './analysis/collaboration_network.xlsx'
     
     # set first_write to be true for creating the file

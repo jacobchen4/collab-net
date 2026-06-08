@@ -12,7 +12,7 @@ from database_load import *
 def getAllConferenceMetrics():
     authors_over_time = []
     pubs_over_time = []
-    years = range(2016, 2026)
+    years = range(2015, 2026)
 
     for conf in ['icse', 'icsa', 'ecsa']:
         # reset the array
@@ -30,7 +30,7 @@ def getAllConferenceMetrics():
         
         # Create visualization
         fig, axes = plt.subplots(2, 1, figsize=(12, 14))
-        fig.suptitle(f'{conf.upper()} Author/Publication Trends (2016-2025)', fontsize=16, fontweight='bold')
+        fig.suptitle(f'{conf.upper()} Author/Publication Trends (2015-2025)', fontsize=16, fontweight='bold')
             
         axes[0].set_ylabel('Authors', fontsize=12, fontweight='bold')
         axes[0].set_title('Number of authors per year')

@@ -98,7 +98,6 @@ def addCoauthorsForAuthor(author):
                 })
 
 def addCoauthorsForPublication(pub_key, authors):
-    
     # if one author, no edges created
     if len(authors) < 2:
         return {'success': True, 'edges_created': 0}
@@ -189,6 +188,3 @@ def getSubgraph(year = -1, conf  = ""):
         return None
     else:
         return graph.execute_read_query(queries['cypher']['get_graph_for_year'], parameters={'year': year})
-    
-if __name__ == "__main__":
-    print(getSubgraph(2021, "ICSE"))
