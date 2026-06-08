@@ -12,6 +12,7 @@ import sys
 from collections import defaultdict
 
 import networkx as nx
+import pandas as pd
 
 sys.path.insert(0, ".")
 from analysis.connection import session
@@ -63,6 +64,50 @@ def fetch_graph():
         pickle.dump(G, f)
 
     print("\nSaved: analysis/multigraph.pkl, analysis/graph.pkl")
+
+
+def build_graphs_from_subgraph_df(df: pd.DataFrame):
+    """
+    Build MG and G from a DataFrame returned by database_load.getSubgraph.
+    Expected columns: authors, edges (pub_key on COAUTHORED_WITH), coauthors.
+
+    The subgraph query traverses undirected edges so each pair appears twice;
+    this function deduplicates before constructing the graphs.
+    """
+    author_names = set(df["authors"].tolist() + df["coauthors"].tolist())
+
+    MG = nx.MultiGraph()
+    for name in author_names:
+        MG.add_node(name, name=name)
+
+    # Normalise each (a, b, pub_key) so duplicates from undirected traversal are dropped
+    seen: set = set()
+    for _, row in df.iterrows():
+        a, b, pub_key = row["authors"], row["coauthors"], row["edges"]
+        key = (min(a, b), max(a, b), pub_key)
+        if key not in seen:
+            seen.add(key)
+            MG.add_edge(a, b, pub_key=pub_key)
+
+    pair_counts: dict = defaultdict(int)
+    for a, b, _ in seen:
+        pair_counts[(a, b)] += 1
+
+    G = nx.Graph()
+    for name in author_names:
+        G.add_node(name, name=name)
+    for (u, v), count in pair_counts.items():
+        G.add_edge(u, v, weight=count, distance=1.0 / count)
+
+    return MG, G
+
+
+def save_graphs(MG, G, mg_path: str, g_path: str):
+    """Pickle MG and G to the given paths."""
+    with open(mg_path, "wb") as f:
+        pickle.dump(MG, f)
+    with open(g_path, "wb") as f:
+        pickle.dump(G, f)
 
 
 if __name__ == "__main__":
