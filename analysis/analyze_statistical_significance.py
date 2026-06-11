@@ -35,6 +35,7 @@ Run from the repo root:  python analysis/analyze_statistical_significance.py
 """
 
 import os
+import itertools
 import numpy as np
 import pandas as pd
 from scipy import stats
@@ -115,7 +116,6 @@ def between_conference_tests(agg):
     for metric in METRICS:
         for aggregate in AGGREGATES:
             col = f"{metric}_{aggregate}"
-            label = f"{metric} ({aggregate})"
             # year x conference table of the chosen aggregate
             pivot = agg.pivot(index="year", columns="conference", values=col)
 
@@ -131,7 +131,7 @@ def between_conference_tests(agg):
                 if friedman_p < ALPHA:
                     nm = sp.posthoc_nemenyi_friedman(complete.values)
                     nm.index, nm.columns = CONFERENCES, CONFERENCES
-                    nemenyi_tables[label] = nm
+                    nemenyi_tables[(metric, aggregate)] = nm
 
             # ---- Kruskal-Wallis: all available years per conference ----
             groups = [pivot[c].dropna().values for c in CONFERENCES]
@@ -144,7 +144,7 @@ def between_conference_tests(agg):
                 if kw_p < ALPHA:
                     dunn = sp.posthoc_dunn(groups, p_adjust="holm")
                     dunn.index, dunn.columns = CONFERENCES, CONFERENCES
-                    dunn_tables[label] = dunn
+                    dunn_tables[(metric, aggregate)] = dunn
 
             results.append(
                 {
@@ -221,6 +221,31 @@ def time_trend_tests(agg):
     return results
 
 
+def flatten_posthoc(tables, test_name):
+    """Turn {(metric, aggregate): 3x3 p-value matrix} into long-form pairwise
+    rows: one row per conference pair, with the adjusted pairwise p and verdict.
+    The post-hoc p-values are already adjusted for the joint comparison (Nemenyi
+    inherently; Dunn via Holm), so they are stored in adj_p."""
+    rows = []
+    for (metric, aggregate), tbl in tables.items():
+        for a, b in itertools.combinations(CONFERENCES, 2):
+            p = tbl.loc[a, b]
+            rows.append(
+                {
+                    "metric": metric,
+                    "aggregate": aggregate,
+                    "test": test_name,
+                    "family": "post_hoc",
+                    "pair": f"{a} vs {b}",
+                    "conf_a": a,
+                    "conf_b": b,
+                    "adj_p": p,
+                    "verdict": verdict(p),
+                }
+            )
+    return pd.DataFrame(rows)
+
+
 def _fmt(df):
     return df.to_string(index=True, float_format=lambda x: f"{x:.4g}")
 
@@ -249,15 +274,29 @@ def main():
 
     if nemenyi_tables:
         print("\n-- Nemenyi post-hoc (pairwise p-values; Friedman was significant) --")
-        for metric, tbl in nemenyi_tables.items():
-            print(f"\n[{metric}]")
+        for (metric, aggregate), tbl in nemenyi_tables.items():
+            print(f"\n[{metric} ({aggregate})]")
             print(_fmt(tbl))
 
     if dunn_tables:
         print("\n-- Dunn's post-hoc (Holm-adjusted; Kruskal-Wallis was significant) --")
-        for metric, tbl in dunn_tables.items():
-            print(f"\n[{metric}]")
+        for (metric, aggregate), tbl in dunn_tables.items():
+            print(f"\n[{metric} ({aggregate})]")
             print(_fmt(tbl))
+
+    # Long-form pairwise post-hoc rows (which conference pairs differ).
+    posthoc = pd.concat(
+        [
+            flatten_posthoc(nemenyi_tables, "Nemenyi (post-hoc Friedman)"),
+            flatten_posthoc(dunn_tables, "Dunn (post-hoc KW, Holm)"),
+        ],
+        ignore_index=True,
+    )
+    if not posthoc.empty:
+        print("\n-- Pairwise post-hoc summary (which conferences differ) --")
+        print(_fmt(posthoc[
+            ["metric", "aggregate", "test", "pair", "adj_p", "verdict"]
+        ]))
 
     print("\n" + "=" * 78)
     print("TRENDS OVER TIME (per conference)")
@@ -279,7 +318,9 @@ def main():
             "sens_slope_per_year": "effect_size",
         }
     ).assign(test="Mann-Kendall", effect_name="Sen's slope/yr", family="time_trend")
-    combined = pd.concat([between_out, trends_out], ignore_index=True, sort=False)
+    combined = pd.concat(
+        [between_out, trends_out, posthoc], ignore_index=True, sort=False
+    )
 
     os.makedirs(os.path.dirname(RESULTS_CSV), exist_ok=True)
     combined.to_csv(RESULTS_CSV, index=False)

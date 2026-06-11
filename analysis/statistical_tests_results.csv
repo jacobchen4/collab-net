@@ -1,0 +1,55 @@
+metric,aggregate,test,n,statistic,raw_p,effect_size,effect_name,adj_p,verdict,family,conference,trend,spearman_rho,spearman_p,pair,conf_a,conf_b
+degree_weighted,median,Friedman (blocked on year),9.0,12.28571428571427,0.0021487754809097395,0.6825396825396817,Kendall's W,0.010743877404548697,significant,between_conference,,,,,,,
+degree_weighted,median,Kruskal-Wallis (all years),31.0,14.188639643185086,0.0008298050024419434,0.4729546547728362,epsilon-squared,0.00248941500732583,significant,between_conference,,,,,,,
+degree_weighted,mean,Friedman (blocked on year),9.0,8.222222222222214,0.016389553790213656,0.4567901234567897,Kendall's W,0.049168661370640965,significant,between_conference,,,,,,,
+degree_weighted,mean,Kruskal-Wallis (all years),31.0,9.668621700879768,0.007952166669209438,0.3222873900293256,epsilon-squared,0.015904333338418876,significant,between_conference,,,,,,,
+betweenness_weighted,median,Friedman (blocked on year),9.0,,,,Kendall's W,,undefined (constant input),between_conference,,,,,,,
+betweenness_weighted,median,Kruskal-Wallis (all years),31.0,,,,epsilon-squared,,undefined (constant input),between_conference,,,,,,,
+betweenness_weighted,mean,Friedman (blocked on year),9.0,1.555555555555543,0.4594258240359297,0.08641975308641905,Kendall's W,0.4594258240359297,not significant,between_conference,,,,,,,
+betweenness_weighted,mean,Kruskal-Wallis (all years),31.0,1.5273704789833857,0.46594613601324997,0.05091234929944619,epsilon-squared,0.46594613601324997,not significant,between_conference,,,,,,,
+clustering_weighted,median,Friedman (blocked on year),9.0,10.903225806451609,0.004289380752379882,0.6057347670250893,Kendall's W,0.01715752300951953,significant,between_conference,,,,,,,
+clustering_weighted,median,Kruskal-Wallis (all years),31.0,15.464202751024462,0.0004385216495599766,0.5154734250341487,epsilon-squared,0.0017540865982399064,significant,between_conference,,,,,,,
+clustering_weighted,mean,Friedman (blocked on year),9.0,8.222222222222214,0.016389553790213656,0.4567901234567897,Kendall's W,0.049168661370640965,significant,between_conference,,,,,,,
+clustering_weighted,mean,Kruskal-Wallis (all years),31.0,16.455522971651988,0.0002671336439038882,0.5485174323883996,epsilon-squared,0.001335668219519441,significant,between_conference,,,,,,,
+degree_weighted,median,Mann-Kendall,11.0,,0.004075200091520292,0.16666666666666666,Sen's slope/yr,0.06927840155584497,not significant,time_trend,icse,increasing,0.8643325211229224,0.0005983941786550795,,,
+degree_weighted,median,Mann-Kendall,9.0,,0.8836174593813684,0.0,Sen's slope/yr,1.0,not significant,time_trend,icsa,no trend,0.10350983390135314,0.7910051864396367,,,
+degree_weighted,median,Mann-Kendall,11.0,,0.6352562959972483,0.0,Sen's slope/yr,1.0,not significant,time_trend,ecsa,no trend,0.20000000000000004,0.5554454421055853,,,
+degree_weighted,mean,Mann-Kendall,11.0,,0.000613905375006274,0.24804062412027786,Sen's slope/yr,0.011050296750112931,significant,time_trend,icse,increasing,0.9454545454545454,1.1183037701493196e-05,,,
+degree_weighted,mean,Mann-Kendall,9.0,,0.46551216987418664,0.03280401825690487,Sen's slope/yr,1.0,not significant,time_trend,icsa,no trend,0.4666666666666666,0.2053863511058121,,,
+degree_weighted,mean,Mann-Kendall,11.0,,0.640428787412791,0.02502017756255042,Sen's slope/yr,1.0,not significant,time_trend,ecsa,no trend,0.18181818181818182,0.5926152128455,,,
+betweenness_weighted,median,Mann-Kendall,11.0,,1.0,0.0,Sen's slope/yr,1.0,not significant,time_trend,icse,no trend,,,,,
+betweenness_weighted,median,Mann-Kendall,9.0,,1.0,0.0,Sen's slope/yr,1.0,not significant,time_trend,icsa,no trend,,,,,
+betweenness_weighted,median,Mann-Kendall,11.0,,1.0,0.0,Sen's slope/yr,1.0,not significant,time_trend,ecsa,no trend,,,,,
+betweenness_weighted,mean,Mann-Kendall,11.0,,0.02927250918630464,1.260565959222801e-05,Sen's slope/yr,0.46836014698087425,not significant,time_trend,icse,increasing,0.7272727272727273,0.011204967253592074,,,
+betweenness_weighted,mean,Mann-Kendall,9.0,,0.46551216987418664,2.382386302278716e-06,Sen's slope/yr,1.0,not significant,time_trend,icsa,no trend,0.25,0.5164895523012261,,,
+betweenness_weighted,mean,Mann-Kendall,11.0,,0.21291190281150452,2.0520628134931696e-06,Sen's slope/yr,1.0,not significant,time_trend,ecsa,no trend,0.43636363636363645,0.17966487658001118,,,
+clustering_weighted,median,Mann-Kendall,11.0,,0.16886246491637102,-0.011111111111111136,Sen's slope/yr,1.0,not significant,time_trend,icse,no trend,-0.31942136563812595,0.3383143940725297,,,
+clustering_weighted,median,Mann-Kendall,9.0,,0.9070384808036946,0.0,Sen's slope/yr,1.0,not significant,time_trend,icsa,no trend,-0.08299250027587321,0.8318964940460578,,,
+clustering_weighted,median,Mann-Kendall,11.0,,0.6665674483521367,0.0,Sen's slope/yr,1.0,not significant,time_trend,ecsa,no trend,0.14453103497016806,0.6715746782473453,,,
+clustering_weighted,mean,Mann-Kendall,11.0,,0.7554968749288828,-0.006061474808672261,Sen's slope/yr,1.0,not significant,time_trend,icse,no trend,-0.10000000000000002,0.7698749998921367,,,
+clustering_weighted,mean,Mann-Kendall,9.0,,0.46551216987418664,-0.003162904029566066,Sen's slope/yr,1.0,not significant,time_trend,icsa,no trend,-0.21666666666666667,0.5755148957119259,,,
+clustering_weighted,mean,Mann-Kendall,11.0,,0.35020138917929566,0.006356750518037181,Sen's slope/yr,1.0,not significant,time_trend,ecsa,no trend,0.27272727272727276,0.4171414371425311,,,
+degree_weighted,median,Nemenyi (post-hoc Friedman),,,,,,0.08554257165495793,not significant,post_hoc,,,,,icse vs icsa,icse,icsa
+degree_weighted,median,Nemenyi (post-hoc Friedman),,,,,,0.03555704186316022,significant,post_hoc,,,,,icse vs ecsa,icse,ecsa
+degree_weighted,median,Nemenyi (post-hoc Friedman),,,,,,0.9334219451352869,not significant,post_hoc,,,,,icsa vs ecsa,icsa,ecsa
+degree_weighted,mean,Nemenyi (post-hoc Friedman),,,,,,0.048337952980301524,significant,post_hoc,,,,,icse vs icsa,icse,icsa
+degree_weighted,mean,Nemenyi (post-hoc Friedman),,,,,,0.025782538508022812,significant,post_hoc,,,,,icse vs ecsa,icse,ecsa
+degree_weighted,mean,Nemenyi (post-hoc Friedman),,,,,,0.9698384289624071,not significant,post_hoc,,,,,icsa vs ecsa,icsa,ecsa
+clustering_weighted,median,Nemenyi (post-hoc Friedman),,,,,,0.01842968164717984,significant,post_hoc,,,,,icse vs icsa,icse,icsa
+clustering_weighted,median,Nemenyi (post-hoc Friedman),,,,,,0.025782538508022812,significant,post_hoc,,,,,icse vs ecsa,icse,ecsa
+clustering_weighted,median,Nemenyi (post-hoc Friedman),,,,,,0.9923721200182585,not significant,post_hoc,,,,,icsa vs ecsa,icsa,ecsa
+clustering_weighted,mean,Nemenyi (post-hoc Friedman),,,,,,0.04833795298030141,significant,post_hoc,,,,,icse vs icsa,icse,icsa
+clustering_weighted,mean,Nemenyi (post-hoc Friedman),,,,,,0.02578253850802259,significant,post_hoc,,,,,icse vs ecsa,icse,ecsa
+clustering_weighted,mean,Nemenyi (post-hoc Friedman),,,,,,0.9698384289624071,not significant,post_hoc,,,,,icsa vs ecsa,icsa,ecsa
+degree_weighted,median,"Dunn (post-hoc KW, Holm)",,,,,,0.0093385409850771,significant,post_hoc,,,,,icse vs icsa,icse,icsa
+degree_weighted,median,"Dunn (post-hoc KW, Holm)",,,,,,0.001240298826190445,significant,post_hoc,,,,,icse vs ecsa,icse,ecsa
+degree_weighted,median,"Dunn (post-hoc KW, Holm)",,,,,,0.6022742394413343,not significant,post_hoc,,,,,icsa vs ecsa,icsa,ecsa
+degree_weighted,mean,"Dunn (post-hoc KW, Holm)",,,,,,0.01232637952780134,significant,post_hoc,,,,,icse vs icsa,icse,icsa
+degree_weighted,mean,"Dunn (post-hoc KW, Holm)",,,,,,0.0314495073495834,significant,post_hoc,,,,,icse vs ecsa,icse,ecsa
+degree_weighted,mean,"Dunn (post-hoc KW, Holm)",,,,,,0.5630032947475645,not significant,post_hoc,,,,,icsa vs ecsa,icsa,ecsa
+clustering_weighted,median,"Dunn (post-hoc KW, Holm)",,,,,,0.001965872408851098,significant,post_hoc,,,,,icse vs icsa,icse,icsa
+clustering_weighted,median,"Dunn (post-hoc KW, Holm)",,,,,,0.001965872408851098,significant,post_hoc,,,,,icse vs ecsa,icse,ecsa
+clustering_weighted,median,"Dunn (post-hoc KW, Holm)",,,,,,0.8142016397457736,not significant,post_hoc,,,,,icsa vs ecsa,icsa,ecsa
+clustering_weighted,mean,"Dunn (post-hoc KW, Holm)",,,,,,0.0012025350261047293,significant,post_hoc,,,,,icse vs icsa,icse,icsa
+clustering_weighted,mean,"Dunn (post-hoc KW, Holm)",,,,,,0.0012361909615588342,significant,post_hoc,,,,,icse vs ecsa,icse,ecsa
+clustering_weighted,mean,"Dunn (post-hoc KW, Holm)",,,,,,0.7705428324768006,not significant,post_hoc,,,,,icsa vs ecsa,icsa,ecsa
