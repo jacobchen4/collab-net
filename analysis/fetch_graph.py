@@ -33,7 +33,7 @@ def fetch_graph():
             RETURN elementId(a) AS aid, elementId(b) AS bid, c.pub_key AS pub_key
             """
         ).data()
-        print(f"  {len(edge_rows):,} directed COAUTHORED_WITH records")
+        print(f"  {len(edge_rows):,} COAUTHORED_WITH records")
 
     # --- MultiGraph (raw, one edge per paper) ---
     MG = nx.MultiGraph()

@@ -163,7 +163,67 @@ def defineCoauthorshipEdges(publications):
             failed_pubs_series = pd.Series([{'pub_key': row['pub_key']} for _, row in failed_pubs_df.iterrows()])
             defineCoauthorshipEdges(failed_pubs_series)
 
-# Helper method to find the leftoff point  
+# Use this method first to define the authorship graph, followed by defineCoauthorshipEdges
+# (which assumes nodes already exist)
+def defineAuthorshipNodesAndEdges(batch_size=100):
+    df = pd.read_csv('csvs/author_publications.csv')
+    failed_batches = []
+    total_edges = 0
+    batch = []
+
+    # Execute a single batched merge for the accumulated rows
+    def flush(rows):
+        nonlocal total_edges
+        result = graph.execute_write_query(
+            query=queries['cypher']['merge_authorship_nodes_and_edges_batch'],
+            database=creds['database'],
+            parameters={'rows': rows})
+        total_edges += result['edges_created'] if result is not None else 0
+
+    for idx, row in df.iterrows():
+        batch.append({
+            'author': row['author'],
+            'pub_key': row['pub_key'],
+            'title': None if pd.isna(row['title']) else row['title'],
+            'year': int(row['year']),
+            'conference': row['conference'],
+        })
+        # When the batch is full, merge it and reset
+        if len(batch) >= batch_size:
+            try:
+                flush(batch)
+                print(f"Processed {idx + 1} rows, last pub_key {row['pub_key']}")
+            except Exception as e:
+                print(f"Error merging batch ending at row {idx + 1}: {str(e)}")
+                failed_batches.append({'rows': list(batch), 'error': str(e)})
+            batch = []
+
+    # Flush the final partial batch
+    if batch:
+        try:
+            flush(batch)
+        except Exception as e:
+            print(f"Error merging final batch: {str(e)}")
+            failed_batches.append({'rows': list(batch), 'error': str(e)})
+
+    print(f"Total AUTHORED edges merged: {total_edges}")
+
+    # Retry any failed batches once after a delay
+    if failed_batches:
+        print(f"\nFailed batches: {len(failed_batches)}")
+        print(f"Retrying failed batches")
+        time.sleep(60)
+        still_failed = []
+        for failed in failed_batches:
+            try:
+                flush(failed['rows'])
+            except Exception as e:
+                print(f"Retry failed: {str(e)}")
+                still_failed.append({'rows': failed['rows'], 'error': str(e)})
+        if still_failed:
+            print(f"Batches still failing after retry: {len(still_failed)}")
+
+# Helper method to find the leftoff point
 # last_publication serves as a checkpoint for whatever publication our coauthorship 
 # script left off at, in the case of network interruptions or the like.
 def findLeftoff(pub_key):
