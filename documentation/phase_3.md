@@ -8,6 +8,10 @@ Jacob Chen, Adrian Rodriguez Vazquez, Madison Seal, Sahaj Baxi
 
 One of the main considerations for improvements is extending our data source. As we decided on DBLP being our main data source, we only worked with the information they had stored in their XML dump. Combining their data with auxiliary sources (be it additional conferences or other databases containing information for ICSA/ICSE/ECSA) would have provided better data coverage for our analysis.
 
+### Ambiguous Authorship
+
+DBLP's data source was somewhat ambiguous (see [phase_1.md](./phase_1.md)), which we had to work around by implementing various disambiguation heuristics. This was an effort of trial and error, which we realize now is an integral part of working with data.
+
 ## Analytical Limitations
 
 ### Limited Analytical Scope
