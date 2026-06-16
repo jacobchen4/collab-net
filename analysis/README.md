@@ -146,3 +146,57 @@ One row per author who published in 2+ conferences, sorted by conference count t
 ## Data source
 
 The underlying graph was loaded into Neo4j from `csvs/author_publications.csv` (extracted from the DBLP XML dump) after author disambiguation. See `database_load/` for the loading scripts and `disambiguation/` for the disambiguation pipeline.
+
+## Statistical Tests
+
+### Friedman test
+
+#### between-conference, primary
+
+It's the nonparametric equivalent of a repeated-measures ANOVA. You picked "year as a blocking factor," and Friedman is built exactly for that: it ranks the three conferences within each year and asks whether one conference consistently ranks higher across years. Using within-year ranks cancels out year-to-year swings (e.g. a big-program year) that would otherwise add noise, and it makes no normality assumption — which matters because the metrics are skewed.
+
+### Nemenyi
+
+#### post-hoc — follow-up to Friedman
+
+Friedman only says "the conferences differ somewhere." Nemenyi is the matched post-hoc that tells you which pairs (ICSE vs ICSA, ICSE vs ECSA, ICSA vs ECSA) differ, while correcting for the fact that you're making three comparisons at once.
+
+### Kruskal–Wallis + Dunn's
+
+#### between-conference, robustness check
+
+Friedman on 9 blocks has low power, and it forces you to drop ICSA's missing 2015–16 to keep complete blocks. Kruskal–Wallis treats the yearly aggregates as independent samples, so it can use all available years per conference. If both KW and Friedman agree, the conclusion is solid; if they disagree, that disagreement is itself informative. Dunn's is the correct pairwise post-hoc after KW (same role Nemenyi plays for Friedman).
+
+### Mann–Kendall
+
+#### trend test — time trends, primary
+
+It tests for a monotonic trend (steady rise or fall) without assuming the trend is linear or the data normal — ideal for short, noisy time series. It answers "is this metric drifting up or down over the decade?" per conference.
+
+### Sen's slope
+
+#### trend magnitude
+
+Mann–Kendall only gives direction + significance; Sen's slope is the robust (outlier-resistant) estimate of how much per year, so you can report the size of the change, not just its existence.
+
+### Spearman correlation
+
+#### trend cross-check
+
+A simple rank correlation of metric-vs-year. It corroborates Mann–Kendall's direction/strength using a different mechanism; agreement between the two adds confidence.
+
+### Holm–Bonferroni correction
+
+#### not a test, a guardrail
+
+You're running many tests across 3 metrics; some will look "significant" by pure chance. Holm adjusts the p-values to control that family-wise error, so you don't over-claim.
+
+### Effect sizes
+
+#### (Kendall's W, epsilon-squared, Sen's slope)
+
+with this data, p-values can be driven by quirks of small samples or, conversely, hide trivially-small-but-real differences. Effect sizes report the magnitude so "significant" doesn't get confused with "important."
+
+---
+
+One theme tying it all together: every test is nonparametric / rank-based because the metrics are heavy-tailed and floored at zero, which rules out the usual ANOVA/t-test family.
