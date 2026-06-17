@@ -193,5 +193,4 @@ def loadExcelSheets():
     print(f"\nCompleted - all results in {excel_file}")                
     
 if __name__ == "__main__":
-    for conf in ['icse', 'icsa', 'ecsa']:
-        visualizeAuthorStatsForConference(conf)
+    loadExcelSheets()
