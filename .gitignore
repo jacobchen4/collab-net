@@ -17,3 +17,6 @@ analysis/graph.pkl
 analysis/graphs/
 analysis/__pycache__/
 database_load/__pycache__/
+
+# CSVs
+analysis/metrics/

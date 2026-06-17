@@ -3,6 +3,9 @@ neo4j
 pyyaml
 networkx
 pandas
+scipy
+scikit-posthocs
+pymannkendall
 matplotlib
 numpy
 openpyxl

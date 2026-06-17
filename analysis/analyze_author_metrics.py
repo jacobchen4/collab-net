@@ -7,13 +7,6 @@ import numpy as np
 sys.path.insert(0, './database_load')
 from database_load import *
 
-# By conference
-# General graph observations
-# Clustering, etc.
-# Take ~10 (?) authors with the highest of each metric, note their position in the graph + who they coauthor with
-# Take ~10 (?) authors with the highest of each metric, note their position in the graph + who they coauthor with
-
-
 # number of authors to retrieve for each metric (top/bottom authors for a specific metric)
 TOP_AUTHORS_RETRIEVAL_NUM = 10
 
@@ -37,15 +30,17 @@ def getTopAuthorStatsForConferenceAndYear(conf="", year=-1):
     avg_cluster_weighted = author_data['clustering_weighted'].mean()
     std_cluster_weighted = author_data['clustering_weighted'].std()
     
+    avg_degree_weighted = author_data['degree_weighted'].mean()
+    std_degree_weighted = author_data['degree_weighted'].std()
+    
     # top authors per category
     top_unweighted_btw_authors = author_data.sort_values(by='betweenness_unweighted', ascending=False).head(TOP_AUTHORS_RETRIEVAL_NUM)[['authors', 'betweenness_unweighted']]
     top_weighted_btw_authors = author_data.sort_values(by='betweenness_weighted', ascending=False).head(TOP_AUTHORS_RETRIEVAL_NUM)[['authors', 'betweenness_weighted']]
     top_weighted_degree_authors = author_data.sort_values(by='degree_weighted', ascending=False).head(TOP_AUTHORS_RETRIEVAL_NUM)[['authors', 'degree_weighted']]
     top_weighted_cluster_authors = author_data.sort_values(by='clustering_weighted', ascending=False).head(TOP_AUTHORS_RETRIEVAL_NUM)[['authors', 'clustering_weighted']]
-    top_weighted_cluster_authors = author_data.sort_values(by='clustering_weighted', ascending=False).head(TOP_AUTHORS_RETRIEVAL_NUM)[['authors', 'clustering_weighted']]
     
-    return avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, avg_cluster_weighted, std_cluster_weighted, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors, top_weighted_cluster_authors
-    return avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, avg_cluster_weighted, std_cluster_weighted, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors, top_weighted_cluster_authors
+    return avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, avg_cluster_weighted, std_cluster_weighted, avg_degree_weighted, std_degree_weighted, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors, top_weighted_cluster_authors
+
 
 def visualizeAuthorStatsForConference(conf=""):
     """
@@ -57,7 +52,7 @@ def visualizeAuthorStatsForConference(conf=""):
     Args:
         conf (str): Conference abbreviation ('icse', 'icsa', 'ecsa')
     """
-    years = list(range(2016, 2026))
+    years = list(range(2015, 2026))
     avg_unweighted_btw_list = []
     std_unweighted_btw_list = []
     avg_weighted_btw_list = []
@@ -66,15 +61,12 @@ def visualizeAuthorStatsForConference(conf=""):
     std_degree_list = []
     avg_cluster_list = []
     std_cluster_list = []
-    avg_cluster_list = []
-    std_cluster_list = []
-    
+   
     # Collect statistics for all years
     for year in years:
         try:
             res = getTopAuthorStatsForConferenceAndYear(conf, year)
-            avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, avg_cluster_weighted, std_cluster_weighted, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors, top_weighted_cluster_authors = res
-            avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, avg_cluster_weighted, std_cluster_weighted, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors, top_weighted_cluster_authors = res
+            avg_unweighted_btw, std_unweighted_btw, avg_weighted_btw, std_weighted_btw, avg_cluster_weighted, std_cluster_weighted, avg_degree_weighted, std_degree_weighted, top_unweighted_btw_authors, top_weighted_btw_authors, top_weighted_degree_authors, top_weighted_cluster_authors = res
             
             avg_unweighted_btw_list.append(avg_unweighted_btw)
             std_unweighted_btw_list.append(std_unweighted_btw if not np.isnan(std_unweighted_btw) else 0)
@@ -82,21 +74,9 @@ def visualizeAuthorStatsForConference(conf=""):
             avg_weighted_btw_list.append(avg_weighted_btw)
             std_weighted_btw_list.append(std_weighted_btw if not np.isnan(std_weighted_btw) else 0)
             
-            # Calculate average and std dev degree from the top degree authors
-            if len(top_weighted_degree_authors) > 0:
-                avg_degree = top_weighted_degree_authors['degree_weighted'].mean()
-                std_degree = top_weighted_degree_authors['degree_weighted'].std()
-            else:
-                avg_degree = 0
-                std_degree = 0
-            avg_degree_list.append(avg_degree)
-            std_degree_list.append(std_degree if not np.isnan(std_degree) else 0)
+            avg_degree_list.append(avg_degree_weighted)
+            std_degree_list.append(std_degree_weighted if not np.isnan(std_degree_weighted) else 0)
             
-            # Clustering coefficient
-            avg_cluster_list.append(avg_cluster_weighted)
-            std_cluster_list.append(std_cluster_weighted if not np.isnan(std_cluster_weighted) else 0)
-            
-            # Clustering coefficient
             avg_cluster_list.append(avg_cluster_weighted)
             std_cluster_list.append(std_cluster_weighted if not np.isnan(std_cluster_weighted) else 0)
             
@@ -110,13 +90,10 @@ def visualizeAuthorStatsForConference(conf=""):
             std_degree_list.append(0)
             avg_cluster_list.append(np.nan)
             std_cluster_list.append(0)
-            avg_cluster_list.append(np.nan)
-            std_cluster_list.append(0)
     
     # Create visualization
     fig, axes = plt.subplots(4, 1, figsize=(12, 14))
-    fig, axes = plt.subplots(4, 1, figsize=(12, 14))
-    fig.suptitle(f'{conf.upper()} Conference - Author Statistics Trends (2016-2025)', fontsize=16, fontweight='bold')
+    fig.suptitle(f'{conf.upper()} Conference - Author Statistics Trends (2015-2025)', fontsize=16, fontweight='bold')
     
     # Plot 1: Average Unweighted Betweenness with error bars
     axes[0].errorbar(years, avg_unweighted_btw_list, yerr=std_unweighted_btw_list, 
@@ -162,7 +139,7 @@ def visualizeAuthorStatsForConference(conf=""):
     plt.tight_layout()
     
     # Save figure
-    output_file = f'./analysis/{conf}_author_statistics_trend.png'
+    output_file = f'./analysis/images/{conf}_author_statistics_trend.png'
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     print(f"Visualization saved to {output_file}")
     plt.close()
@@ -171,7 +148,7 @@ def visualizeAuthorStatsForConference(conf=""):
 # into an excel workbook, with a sheet per conference + year 
 def loadExcelSheets():
     conferences = ['icse', 'icsa', 'ecsa']
-    years = range(2016, 2026)
+    years = range(2015, 2026)
     excel_file = './analysis/collaboration_network.xlsx'
     
     # set first_write to be true for creating the file

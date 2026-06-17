@@ -1,5 +1,5 @@
 """
-For each of 3 conferences (ICSA, ECSA, ICSE) and years 2016-2025 (30 partitions),
+For each of 3 conferences (ICSA, ECSA, ICSE) and years 2015-2025 (30 partitions),
 fetches the coauthorship subgraph from Neo4j, saves two pickled graphs to
 analysis/graphs/, and writes per-author metrics to analysis/metrics/.
 
@@ -25,7 +25,7 @@ from analysis.fetch_graph import build_graphs_from_subgraph_df, save_graphs
 from analysis.compute_metrics import compute_metrics
 
 CONFERENCES = ["icsa", "ecsa", "icse"]
-YEARS = list(range(2016, 2026))
+YEARS = list(range(2015, 2026))
 GRAPHS_DIR = "analysis/graphs"
 METRICS_DIR = "analysis/metrics"
 

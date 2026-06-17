@@ -65,6 +65,25 @@ cypher:
     
 
 # Write Queries
+  add_author_nodes_batch: |
+    UNWIND $authors as name
+    MERGE (a:author {author: author})
+    return count(a) as nodes_created
+
+  add_publication_nodes_batch: |
+
+
+  merge_authorship_nodes_and_edges_batch: |
+    UNWIND $rows AS row
+    MERGE (a:author {author: row.author})
+    MERGE (p:publication {pub_key: row.pub_key})
+      ON CREATE SET p.title = row.title,
+                    p.year = row.year,
+                    p.conference = row.conference
+    MERGE (a)-[r:AUTHORED]->(p)
+    RETURN count(r) AS edges_created
+
+
   add_coauthorship_edge: |
     MATCH (a:author {author: $author}), (b:author {author: $coauthor})
     MERGE (a)-[c:COAUTHORED_WITH {pub_key: $pub_key}]-(b)
