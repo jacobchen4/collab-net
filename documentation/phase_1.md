@@ -36,4 +36,5 @@ The second graph state includes coauthorship edges between author nodes in addit
 
 ## Dataset Access
 
-Our dataset is accessible via the /csvs/ directory, which includes author_publications.csv as well as additional files such as ambiguous authors and statistical results.
+Our dataset is accessible via the /csvs/ directory, which includes author_publications.csv as well as additional files such as ambiguous authors and statistical results. Additional post-script result datasets will be found in /analysis/.
+..
