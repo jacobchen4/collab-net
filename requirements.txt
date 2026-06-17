@@ -3,3 +3,7 @@ neo4j
 pyyaml
 networkx
 pandas
+matplotlib
+numpy
+openpyxl
+powerlaw
