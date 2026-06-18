@@ -4,7 +4,7 @@ Jacob Chen, Adrian Rodriguez Vazquez, Madison Seal, Sahaj Baxi
 
 ## Data sets targeted
 
-Our project targeted [DBLP](Link)'s records on three specific software engineering/architecture conferences: ICSE, ICSA, and ECSA. For each of these conferences, we gathered all publications posted between the years of 2015 and 2025, and found the authors for each.
+Our project targeted [DBLP](Link)'s records on three specific software engineering/architecture conferences: ICSE, ICSA, and ECSA. For each of these conferences, we gathered all publications posted between the years of 2016 and 2025, and found the authors for each.
 
 ## Data Extraction
 

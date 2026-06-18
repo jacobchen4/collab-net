@@ -1,0 +1,108 @@
+name_a,name_b,canonical_a,canonical_b,fuzzy_ratio,n_shared_coauthors,shared_coauthors
+Adailton M. Lima,Adailton Magalhães Lima,adailton lima,adailton lima,1.0,1,Rodrigo Quites Reis
+Aditya Ghose,Aditya K. Ghose,aditya ghose,aditya ghose,1.0,1,Hoa Khanh Dam
+Akond Ashfaque Ur Rahman,Akond Rahman,akond rahman,akond rahman,1.0,1,Laurie A. Williams
+Alessandro F. Garcia 0001,Alessandro Garcia 0001,alessandro garcia,alessandro garcia,1.0,8,Ana Carla Bibiano; Baldoino Fonseca; Daniel Oliveira; Leonardo da Silva Sousa; Rafael Maiani de Mello; Roberto Felicio Oliveira; Wesley K. G. Assunção; Willian Nalepa Oizumi
+André A. Meyer,André N. Meyer,andre meyer,andre meyer,1.0,1,Thomas Fritz
+Anh Tuan Nguyen 0001,Thanh Van Nguyen,anh nguyen,thanh nguyen,0.909,5,Hung Dang Phan; Mark Karanfil; Peter C. Rigby; Tien N. Nguyen; Trong Duc Nguyen
+Awdren L. Fontão,Awdren de Lima Fontão,awdren fontao,awdren fontao,1.0,1,Rodrigo Pereira dos Santos
+Ayse Basar Bener,Ayse Bener,ayse bener,ayse bener,1.0,2,Shirin Akbarinasaji; Syed Shariyar Murtaza
+Bora Caglayan,Bora Çaglayan,bora caglayan,bora caglayan,1.0,2,Andriy V. Miranskyy; Ayse Basar Bener
+Carlos José Pereira de Lucena,Carlos Lucena,carlos lucena,carlos lucena,1.0,3,Leonardo da Silva Sousa; Rafael Maiani de Mello; Roberto Felicio Oliveira
+Carlos M. Aderaldo,Carlos Mendes Aderaldo,carlos aderaldo,carlos aderaldo,1.0,2,David Garlan; Nabor C. Mendonça
+Carlos S. S. Marinho,Carlos Sérgio da S. Marinho,carlos marinho,carlos marinho,1.0,1,Leonardo O. Moreira
+Cen Zhang,Chen Zhang,cen zhang,chen zhang,0.947,1,Xin Peng
+Chanchal K. Roy,Chanchal Kumar Roy,chanchal roy,chanchal roy,1.0,2,Jeffrey Svajlenko; Mohammad Masudur Rahman
+Chanchal K. Roy,Chanchal Roy,chanchal roy,chanchal roy,1.0,3,Banani Roy; Debasish Chakroborti; Kevin A. Schneider
+Chen Zhang,Chenxi Zhang 0003,chen zhang,chenxi zhang,0.909,1,Xin Peng
+Christopher A. Sanchez,Christopher Sanchez,christopher sanchez,christopher sanchez,1.0,2,Anita Sarma; Rahul Pandita
+Chunyang Chen 0001,Chuyang Chen 0001,chunyang chen,chuyang chen,0.96,1,Ting Su
+Cláudia M. L. Werner,Cláudia Maria Lima Werner,claudia werner,claudia werner,1.0,1,Toacy Cavalcante de Oliveira
+Damian A. Tamburri,Damian Andrew Tamburri,damian tamburri,damian tamburri,1.0,7,Alexander Serebrenik; Elisabetta Di Nitto; Fabiano Pecorelli; Fabio Palomba; Gemma Catolino; Michele Guerriero; Rick Kazman
+Danfeng (Daphne) Yao,Danfeng Daphne Yao,danfeng yao,danfeng yao,1.0,1,Na Meng
+Daniel Oliveira 0005,Daniel Tenório Martins de Oliveira,daniel oliveira,daniel oliveira,1.0,2,Alessandro Garcia; Baldoino Fonseca
+Darryl C. Jarman,Darryl Jarman,darryl jarman,darryl jarman,1.0,3,Jeffrey Berry; Owen Johnston; Zhi Quan Zhou
+Dimitrios S. Kolovos,Dimitris S. Kolovos,dimitrios kolovos,dimitris kolovos,0.97,1,Richard F. Paige
+Edson César Cunha de Oliveira,Edson Oliveira 0001,edson oliveira,edson oliveira,1.0,2,Adriana Lopes; Tayana Conte
+Eliane Stampfer Wiese,Eliane Wiese,eliane wiese,eliane wiese,1.0,1,Anna N. Rafferty
+Erik A. Jagroep,Erik Jagroep,erik jagroep,erik jagroep,1.0,5,Jan Martijn E. M. van der Werf; Leen Blom; Patricia Lago; Rob van Vliet; Sjaak Brinkkemper
+Fabiola Moyon,Fabiola Moyón,fabiola moyon,fabiola moyon,1.0,2,Florian Angermeir; Markus Voggenreiter
+Fernando Figueira Filho,Fernando Marques Figueira Filho,fernando filho,fernando filho,1.0,2,Cleidson R. B. de Souza; Sabrina Marczak
+Fábio Basso,Fábio Paulo Basso,fabio basso,fabio basso,1.0,1,Toacy Cavalcante de Oliveira
+Ganesha B. Upadhyaya,Ganesha Upadhyaya,ganesha upadhyaya,ganesha upadhyaya,1.0,3,Hoan Anh Nguyen; Hridesh Rajan; Ramanathan Ramu
+Gudjon Einar Magnusson,Gudjon Magnusson,gudjon magnusson,gudjon magnusson,1.0,2,Adam A. Porter; Mikael Lindvall
+Guenther Ruhe,Günther Ruhe,guenther ruhe,gunther ruhe,0.96,1,Zahra Shakeri Hossein Abad
+Hoan Anh Nguyen,Hoan Nguyen,hoan nguyen,hoan nguyen,1.0,5,Hieu Tran; Ngoc M. Tran; Omer Tripp; Son Nguyen; Tien N. Nguyen
+Hung Dang Phan,Hung Phan,hung phan,hung phan,1.0,2,Anh Tuan Nguyen; Tien N. Nguyen
+Hyoungjoo Ahn,Yongjoo Ahn,hyoungjoo ahn,yongjoo ahn,0.917,10,Dongju Chae; Geunsik Lim; Gichan Jang; Jaeyun Jung; Ji Joong Moon; Jihoon Lee; MyungJoo Ham; Parichay Kapoor; Sangjung Woo; Wook Song
+Igor Fabio Steinmacher,Igor Steinmacher,igor steinmacher,igor steinmacher,1.0,1,Tayana Uchôa Conte
+Igor Scaliante Wiese,Igor Wiese,igor wiese,igor wiese,1.0,3,Gustavo Pinto; Igor Steinmacher; Marco Aurélio Gerosa
+Jaime Navon,Jaime Navón,jaime navon,jaime navon,1.0,1,José I. Benedetto
+Jan Pacovsky,Jan Pacovský,jan pacovsky,jan pacovsky,1.0,2,Petr Hnetynka; Tomás Bures
+Jane Wyngaard,Janet Wyngaard,jane wyngaard,janet wyngaard,0.963,2,Jane Cleland-Huang; Michael Vierhauser
+Javam C. Machado,Javam de Castro Machado,javam machado,javam machado,1.0,1,Leonardo O. Moreira
+Jia-Guang Sun 0001,Jiaguang Sun 0001,jia-guang sun,jiaguang sun,0.96,2,Han Liu; Yu Jiang
+Jiacheng Wang,Jincheng Wang,jiacheng wang,jincheng wang,0.923,1,Claire Le Goues
+Jian Lu 0001,Jian Lü 0001,jian lu,jian lu,1.0,5,Chang Xu; Chun Cao; Tianxiao Gu; Xiaoxing Ma; Yanyan Jiang
+Jim Alain Laredo,Jim Laredo,jim laredo,jim laredo,1.0,1,Yunhui Zheng
+Jin Guo 0004,Jin L. C. Guo,jin guo,jin guo,1.0,2,Jane Cleland-Huang; Jinghui Cheng
+JingZheng Wu,Jingzheng Wu,jingzheng wu,jingzheng wu,1.0,3,Mutian Yang; Tianyue Luo; Yanjun Wu
+Johan J. Lukkien,Johan Lukkien,johan lukkien,johan lukkien,1.0,1,Pieter J. L. Cuijpers
+John C. Grundy,John Grundy 0001,john grundy,john grundy,1.0,12,Hourieh Khalajzadeh; Humphrey O. Obie; Jean-Guy Schneider; Jun Han; Li Li; Miao Du; Mohamed Abdelrazek; Mojtaba Shahin; Pei Liu; Rajesh Vasa; Scott Barnett; Yanjie Zhao
+João Felipe Nicolaci Pimentel,João Felipe Pimentel,joao pimentel,joao pimentel,1.0,3,Anita Sarma; Igor Steinmacher; Marco Aurélio Gerosa
+Juan P. Galeotti,Juan Pablo Galeotti,juan galeotti,juan galeotti,1.0,1,Andreas Zeller
+Juergen Musil,Jürgen Musil,juergen musil,jurgen musil,0.96,2,Angelika Musil; Stefan Biffl
+Ken-ichi Matsumoto,Kenichi Matsumoto,ken-ichi matsumoto,kenichi matsumoto,0.971,5,Ahmed E. Hassan; Akinori Ihara; Chakkrit Tantithamthavorn; Hideaki Hata; Shane McIntosh
+Letícia Machado,Letícia S. Machado,leticia machado,leticia machado,1.0,3,Cleidson R. B. de Souza; Igor Steinmacher; Sabrina Marczak
+Letícia Machado,Letícia Santos Machado,leticia machado,leticia machado,1.0,1,Cleidson R. B. de Souza
+Letícia S. Machado,Letícia Santos Machado,leticia machado,leticia machado,1.0,1,Cleidson R. B. de Souza
+LiGuo Huang,Liguo Huang,liguo huang,liguo huang,1.0,6,Alexander Egyed; Bin Luo; Christoph Mayr-Dorn; Feifei Niu; Jidong Ge; Wesley K. G. Assunção
+Lucas B. R. Oliveira,Lucas Bueno Ruas de Oliveira,lucas oliveira,lucas oliveira,1.0,1,Milena Guessi
+Luis Cruz 0002,Luís Cruz 0002,luis cruz,luis cruz,1.0,1,Arie van Deursen
+Madan Musuvathi,Madanlal Musuvathi,madan musuvathi,madanlal musuvathi,0.909,3,Saikat Chakraborty; Sarah Fakhoury; Shuvendu K. Lahiri
+Mahmoud Hammad,Mahmoud M. Hammad,mahmoud hammad,mahmoud hammad,1.0,1,Sam Malek
+Margaret Burnett,Margaret M. Burnett,margaret burnett,margaret burnett,1.0,3,Anita Sarma; Claudia Hilderbrand; Zoe Steine-Hanson
+Mark G. J. van den Brand,Mark van den Brand,mark brand,mark brand,1.0,2,Priyanka Karkhanis; Yanja Dajsuren
+Matteo G. Rossi,Matteo Rossi 0001,matteo rossi,matteo rossi,1.0,1,Marcello M. Bersani
+Mattias Galnander,Mattias Gålnander,mattias galnander,mattias galnander,1.0,3,John Lundbäck; Kurt-Lennart Lundbäck; Saad Mubeen
+Mauricio Finavaro Aniche,Maurício Finavaro Aniche,mauricio aniche,mauricio aniche,1.0,2,Arie van Deursen; Christoph Treude
+Maurício Aniche,Maurício Finavaro Aniche,mauricio aniche,mauricio aniche,1.0,1,Annibale Panichella
+Md Mahbubur Rahman,Md. Masudur Rahman 0001,md rahman,md. rahman,0.947,2,Baishakhi Ray; Saikat Chakraborty
+Mehdi Mirakhorli,Mehdi Tarrit Mirakhorli,mehdi mirakhorli,mehdi mirakhorli,1.0,1,Viktoria Koscinski
+Michel Chaudron,Michel R. V. Chaudron,michel chaudron,michel chaudron,1.0,1,Satrio Adi Rukmono
+Miguel A. Jiménez 0003,Miguel Jiménez 0003,miguel jimenez,miguel jimenez,1.0,4,Gabriel Tamura; Hausi A. Müller; Luis F. Rivera; Norha M. Villegas
+Mir Anamul Hasan,Mir Hasan,mir hasan,mir hasan,1.0,1,Sonia Haiduc
+Mohamed Abdelrazek 0001,Mohamed Almorsy Abdelrazek,mohamed abdelrazek,mohamed abdelrazek,1.0,6,Andrew Cain; Feifei Chen; Jean-Guy Schneider; John C. Grundy; Kevin Lee; Peter W. Eklund
+Muhammad Ashfakur Rahman Arju,Muhmmad Ashfakur Rahman Arju,muhammad arju,muhmmad arju,0.96,2,Amr S. Abdelfattah; Tomás Cerný
+Nikolas Herbst,Nikolas Roman Herbst,nikolas herbst,nikolas herbst,1.0,1,Samuel Kounev
+Patrick J. Morrison,Patrick Morrison,patrick morrison,patrick morrison,1.0,1,Laurie A. Williams
+Paulo Henrique M. Maia,Paulo Henrique Mendes Maia,paulo maia,paulo maia,1.0,1,Davi Monteiro Barbosa
+Phuong T. Nguyen 0001,Phuong Thanh Nguyen 0001,phuong nguyen,phuong nguyen,1.0,1,Davide Di Ruscio
+Qanjun Zhang,Quanjun Zhang,qanjun zhang,quanjun zhang,0.96,3,Chunrong Fang; Jiawei Liu; Xufan Zhang
+Roberto E. Lopez-Herrejon,Roberto Erick Lopez-Herrejon,roberto lopez-herrejon,roberto lopez-herrejon,1.0,2,Alexander Egyed; Lukas Linsbauer
+Rodrigo O. Spínola,Rodrigo Oliveira Spínola,rodrigo spinola,rodrigo spinola,1.0,2,Carolyn B. Seaman; Nicolli Rios
+Ronnie E. S. Santos,Ronnie Edson de Souza Santos,ronnie santos,ronnie santos,1.0,2,Cleyton V. C. de Magalhães; Maria Teresa Baldassarre
+Rosana T. Vaccare Braga,Rosana Teresinha Vaccare Braga,rosana braga,rosana braga,1.0,1,Iohan Gonçalves Vargas
+S M Hasan Mansur 0001,S. M. Hasan Mansur 0001,s mansur,s. mansur,0.941,1,Kevin Moran
+Saemundur Haraldsson,Saemundur O. Haraldsson,saemundur haraldsson,saemundur haraldsson,1.0,1,John R. Woodward
+Shizhuo Dylan Zhang,Shizhuo Zhang,shizhuo zhang,shizhuo zhang,1.0,4,Alex Sanchez-Stern; Talia Ringer; Yuriy Brun; Zhanna Kaufman
+Sohil L. Shrestha,Sohil Lal Shrestha,sohil shrestha,sohil shrestha,1.0,1,Christoph Csallner
+Stefan Albert Horstmann,Stefan Horstmann,stefan horstmann,stefan horstmann,1.0,1,Alena Naiakshina
+Stefan Haselbock,Stefan Haselböck,stefan haselbock,stefan haselbock,1.0,1,Rainer Weinreich
+Stefen Becker,Steffen Becker 0001,stefen becker,steffen becker,0.963,1,Markus Frank
+Steve Versteeg,Steven Versteeg,steve versteeg,steven versteeg,0.966,3,Jean-Guy Schneider; Jun Han; Miao Du
+Syed Asad Ali Naqvi,Syed Asad Naqvi,syed naqvi,syed naqvi,1.0,1,Awais Rashid
+Tayana Conte,Tayana Uchôa Conte,tayana conte,tayana conte,1.0,5,Bruno Gadelha; Edson César Cunha de Oliveira; Igor Steinmacher; Marco Aurélio Gerosa; Patrícia G. F. Matsubara
+Thaís Batista,Thaís Vasconcelos Batista,thais batista,thais batista,1.0,4,Eduardo Silva; Everton Cavalcante; Flávio Oquendo; Jair C. Leite
+Themistoklis Diamantopoulos,Themistoklis G. Diamantopoulos,themistoklis diamantopoulos,themistoklis diamantopoulos,1.0,1,Andreas L. Symeonidis
+Tse-Hsun (Peter) Chen,Tse-Hsun Chen,tse-hsun chen,tse-hsun chen,1.0,7,Ahmed E. Hassan; An Ran Chen; Jinqiu Yang; Mohamed N. Nasser; Parminder Flora; Weiyi Shang; Zhenhao Li
+Tse-Hsun (Peter) Chen,Tse-Hsun Peter Chen,tse-hsun chen,tse-hsun chen,1.0,4,Heng Li; Jinqiu Yang; Weiyi Shang; Zhenhao Li
+Tse-Hsun Chen,Tse-Hsun Peter Chen,tse-hsun chen,tse-hsun chen,1.0,5,Dong Jae Kim; Jinqiu Yang; Weiyi Shang; Zeyang Ma; Zhenhao Li
+Vikrant Kaulgud,Vikrant S. Kaulgud,vikrant kaulgud,vikrant kaulgud,1.0,1,Vibhu Saujanya Sharma
+Wesley K. G. Assunção,Wesley Klewerton Guez Assunção,wesley assuncao,wesley assuncao,1.0,2,Alexander Egyed; Christoph Mayr-Dorn
+Yan Liu,Yang Liu 0003,yan liu,yang liu,0.933,1,Xiaoning Du
+Yanli Wang 0001,Yanlin Wang 0001,yanli wang,yanlin wang,0.952,5,Daya Guo; Jiachi Chen; Ruikai Zhang; Yuchi Ma; Zibin Zheng
+Zhen Ming (Jack) Jiang,Zhen Ming Jack Jiang,zhen jiang,zhen jiang,1.0,1,Boyuan Chen
+Zhen Ming (Jack) Jiang,Zhen Ming Jiang,zhen jiang,zhen jiang,1.0,1,Boyuan Chen
+Zhen Ming Jack Jiang,Zhen Ming Jiang,zhen jiang,zhen jiang,1.0,2,Boyuan Chen; Yong Shi
+Zhong Chen 0001,Zhongqi Chen,zhong chen,zhongqi chen,0.909,1,Chao Liu

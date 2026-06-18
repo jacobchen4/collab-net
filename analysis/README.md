@@ -131,7 +131,7 @@ One row per author who published in 2+ conferences, sorted by conference count t
 |---|---|
 | Total authors | 13,903 |
 | Total publications | 7,553 |
-| Conferences | ICSA, ICSE, ECSA (2015–present) |
+| Conferences | ICSA, ICSE, ECSA (2016–2025) |
 | Unique coauthor pairs | 45,405 |
 | Raw coauthorship edges | 56,589 |
 | Connected components | 1,120 |
@@ -165,7 +165,7 @@ Friedman only says "the conferences differ somewhere." Nemenyi is the matched po
 
 #### between-conference, robustness check
 
-Friedman on 9 blocks has low power, and it forces you to drop ICSA's missing 2015–16 to keep complete blocks. Kruskal–Wallis treats the yearly aggregates as independent samples, so it can use all available years per conference. If both KW and Friedman agree, the conclusion is solid; if they disagree, that disagreement is itself informative. Dunn's is the correct pairwise post-hoc after KW (same role Nemenyi plays for Friedman).
+Friedman on 9 blocks has low power, and it forces you to drop ICSA's missing 2016–17 to keep complete blocks. Kruskal–Wallis treats the yearly aggregates as independent samples, so it can use all available years per conference. If both KW and Friedman agree, the conclusion is solid; if they disagree, that disagreement is itself informative. Dunn's is the correct pairwise post-hoc after KW (same role Nemenyi plays for Friedman).
 
 ### Mann–Kendall
 

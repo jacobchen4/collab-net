@@ -67,7 +67,7 @@ Higher-level structural properties of the coauthorship network are computed usin
 - **K-shell decomposition (Task 11):** Assigns each author a k-core number (the highest k for which they belong to the k-core subgraph), providing a parameter-free measure of structural embeddedness. Produces a k-shell histogram and boxplots grouped by structural role.
 - **Author retention (Task 12):** Tracks when each author first and last appears at each conference and constructs mean retention (survival) curves per conference across debut cohorts, measuring how long authors remain active after their first publication.
 
-We deemed a subset of tasks to give meaningful results, notably tasks 5, 6, 7, and 11.
+We deemed a subset of tasks to give meaningful results, notably tasks 5, 6, and 11.
 
 #### Visualization
 
