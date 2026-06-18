@@ -24,12 +24,12 @@ copy config.yaml.template database_load\config.yaml
 
 ```yaml
 credentials:
-  uri: neo4j+s://<instance-id>.databases.neo4j.io
-  user: <user_id>
-  password: <your-password>
-  database: neo4j
-  instance_id: <id>
-  instance_name: <name-of-graph>
+  uri: 'neo4j+s://738a9212.databases.neo4j.io'
+  user: '738a9212'
+  password: 'LLdrXoQtv7noKIxLg41vZCb0I9nyuDUnjatXeSEcpxs'
+  database: '738a9212'
+  instance_id: '738a9212'
+  instance_name: 'Co-author Graph'
 ```
 
 `config.yaml` is gitignored.
